@@ -49,7 +49,7 @@
   <header
     class="
       header group/header
-      {% if enable_transparent_header %} border-b-1 border-transparent text-white transition-colors hover:bg-background hover:text-text hover:border-beige group-[.scrolled]/html:bg-background group-[.scrolled]/html:text-text group-[.scrolled]/html:border-beige{% else %} bg-background border-b-1 border-beige{% endif %}
+      {% if enable_transparent_header %} text-white transition-colors hover:bg-background hover:text-text group-[.scrolled]/html:bg-background group-[.scrolled]/html:text-text{% else %} bg-background{% endif %}
     "
     {% if enable_transparent_header %}data-transparent-header="true"{% endif %}
     data-section-id="{{ section.id }}"
@@ -84,7 +84,7 @@
                           <div class="transition-transform ease-in-out group-hover/nav:rotate-180">
                             {% render 'icon' icon: 'dropdown' %}
                           </div>
-                          <div class="absolute bottom-0 left-0 right-full border-b-1 border-black transition-position group-hover/link:right-0"></div>
+                          <div class="absolute bottom-0 left-0 right-full border-b-1 border-brown transition-position group-hover/link:right-0"></div>
                         </div>
 
                         <ul class="min-w-[170px] pt-20 px-20 pb-15 flex flex-col gap-5 absolute top-full -translate-x-20 -translate-y-px opacity-0 invisible bg-background border-1 border-beige group-hover/nav:opacity-100 group-hover/nav:visible transition-visibility ease-in-out" role="list" tabindex="-1">
@@ -116,7 +116,7 @@
                     {% else %}
                       <a href="{{ link.url }}" class="group/link py-20 block text-cta uppercase relative"{% if link.current %} aria-current="page"{% endif %}>
                         {{ link.title | escape }}
-                        <div class="absolute bottom-0 left-0 right-full border-b-1 border-black transition-position group-hover/link:right-0"></div>
+                        <div class="absolute bottom-0 left-0 right-full border-b-1 border-brown transition-position group-hover/link:right-0"></div>
                       </a>
                     {% endif %}
                   </li>
@@ -127,7 +127,7 @@
                       <div class="transition-transform origin-center ease-in-out group-hover/link:rotate-180">
                         {% render 'icon' icon: 'dropdown' %}
                       </div>
-                      <div class="absolute bottom-0 left-0 right-full border-b-1 border-black transition-position group-hover/nav:right-0"></div>
+                      <div class="absolute bottom-0 left-0 right-full border-b-1 border-brown transition-position group-hover/nav:right-0"></div>
                     </a>
 
                     {% for block in section.blocks %}
@@ -244,6 +244,19 @@
 
         <!-- Icons -->
         <div class="flex justify-end items-center gap-20 flex-shrink-0 relative md:gap-40 lg:gap-60">
+          {% if section.settings.additional_menu != blank %}
+            <nav class="flex flex-shrink-0">
+              <ul class="hidden items-center gap-20 md:flex md:gap-40 lg:gap-60" role="list">
+                {% for link in section.settings.additional_menu.links %}
+                  <a href="{{ link.url }}" class="group/link py-20 block text-cta uppercase relative"{% if link.current %} aria-current="page"{% endif %}>
+                    {{ link.title | escape }}
+                    <div class="absolute bottom-0 left-0 right-full border-b-1 border-brown transition-position group-hover/link:right-0"></div>
+                  </a>
+                {% endfor %}
+              </ul>
+            </nav>
+          {% endif %}
+
           {% if section.settings.enable_search %}
             <button class="group/link hidden relative md:block" data-open-search>
               <span class="md:hidden">
@@ -251,20 +264,20 @@
                 <span class="visually-hidden">Search</span>
               </span>
               <span class="py-20 hidden text-cta uppercase md:block">Search</span>
-              <div class="hidden absolute bottom-0 left-0 right-full border-b-1 border-black transition-position group-hover/link:right-0 md:block"></div>
+              <div class="hidden absolute bottom-0 left-0 right-full border-b-1 border-brown transition-position group-hover/link:right-0 md:block"></div>
             </button>
           {% endif %}
 
-          {% if shop.customer_accounts_enabled %}
+          {% comment %} {% if shop.customer_accounts_enabled %}
             <a href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}" class="group/link relative">
               <span class="md:hidden">
                 {% render 'icon' icon: 'account' %}
                 <span class="visually-hidden">Account</span>
               </span>
               <span class="py-20 hidden text-cta uppercase md:block">Account</span>
-              <div class="hidden absolute bottom-0 left-0 right-full border-b-1 border-black transition-position group-hover/link:right-0 md:block"></div>
+              <div class="hidden absolute bottom-0 left-0 right-full border-b-1 border-brown transition-position group-hover/link:right-0 md:block"></div>
             </a>
-          {% endif %}
+          {% endif %} {% endcomment %}
 
           {% if template != 'cart' %}
             <button class="relative md:py-20" data-open-cart id="cart-icon-bubble" aria-label="Open Cart Drawer" data-id="{{ section.id }}">
@@ -371,6 +384,11 @@
       "id": "menu",
       "label": "Menu",
       "default": "main-menu"
+    },
+    {
+      "type": "link_list",
+      "id": "additional_menu",
+      "label": "Additional Menu"
     },
     {
       "type": "checkbox",

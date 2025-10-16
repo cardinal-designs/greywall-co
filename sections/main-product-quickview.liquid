@@ -13,7 +13,7 @@
               <div class="swiper-wrapper">
                 {% for media in product.media %}
                   <li class="swiper-slide group/thumb cursor-pointer" style="height:auto; aspect-ratio: 3 / 4;" data-media-id="thumbs-{{ section.id }}-{{ media.id }}">
-                    <div class="aspect-product overflow-hidden relative border-1 border-transparent transition-colors group-[.swiper-slide-thumb-active]/thumb:border-black">
+                    <div class="aspect-product overflow-hidden relative border-1 border-transparent transition-colors group-[.swiper-slide-thumb-active]/thumb:border-brown">
                       {% render 'image'
                         image: media,
                         classes: 'size-full inset object-cover',
@@ -66,7 +66,7 @@
           {% render 'product-badges' prod: product, classes: 'mb-20 hidden md:block' %}
 
           <div class="{% if mobile_title_position == 'above' %} hidden md:block{% endif %}">
-            <h1 class="mb-10 text-m-h2 font-serif italic md:text-h4">
+            <h1 class="mb-10 text-m-h2 font-serif uppercase md:text-h4">
               {{ product.title | escape }}
             </h1>
 
@@ -87,7 +87,7 @@
           {% render 'product-form' prod: product, product_form_id: product_form_id, show_quantity: false, change_url: false %}
 
           {% if section.settings.extra_text != blank %}
-            <p class="mt-10 text-caption font-serif italic text-center">{{ section.settings.extra_text }}</p>
+            <p class="mt-10 text-caption font-serif uppercase text-center">{{ section.settings.extra_text }}</p>
           {% endif %}
         </div>
       </div>

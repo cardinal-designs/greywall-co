@@ -1,12 +1,8 @@
 {% liquid
   assign classes = 'button'
   case block.settings.button_color
-    when 'white'
-      assign classes = 'button button--white'
-    when 'black_outline'
-      assign classes = 'button button--outline'
-    when 'white_outline'
-      assign classes = 'button button--white-outline'
+    when 'dark'
+      assign classes = 'button button--brown'
   endcase
 %}
 
@@ -18,6 +14,7 @@
   {% if block.settings.button_style == 'button' %}
     <a href="{{ block.settings.button_link }}" class="w-fit {{ classes }}">
       {{ block.settings.text }}
+      <span class="button-dots"></span>
     </a>
   {% else %}
     {% render 'text-link' link: block.settings.button_link, label: block.settings.text %}
@@ -47,21 +44,19 @@
           { "value": "button", "label": "Button" },
           { "value": "text", "label": "Text" }
         ],
-        "default": "text",
+        "default": "button",
         "label": "Button Style"
       },
       {
         "type": "select",
         "id": "button_color",
         "options": [
-          { "value": "white", "label": "White" },
-          { "value": "black", "label": "Black" },
-          { "value": "white_outline", "label": "White Outline" },
-          { "value": "black_outline", "label": "Black Outline" }
+          { "value": "light", "label": "Light" },
+          { "value": "dark", "label": "Dark" }
         ],
-        "default": "white",
+        "default": "light",
         "label": "Button Color",
-        "info": "Only applies to button links."
+        "visible_if": "{{ block.settings.button_style == 'button' }}"
       },
       {
         "type": "header",

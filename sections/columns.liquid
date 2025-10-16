@@ -1,9 +1,13 @@
-<div class="page-width my-60 md:my-80">
-  {% if section.settings.title != blank %}
-    <h2 class="mb-20 text-m-h2 font-serif italic md:mb-40 md:text-h2" data-animate>{{ section.settings.title }}</h2>
-  {% endif %}
-  <div class="grid{% if section.settings.desktop_columns == "4" %} gap-20 grid-cols-2 md:grid-cols-4{% elsif section.settings.desktop_columns == "3" %} gap-x-20 gap-y-40 md:grid-cols-3{% else %} gap-x-20 gap-y-40 md:grid-cols-2{% endif %}">
-    {% content_for 'blocks' %}
+{% assign bg_color = section.settings.background_color %}
+
+<div class="{{ section.settings.content_color }} {% if bg_color != blank and bg_color != 'rgba(0,0,0,0)' %}pt-30 pb-50 md:pt-50" style="background-color: {{ bg_color }}"{% else %}my-60 md:my-80{% endif %}">
+  <div class="page-width">
+    {% if section.settings.title != blank %}
+      <h2 class="mb-25 text-m-sh1 font-italic lowercase md:mb-30 md:text-sh1" data-animate>{{ section.settings.title }}</h2>
+    {% endif %}
+    <div class="grid{% if section.settings.desktop_columns == "4" %} gap-20 grid-cols-2 md:grid-cols-4{% elsif section.settings.desktop_columns == "3" %} gap-x-20 gap-y-40 md:grid-cols-3{% else %} gap-x-20 gap-y-40 md:grid-cols-2{% endif %}">
+      {% content_for 'blocks' %}
+    </div>
   </div>
 </div>
 
@@ -14,6 +18,21 @@
       {
         "type": "header",
         "content": "Config"
+      },
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color"
+      },
+      {
+        "type": "select",
+        "id": "content_color",
+        "options": [
+          { "value": "text-white", "label": "Light" },
+          { "value": "text-text", "label": "Dark" }
+        ],
+        "default": "text-text",
+        "label": "Content Color"
       },
       {
         "type": "select",

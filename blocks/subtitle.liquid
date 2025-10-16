@@ -1,5 +1,13 @@
+{% liquid
+  assign classes = 'text-m-sh2 uppercase md:text-sh2'
+  case block.settings.font_style
+    when 'italic'
+      assign classes = 'text-m-sh1 font-italic lowercase md:text-sh1'
+  endcase
+%}
+
 <p
-  class="text-sh2 uppercase"
+  class="{{ classes }}"
   style="margin-top: {{ block.settings.margin_top }}px;margin-bottom: {{ block.settings.margin_bottom }}px;"
   data-animate {{ block.shopify_attributes }}
 >
@@ -16,6 +24,16 @@
         "id": "title",
         "label": "Title",
         "default": "Subtitle"
+      },
+      {
+        "type": "select",
+        "id": "font_style",
+        "options": [
+          { "value": "italic", "label": "Italic" },
+          { "value": "uppercase", "label": "Uppercase" }
+        ],
+        "default": "italic",
+        "label": "Font Style"
       },
       {
         "type": "header",

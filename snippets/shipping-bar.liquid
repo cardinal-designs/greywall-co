@@ -8,14 +8,14 @@
     {% assign percentage = 100 %}
   {% endif %}
 
-  <div class="py-10 text-center bg-mint">
+  <div class="py-10 text-center bg-gold">
     {% if cart.total_price < threshold_in_cents %}
       <p class="text-sh2 uppercase">You're {{ remaining_amount | money_without_trailing_zeros }} away from free shipping</p>
     {% else %}
       <p class="text-sh2 uppercase">You have free shipping!</p>
     {% endif %}
   </div>
-  <div class="h-[3px] bg-black/10 relative">
-    <div class="absolute top-0 left-0 bottom-0 bg-black" style="width: {{ percentage }}%;"></div>
+  <div class="h-[3px] bg-brown/10 relative">
+    <div class="absolute top-0 left-0 bottom-0 bg-brown" style="width: {{ percentage }}%;"></div>
   </div>
 {% endif %}

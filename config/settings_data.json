@@ -9,9 +9,9 @@
  */
 {
   "current": {
-    "background_color": "#ffffff",
-    "text_color": "#000000",
-    "shop_all_link": "shopify://collections/shop-all",
+    "background_color": "#f7f4ef",
+    "text_color": "#472715",
+    "shop_all_link": "",
     "enable_quickview": true,
     "show_quantity_selector": true,
     "cart_title": "My Bag",
@@ -29,12 +29,12 @@
     "badge_tags_1": "Best Seller",
     "badge_tags_1_color": "#ebf1e6",
     "badge_tags_1_text_color": "#000000",
-    "social_facebook_link": "https://facebook.com/shopify",
-    "social_instagram_link": "http://instagram.com/shopify",
-    "social_pinterest_link": "https://pinterest.com/shopify",
-    "social_twitter_link": "https://twitter.com/shopify",
-    "social_tiktok_link": "https://tiktok.com/@shopify",
-    "favicon": "shopify://shop_images/ohaei-favicon.png",
+    "social_facebook_link": "",
+    "social_instagram_link": "https://www.instagram.com/greywallandco",
+    "social_pinterest_link": "",
+    "social_twitter_link": "",
+    "social_tiktok_link": "",
+    "favicon": "shopify://shop_images/Frame_811581_2.png",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -74,8 +74,8 @@
       "mobile-menu": {
         "type": "mobile-menu",
         "settings": {
-          "menu": "mobile-menu",
-          "additional_menu": "mobile-additional-menu"
+          "menu": "",
+          "additional_menu": ""
         }
       },
       "main-login": {

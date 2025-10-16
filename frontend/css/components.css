@@ -1,19 +1,23 @@
 @layer components {
   /* Button */
   .button {
-    @apply px-30 py-[17.5px] inline-block text-cta uppercase text-center bg-black text-white border-1 border-transparent transition-colors hover:bg-charcoal;
+    @apply px-[38px] py-[14px] inline-block text-sh2 uppercase text-center bg-cream text-brown transition-colors relative hover:bg-brown hover:text-cream;
   }
 
-  .button--white {
-    @apply bg-white text-black hover:bg-mint;
+  .button::before {
+    @apply content-[''] absolute top-[4px] right-[4px] bottom-[4px] left-[4px] border-1 border-current;
   }
 
-  .button--outline {
-    @apply bg-transparent border-black text-black hover:bg-black hover:text-white;
+  .button .button-dots::before {
+    @apply content-['•'] absolute left-15 top-half -translate-y-half flex justify-between;
   }
 
-  .button--white-outline {
-    @apply bg-transparent border-white text-white hover:bg-white hover:text-black;
+  .button .button-dots::after {
+    @apply content-['•'] absolute right-15 top-half -translate-y-half flex justify-between;
+  }
+
+  .button--brown {
+    @apply bg-brown text-cream hover:bg-cream hover:text-brown;
   }
 
   .button:disabled {
@@ -26,11 +30,11 @@
   }
 
   .field__input {
-    @apply w-full p-10 text-body-2 text-black border-1 rounded-none border-black bg-transparent resize-none placeholder:text-black/50;
+    @apply w-full p-10 text-body-2 text-brown border-1 rounded-none border-brown bg-transparent resize-none placeholder:text-brown/50;
   }
 
   .field__select {
-    @apply relative border-1 border-black;
+    @apply relative border-1 border-brown;
   }
 
   .select__select {
@@ -81,11 +85,11 @@
   }
 
   .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet {
-    @apply size-[6px] m-0 bg-mint opacity-100 transition-colors;
+    @apply size-[6px] m-0 bg-taupe opacity-100 transition-colors;
   }
 
   .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet-active {
-    @apply bg-black;
+    @apply bg-brown;
   }
 
   .swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal {
@@ -98,7 +102,7 @@
 
   /* Image Placeholders */
   .placeholder {
-    @apply inset bg-sage;
+    @apply inset bg-taupe;
   }
 
   .placeholder svg {
@@ -156,7 +160,7 @@
   }
 
   .text-editor blockquote {
-    @apply max-w-[660px] w-full mx-auto text-m-h3 font-serif italic md:text-h3;
+    @apply max-w-[660px] w-full mx-auto text-m-h3 font-serif uppercase md:text-h3;
   }
 
   .text-editor p {
@@ -164,15 +168,15 @@
   }
 
   .text-editor h1 {
-    @apply text-m-h1 font-serif italic md:text-h1;
+    @apply text-m-h1 font-serif uppercase md:text-h1;
   }
 
   .text-editor h2 {
-    @apply text-m-h3 font-serif italic md:text-h3;
+    @apply text-m-h3 font-serif uppercase md:text-h3;
   }
 
   .text-editor h3 {
-    @apply text-m-h4 font-serif italic md:text-h4;
+    @apply text-m-h4 font-serif uppercase md:text-h4;
   }
 
   .text-editor h4 {

@@ -21,7 +21,7 @@
       <div class="h-full px-20 pb-20 flex flex-col justify-between relative">
         <ul class="" role="list">
           {% for link in section.settings.menu.links %}
-            <li class="border-b-1 border-mint">
+            <li class="border-b-1 border-taupe">
               {% if link.links != blank %}
                 <button class="dropdown-button w-full py-15 flex justify-between items-center text-m-body-3" href="{{ link.url }}">
                   <span>{{ link.title }}</span>
@@ -34,7 +34,7 @@
                       group-[.active]/dropdown:translate-x-0
                     "
                   >
-                    <button class="dropdown-back w-full pl-10 py-15 flex items-center gap-15 border-b-1 border-mint text-m-body-3">
+                    <button class="dropdown-back w-full pl-10 py-15 flex items-center gap-15 border-b-1 border-taupe text-m-body-3">
                       <span class="rotate-180">
                         {% render 'icon' icon: 'caret' %}
                       </span>
@@ -42,7 +42,7 @@
                     </button>
                     <ul class="" role="list">
                       {% for child_link in link.links %}
-                        <li class="border-b-1 border-mint">
+                        <li class="border-b-1 border-taupe">
                           <a class="-mt-5 py-15 pl-40 block text-m-body-3" href="{{ child_link.url }}">{{ child_link.title }}</a>
                           {% if child_link.links != blank %}
                             <ul class="pb-15 pl-60 flex flex-col">
@@ -68,7 +68,7 @@
           <ul class="" role="list">
             {% for link in section.settings.additional_menu.links %}
               <li>
-                <a class="py-10 block text-m-body-2 border-b-1 border-mint" href="{{ link.url }}">{{ link.title }}</a>
+                <a class="py-10 block text-m-body-2 border-b-1 border-taupe" href="{{ link.url }}">{{ link.title }}</a>
               </li>
             {% endfor %}
           </ul>

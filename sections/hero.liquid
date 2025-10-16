@@ -44,7 +44,7 @@
   endcase
 %}
 
-<div class="hero page-width h-[600px] flex relative overflow-hidden  {{ mobile_content_position }} {{ content_position }} md:h-[700px]">
+<div class="hero page-width min-h-[150vw] max-h-[900px] flex relative overflow-hidden  {{ mobile_content_position }} {{ content_position }} md:min-h-[50vw] md:max-h-full">
   <div>
     {% if section.settings.media_type == 'image' %}
       {% liquid
@@ -85,7 +85,7 @@
     {% endif %}
     
     {% if section.settings.add_overlay != blank %}
-      <div class="inset bg-black/20"></div>
+      <div class="inset bg-brown/20"></div>
     {% endif %}
   </div>
 

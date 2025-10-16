@@ -9,7 +9,7 @@
 {% endcomment %}
 
 <product-upsell>
-  <div class="p-10 flex gap-20 border-1 border-mint">
+  <div class="p-10 flex gap-20 border-1 border-taupe">
     <div class="w-80 flex-shrink-0">
       {% render 'image'
         image: prod.featured_image,
@@ -63,7 +63,7 @@
                       {% if variant.image %}data-image="{{ variant.image | img_url: '800x' }}"{% endif %}
                     >
                       <div class="visually-hidden">{{ value }}</div>
-                      <div class="absolute right-0 -bottom-[4px] left-0 border-b-1 border-transparent transition-colors group-[.active]/color:border-black"></div>
+                      <div class="absolute right-0 -bottom-[4px] left-0 border-b-1 border-transparent transition-colors group-[.active]/color:border-brown"></div>
                     </button>
                   {% endfor %} 
                 </div>
@@ -88,7 +88,7 @@
                   assign variants_option3_arr = prod.variants | map: 'option3'
                 -%}
                 <div class="relative">
-                  <select class="size-dropdown select__select w-full h-full px-15 text-cta bg-transparent border-1 rounded-none border-black" data-size-dropdown data-position="{{ option.position }}">
+                  <select class="size-dropdown select__select w-full h-full px-15 text-cta bg-transparent border-1 rounded-none border-brown" data-size-dropdown data-position="{{ option.position }}">
                     {% for value in option.values %}
                       {%- liquid
                         assign option_disabled = true

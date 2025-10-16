@@ -10,7 +10,7 @@
               {{ collection.featured_image | image_url: width: 1000 | image_tag: width: collection.featured_image.width, sizes: '1000x', widths: '200, 300, 400, 500, 700, 900, 1000', class: 'w-full h-full inset object-cover' }}
             {% endif %}
 
-            <div class="p-20 inset flex items-end bg-black/10">
+            <div class="p-20 inset flex items-end bg-brown/10">
               {% unless section.settings.image_padding %}<div class="overlay-card"></div>{% endunless %}
               <h2 class="flex items-center gap-10 text-m-h5 font-bold md:text-h5">
                 <span>{{- collection.title -}}</span>

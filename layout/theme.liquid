@@ -20,10 +20,8 @@
 
     {{ content_for_header }}
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" as="style" type="text/css" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/jll5opp.css">
+    {% render 'fonts' %}
 
     {% style %}
       :root {
@@ -45,9 +43,9 @@
       {{- "accessibility.skip_to_text" | t -}}
     </a>
 
-    <div class="page-overlay fixed top-0 right-0 bottom-0 left-0 bg-black/30 z-50 invisible opacity-0 transition-visibility"></div>
-    <div class="page-overlay-under fixed top-0 right-0 bottom-0 left-0 bg-black/30 z-30 invisible opacity-0 transition-visibility"></div>
-    <div class="page-overlay-popover fixed top-0 right-0 bottom-[330px] left-0 bg-black/30 z-50 invisible opacity-0 transition-visibility md:hidden"></div>
+    <div class="page-overlay fixed top-0 right-0 bottom-0 left-0 bg-brown/30 z-50 invisible opacity-0 transition-visibility"></div>
+    <div class="page-overlay-under fixed top-0 right-0 bottom-0 left-0 bg-brown/30 z-30 invisible opacity-0 transition-visibility"></div>
+    <div class="page-overlay-popover fixed top-0 right-0 bottom-[330px] left-0 bg-brown/30 z-50 invisible opacity-0 transition-visibility md:hidden"></div>
 
     <div class="header-group sticky top-0 z-40">
       {%- sections 'header-group' -%}

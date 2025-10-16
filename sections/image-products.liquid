@@ -11,12 +11,12 @@
 
 {% if contains_content %}
   {% capture content %}
-    <div class="mb-30 max-w-custom flex flex-col gap-20 md:50 lg:mb-90{% unless section.settings.text != blank %} mx-auto text-center{% endunless %}" style="--width: 375px;">
+    <div class="mb-30 max-w-custom flex flex-col gap-20 md:50 lg:mb-90{% unless section.settings.text != blank %} mx-auto text-center{% endunless %}" style="--width: 415px;">
       {% if section.settings.title != blank %}
-        <h2 class="text-m-h1 font-serif italic text-balance md:text-h1">{{ section.settings.title }}</h2>
+        <h2 class="text-m-h1 font-serif uppercase text-balance md:text-h4">{{ section.settings.title }}</h2>
       {% endif %}
       {% if section.settings.text != blank %}
-        <p class="text-body-3">{{ section.settings.text }}</p>
+        <p class="max-w-custom w-full text-body-3{% unless section.settings.text != blank %} mx-auto{% endunless %}" style="--width: 385px;">{{ section.settings.text }}</p>
       {% endif %}
     </div>
   {% endcapture %}
@@ -51,9 +51,9 @@
           <div class="relative" data-animate>
             <div class="mb-20 flex md:mb-30{% if columns == '2' %} justify-between gap-20 md:pb-5{% else %} justify-center{% endif %}">
               {% if section.settings.product_slider_title != blank %}
-                <h3 class="{% if columns == '2' %}text-h5{% else %}text-m-h2 font-serif italic md:text-h2{% endif %}">{{ section.settings.product_slider_title }}</h3>
+                <h3 class="text-m-sh1 font-italic lowercase md:text-sh1">{{ section.settings.product_slider_title }}</h3>
               {% endif %}
-              <div class="swiper-buttons items-center gap-30{% if columns == '2' %} hidden md:flex{% else %} flex{% endif %}">
+              <div class="swiper-buttons items-center gap-20{% if columns == '2' %} hidden md:flex{% else %} flex{% endif %}">
                 <button class="swiper-button swiper-button-prev rotate-180{% if columns == '1' %} swiper-button--absolute left-0 top-half -translate-y-half{% endif %}">
                   {% render 'icon' icon: 'arrow' %}
                 </button>

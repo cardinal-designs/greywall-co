@@ -25,7 +25,7 @@
             src_set_type: 'full-width',
           %}
 
-          <button class="inset flex justify-center items-center text-white{% if section.settings.show_overlay %} bg-black/30{% endif %}" data-play aria-label="Play Video">
+          <button class="inset flex justify-center items-center text-white{% if section.settings.show_overlay %} bg-brown/30{% endif %}" data-play aria-label="Play Video">
             <span class="w-50 [&_svg]:w-full [&_svg]:h-auto md:w-60">{% render 'icon' icon: 'play' %}</span>
           </button>
         </div>
@@ -45,8 +45,7 @@
       {
         "type": "color",
         "id": "background_color",
-        "label": "Background Color",
-        "default": "#EBF1E6"
+        "label": "Background Color"
       },
       {
         "type": "header",

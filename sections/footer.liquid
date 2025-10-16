@@ -2,25 +2,25 @@
   <div class="page-width">
     <div class="flex flex-wrap gap-40 md:justify-between lg:flex-nowrap xl:gap-60">
 
-      <div class="max-w-custom w-full mx-auto flex-shrink-0 md:m-0" style="--width: 295px;">
+      <div class="max-w-custom w-full mb-20 mx-auto flex-shrink-0 md:m-0" style="--width: 295px;">
         {% if section.settings.logo != blank %}
-          <a href="{{ routes.root_url }}" class="w-125 mx-auto block md:m-0" aria-label="Footer Logo Link">
+          <a href="{{ routes.root_url }}" class="w-[215px] mx-auto block md:m-0" aria-label="Footer Logo Link">
             {{ section.settings.logo | image_url: width: 200 | image_tag: width: section.settings.logo.width, class: 'w-full', sizes: '200px', widths: '100, 150, 200, 300' }}
           </a>
         {% endif %}
         {% if section.settings.brand_text != blank %}
-          <div class="rte text-body-4 opacity-70 text-center md:text-left{% if section.settings.logo != blank %} mt-10 md:mt-60{% endif %}">{{ section.settings.brand_text }}</div>
+          <div class="rte text-body-3 text-taupe text-center md:text-left{% if section.settings.logo != blank %} mt-10 md:mt-60{% endif %}">{{ section.settings.brand_text }}</div>
         {% endif %}
       </div>
 
       <div class="w-full grid grid-cols-2 gap-x-20 gap-y-40 md:w-auto md:flex md:justify-evenly md:gap-80 lg:gap-40 lg:w-full xl:gap-100">
         {% for link in section.settings.menu.links %}
           <div>
-            <h2 class="mb-15 text-body-4">{{ link.title }}</h2>
+            <h2 class="mb-15 text-m-sh2 uppercase md:text-sh2">{{ link.title }}</h2>
             <ul class="flex flex-col gap-5 md:gap-10">
               {% for child_link in link.links %}
                 <li>
-                  <a href="{{ child_link.url }}" class="text-body-4 opacity-70 transition-opacity hover:opacity-100{% if child_link.active %} active{% endif %}">
+                  <a href="{{ child_link.url }}" class="text-body-3 text-taupe transition-opacity hover:opacity-cream{% if child_link.active %} active{% endif %}">
                     {{ child_link.title }}
                   </a>
                 </li>
@@ -32,10 +32,10 @@
 
       <div class="w-full flex-shrink-0 lg:max-w-custom" style="--width: 300px;">
         {% if section.settings.newsletter_title != blank %}
-          <h2 class="text-body-4">{{ section.settings.newsletter_title }}</h2>
+          <h2 class="text-m-sh2 uppercase md:text-sh2">{{ section.settings.newsletter_title }}</h2>
         {% endif %}
         {% if section.settings.newsletter_text != blank %}
-          <div class="mt-15 text-body-4">{{ section.settings.newsletter_text }}</div>
+          <div class="mt-15 text-body-3 text-taupe">{{ section.settings.newsletter_text }}</div>
         {% endif %}
 
         {% form 'customer', id: 'ContactFooter', class: 'mt-30' %}
@@ -45,7 +45,7 @@
               {{ 'newsletter.label' | t }}
             </label>
             <input
-              class="w-full py-10 text-body-4 bg-transparent text-white placeholder:text-white/50"
+              class="w-full py-10 text-body-3 bg-transparent text-white placeholder:text-white/50"
               id="NewsletterForm--{{ section.id }}"
               type="email"
               name="contact[email]"
@@ -61,7 +61,7 @@
               {% elsif form.posted_successfully? %}
                 aria-describedby="ContactFooter-success"
               {% endif %}
-              placeholder="Enter Email"
+              placeholder="Your email"
               required
             >
             <button type="submit" class="h-auto text-cta uppercase" name="commit" aria-label="Submit">
@@ -82,10 +82,10 @@
       <div class="mb-70 flex justify-center md:m-0 md:block">
         {% render 'social' %}
       </div>
-      <div class="flex flex-col items-center opacity-50 md:flex-row md:gap-10">
-        <p class="text-body-4">&copy;{{ 'now' | date: "%Y" }}  Ohaei Inc. All Rights Reserved.</p>
-        <button class="block text-body-4 underline" data-open-credits>Site Credits.</button>
-        <a href="/pages/sitemap" class="block text-body-4 underline">Sitemap.</a>
+      <div class="flex justify-center items-center opacity-50 text-sh4 font-italic lowercase flex-wrap md:justify-normal md:gap-5">
+        <p class="w-full text-center md:w-auto">&copy;{{ 'now' | date: "%Y" }}  Greywall and Co. All Rights Reserved.</p>
+        <button class="block lowercase" data-open-credits>Site Credits.</button>
+        <a href="/pages/sitemap" class="block lowercase">Sitemap.</a>
       </div>
     </div>
   </div>

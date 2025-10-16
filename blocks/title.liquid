@@ -1,22 +1,18 @@
 {% liquid
-  assign mobile_classes = 'font-serif italic text-m-h1'
+  assign mobile_classes = 'font-serif uppercase text-m-h2'
   case block.settings.mobile_font_size
-    when 'h2'
-      assign mobile_classes = 'font-serif italic text-m-h2'
-    when 'h3'
-      assign mobile_classes = 'font-serif italic text-m-h3'
-    when 'h4'
-      assign mobile_classes = 'font-serif text-m-sh4'
+    when 'small'
+      assign mobile_classes = 'font-serif uppercase text-m-sh4'
+    when 'large'
+      assign mobile_classes = 'font-serif uppercase text-m-h1'
   endcase
 
-  assign desktop_class = 'md:text-h1'
+  assign desktop_class = 'md:text-h4'
   case block.settings.font_size
-    when 'h2'
-      assign desktop_class = 'md:text-h2'
-    when 'h3'
+    when 'small'
+      assign desktop_class = 'md:text-h5'
+    when 'large'
       assign desktop_class = 'md:text-h3'
-    when 'h4'
-      assign desktop_class = 'md:text-sh3'
   endcase
 %}
 
@@ -43,24 +39,22 @@
         "type": "select",
         "id": "font_size",
         "options": [
-          { "value": "h1", "label": "H1" },
-          { "value": "h2", "label": "H2" },
-          { "value": "h3", "label": "H3" },
-          { "value": "h4", "label": "H4" }
+          { "value": "small", "label": "Small" },
+          { "value": "regular", "label": "Regular" },
+          { "value": "large", "label": "Large" }
         ],
-        "default": "h1",
+        "default": "regular",
         "label": "Font Size"
       },
       {
         "type": "select",
         "id": "mobile_font_size",
         "options": [
-          { "value": "h1", "label": "H1" },
-          { "value": "h2", "label": "H2" },
-          { "value": "h3", "label": "H3" },
-          { "value": "h4", "label": "H4" }
+          { "value": "small", "label": "Small" },
+          { "value": "regular", "label": "Regular" },
+          { "value": "large", "label": "Large" }
         ],
-        "default": "h1",
+        "default": "large",
         "label": "Mobile Font Size"
       },
       {

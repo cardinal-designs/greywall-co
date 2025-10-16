@@ -1,21 +1,30 @@
-<div class="page-width my-40 md:my-60">
-  <a href="{{ section.settings.link }}" class="mb-30 block text-m-sh2 uppercase text-center md:mb-60 md:text-sh2" target="_blank">{{ section.settings.title }}</a>
-  <div class="grid grid-cols-2 gap-20{% if section.blocks.size == 5 %} md:grid-cols-5{% else %} md:grid-cols-4{% endif %}">
-    {% for block in section.blocks %}
-      <div class="aspect-tall relative overflow-hidden{% if forloop.index == 5 %} hidden md:block{% endif %}" data-animate {{ block.shopify_attributes }}>
-        {% render 'image'
-          image: block.settings.image,
-          classes: 'sizes-full inset object-cover',
-          sizes: '400x',
-          include_placeholder: true,
-          placeholder_name: 'collection-3',
-          src_set_type: 'grid'
-        %}
-        {% if section.settings.link != blank %}
-          <a href="{{ section.settings.link }}" class="inset" target="_blank"><span class="hidden visually-hidden">{{ section.settings.title }}</span></a>
-        {% endif %}
-      </div>
-    {% endfor %}
+{% assign bg_color = section.settings.background_color %}
+
+<div class="{{ section.settings.content_color }} {% if bg_color != blank and bg_color != 'rgba(0,0,0,0)' %}pt-[35px] pb-60 md:pt-60 md:pb-80" style="background-color: {{ bg_color }}"{% else %}my-40 md:my-60{% endif %}">
+  <div class="page-width">
+    <div class="mb-30 flex justify-center items-center gap-20 md:mb-25 md:justify-between">
+      {% if section.settings.title != blank %}
+        <h2 class="text-m-sh1 font-italic lowercase md:text-sh1">{{ section.settings.title }}</h2>
+      {% endif %}
+      <a href="{{ section.settings.link }}" class="text-m-sh2 uppercase md:text-sh2" target="_blank">{{ section.settings.handle }}</a>
+    </div>
+    <div class="grid grid-cols-2 gap-20{% if section.blocks.size == 5 %} md:grid-cols-5{% else %} md:grid-cols-4{% endif %}">
+      {% for block in section.blocks %}
+        <div class="aspect-tall relative overflow-hidden{% if forloop.index == 5 %} hidden md:block{% endif %}" data-animate {{ block.shopify_attributes }}>
+          {% render 'image'
+            image: block.settings.image,
+            classes: 'sizes-full inset object-cover',
+            sizes: '400x',
+            include_placeholder: true,
+            placeholder_name: 'collection-3',
+            src_set_type: 'grid'
+          %}
+          {% if section.settings.link != blank %}
+            <a href="{{ section.settings.link }}" class="inset" target="_blank"><span class="hidden visually-hidden">{{ section.settings.title }}</span></a>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
 
@@ -24,9 +33,38 @@
     "name": "Instagram",
     "settings": [
       {
+        "type": "header",
+        "content": "Config"
+      },
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color"
+      },
+      {
+        "type": "select",
+        "id": "content_color",
+        "options": [
+          { "value": "text-white", "label": "Light" },
+          { "value": "text-text", "label": "Dark" }
+        ],
+        "default": "text-text",
+        "label": "Content Color"
+      },
+      {
+        "type": "header",
+        "content": "Content"
+      },
+      {
         "type": "text",
         "id": "title",
         "label": "Title",
+        "default": "Title"
+      },
+      {
+        "type": "text",
+        "id": "handle",
+        "label": "Handle",
         "default": "@handle"
       },
       {
