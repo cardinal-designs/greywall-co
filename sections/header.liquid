@@ -84,7 +84,6 @@
                           <div class="transition-transform ease-in-out group-hover/nav:rotate-180">
                             {% render 'icon' icon: 'dropdown' %}
                           </div>
-                          <div class="absolute bottom-0 left-0 right-full border-b-1 border-brown transition-position group-hover/link:right-0"></div>
                         </div>
 
                         <ul class="min-w-[170px] pt-20 px-20 pb-15 flex flex-col gap-5 absolute top-full -translate-x-20 -translate-y-px opacity-0 invisible bg-background border-1 border-beige group-hover/nav:opacity-100 group-hover/nav:visible transition-visibility ease-in-out" role="list" tabindex="-1">
@@ -116,7 +115,6 @@
                     {% else %}
                       <a href="{{ link.url }}" class="group/link py-20 block text-cta uppercase relative"{% if link.current %} aria-current="page"{% endif %}>
                         {{ link.title | escape }}
-                        <div class="absolute bottom-0 left-0 right-full border-b-1 border-brown transition-position group-hover/link:right-0"></div>
                       </a>
                     {% endif %}
                   </li>
@@ -127,7 +125,6 @@
                       <div class="transition-transform origin-center ease-in-out group-hover/link:rotate-180">
                         {% render 'icon' icon: 'dropdown' %}
                       </div>
-                      <div class="absolute bottom-0 left-0 right-full border-b-1 border-brown transition-position group-hover/nav:right-0"></div>
                     </a>
 
                     {% for block in section.blocks %}
@@ -145,21 +142,21 @@
                             "
                           >
                             <div class="page-width flex justify-between gap-60">
-                              <div class="py-40 flex gap-60 xl:gap-125">
+                              <div class="max-w-[900px] py-40 flex justify-between gap-30{% if link.links.size > 3 %} w-full{% else %} md:gap-60{% endif %}">
                                 {% for child_link in link.links %}
                                   <div>
-                                    <h2 class="mb-5 text-body-4">{{ child_link.title }}</h2>
+                                    <h2 class="mb-5 text-sh4 lowercase font-italic">{{ child_link.title }}</h2>
                                     <ul class="flex flex-col gap-5">
                                       {% for grandchild_link in child_link.links %}
                                         <li>
-                                          <a href="{{ grandchild_link.url }}" class="block text-body-4 opacity-50 transition-opacity hover:opacity-100">{{ grandchild_link.title }}</a>
+                                          <a href="{{ grandchild_link.url }}" class="block text-body-3 opacity-50 transition-opacity hover:opacity-100">{{ grandchild_link.title }}</a>
                                         </li>
                                       {% endfor %}
                                     </ul>
                                   </div>
                                 {% endfor %}
                               </div>
-                              <div class="flex gap-10">
+                              <div class="flex gap-10 flex-shrink-0">
                                 {% if block.settings.image_1 != blank %}
                                   <div class="relative">
                                     <div class="size-[280px] relative">
@@ -173,7 +170,7 @@
                                       %}
                                     </div>
                                     {% if block.settings.title_1 != blank %}
-                                      <p class="py-10 text-body-4">{{ block.settings.title_1 }}</p>
+                                      <p class="py-10 text-sh4 lowercase font-italic">{{ block.settings.title_1 }}</p>
                                     {% endif %}
                                     {% if block.settings.url_1 != blank %}
                                       <a href="{{ block.settings.url_1 }}" class="inset"><span class="hidden visually-hidden">{{ block.settings.title_1 }}</span></a>
@@ -193,7 +190,7 @@
                                       %}
                                     </div>
                                     {% if block.settings.title_2 != blank %}
-                                      <p class="py-10 text-body-4">{{ block.settings.title_2 }}</p>
+                                      <p class="py-10 text-sh4 lowercase font-italic">{{ block.settings.title_2 }}</p>
                                     {% endif %}
                                     {% if block.settings.url_2 != blank %}
                                       <a href="{{ block.settings.url_2 }}" class="inset"><span class="hidden visually-hidden">{{ block.settings.title_2 }}</span></a>
@@ -250,7 +247,6 @@
                 {% for link in section.settings.additional_menu.links %}
                   <a href="{{ link.url }}" class="group/link py-20 block text-cta uppercase relative"{% if link.current %} aria-current="page"{% endif %}>
                     {{ link.title | escape }}
-                    <div class="absolute bottom-0 left-0 right-full border-b-1 border-brown transition-position group-hover/link:right-0"></div>
                   </a>
                 {% endfor %}
               </ul>
@@ -264,7 +260,6 @@
                 <span class="visually-hidden">Search</span>
               </span>
               <span class="py-20 hidden text-cta uppercase md:block">Search</span>
-              <div class="hidden absolute bottom-0 left-0 right-full border-b-1 border-brown transition-position group-hover/link:right-0 md:block"></div>
             </button>
           {% endif %}
 

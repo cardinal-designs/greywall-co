@@ -11,6 +11,10 @@
     {% render 'product-upsell', prod: product, size: 'small' %}
 {% endcomment %}
 
+{% liquid
+  assign has_size_option = prod.options_with_values | has: 'name', 'Size'
+%}
+
 <product-upsell>
   <div>
     {% render 'image'
@@ -39,8 +43,8 @@
                     assign swatch_color = color_swatch_name
                     assign swatch_metaobject = shop.metaobjects.color_swatch[color_swatch_name]
 
-                    if swatch_metaobject.hex_value != blank
-                      assign swatch_color = swatch_metaobject.hex_value
+                    if swatch_metaobject.hex_code != blank
+                      assign swatch_color = swatch_metaobject.hex_code
                     endif
 
                     assign is_active = false
@@ -78,7 +82,7 @@
       </div>
     </div>
 
-    {% unless prod.has_only_default_variant %}
+    {% if has_size_option %}
       <div class="grid grid-cols-2{% if size == 'large' %} min-w-[140px]{% else %} mt-10{% endif %}">
         {% for option in prod.options_with_values %}
           {% if option.name == 'Size' %}
@@ -121,11 +125,11 @@
             </div>
           {% endif %}
         {% endfor %}
-        <button class="w-full button p-10" data-add-to-cart>Add</button>
+        <button class="w-full px-20 py-10 text-sh2 uppercase bg-brown text-beige transition-colors hover:bg-beige hover:text-brown" data-add-to-cart>Add</button>
       </div>
     {% else %}
-      <button class="button p-10{% if size == 'large' %} min-w-70{% else %} w-full{% endif %}" data-add-to-cart data-variant-id="{{ prod.selected_or_first_available_variant.id }}">Add</button>
-    {% endunless %}
+      <button class=" px-20 py-10 text-sh2 uppercase bg-brown text-beige transition-colors hover:bg-beige hover:text-brown{% if size == 'large' %} min-w-70{% else %} w-full{% endif %}" data-add-to-cart data-variant-id="{{ prod.selected_or_first_available_variant.id }}">Add</button>
+    {% endif %}
   </div>
 
   <script class="product-upsell-data" type="application/json">

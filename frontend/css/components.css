@@ -20,6 +20,14 @@
     @apply bg-brown text-cream hover:bg-cream hover:text-brown;
   }
 
+  .button--gold {
+    @apply bg-gold text-cream hover:bg-cream hover:text-brown;
+  }
+
+  .button--taupe {
+    @apply bg-taupe hover:bg-brown hover:text-cream;
+  }
+
   .button:disabled {
     @apply opacity-50 pointer-events-none;
   }

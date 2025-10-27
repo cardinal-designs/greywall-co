@@ -65,8 +65,8 @@
         <div class="sticky-bar w-full">
           {% render 'product-badges' prod: product, classes: 'mb-20 hidden md:block' %}
 
-          <div class="{% if mobile_title_position == 'above' %} hidden md:block{% endif %}">
-            <h1 class="mb-10 text-m-h2 font-serif uppercase md:text-h4">
+          <div class="">
+            <h1 class="mb-20 text-m-h2 font-serif uppercase md:text-h5">
               {{ product.title | escape }}
             </h1>
 
@@ -86,9 +86,7 @@
 
           {% render 'product-form' prod: product, product_form_id: product_form_id, show_quantity: false, change_url: false %}
 
-          {% if section.settings.extra_text != blank %}
-            <p class="mt-10 text-caption font-serif uppercase text-center">{{ section.settings.extra_text }}</p>
-          {% endif %}
+          <a href="{{ product.url |  within: collection }}" class="mt-10 mx-auto block text-sh4 font-italic lowercase underline text-center">full product details</a>
         </div>
       </div>
     </div>

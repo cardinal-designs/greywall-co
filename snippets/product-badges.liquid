@@ -17,6 +17,11 @@
   assign badge_tags_3 = settings.badge_tags_3 | split: ', '
   assign badge_tags_4 = settings.badge_tags_4 | split: ', '
   assign badge_tags = badge_tags_1 | concat: badge_tags_2 | concat: badge_tags_3 | concat: badge_tags_4
+  
+  assign style = 'p-[8px] inline-block text-cta uppercase font-serif'
+  if classes != blank
+    assign style = classes
+  endif
 %}
 
 {% assign badge_count = 0 %}
@@ -36,7 +41,7 @@
 
     {% if product_tag_downcase == badge_tag_downcase and badge_count < 2 %}
       {% capture badges %}
-        <div class="px-[8px] py-[6px] inline-block text-tag font-serif uppercase bg-gold" style="background-color: {{ bg_color }}; color: {{ text_color }}">{{ badge_tag }}</div>
+        <div class="{{ style }}"{% unless hide_colors == true %} style="background-color: {{ bg_color }}; color: {{ text_color }}"{% endunless %}>{{ badge_tag }}</div>
       {% endcapture %}
       {% assign badge_count = badge_count | plus: 1 %}
     {% endif %}
@@ -45,18 +50,18 @@
 
 {% if prod.compare_at_price > prod.price %}
   {% capture badges %}
-    <div class="px-[8px] py-[6px] inline-block text-tag font-serif uppercase bg-gold">Sale</div>
+    <div class="{{ style }} bg-gold">Sale</div>
   {% endcapture %}
 {% endif %}
 
 {% unless prod.available %}
   {% capture badges %}
-    <div class="px-[8px] py-[6px] inline-block text-tag font-serif uppercase bg-gold text-brown/50">Out of Stock</div>
+    <div class="{{ style }} bg-gold text-brown/50">Out of Stock</div>
   {% endcapture %}
 {% endunless %}
 
 {% if badges != blank %}
-  <div class="{{ classes }}">
+  <div class="{{ container_classes }}">
     {{ badges }}
   </div>
 {% endif %}

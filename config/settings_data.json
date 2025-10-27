@@ -11,24 +11,23 @@
   "current": {
     "background_color": "#f7f4ef",
     "text_color": "#472715",
-    "shop_all_link": "",
+    "shop_all_link": "shopify://collections/shop-all",
     "enable_quickview": true,
-    "show_quantity_selector": true,
+    "show_quantity_selector": false,
     "cart_title": "My Bag",
-    "enable_shipping_bar": true,
+    "enable_shipping_bar": false,
     "shipping_threshold": 350,
-    "enable_cart_note": true,
+    "enable_cart_note": false,
     "enable_cart_upsells": true,
-    "cart_upsells_source": "product_list",
-    "cart_upsells_product_list": [
-      "alpine-cable-knit",
-      "horizon-day-bag",
-      "park-trousers-tan",
-      "summit-stripe-shirt"
-    ],
+    "cart_upsells_source": "collection",
+    "cart_upsells_collection": "shop-all",
+    "cart_upsells_product_list": [],
     "badge_tags_1": "Best Seller",
-    "badge_tags_1_color": "#ebf1e6",
-    "badge_tags_1_text_color": "#000000",
+    "badge_tags_1_color": "#8b6536",
+    "badge_tags_1_text_color": "#f7f4ef",
+    "badge_tags_2": "Pre-order",
+    "badge_tags_2_color": "#8b6536",
+    "badge_tags_2_text_color": "#f7f4ef",
     "social_facebook_link": "",
     "social_instagram_link": "https://www.instagram.com/greywallandco",
     "social_pinterest_link": "",
@@ -74,8 +73,8 @@
       "mobile-menu": {
         "type": "mobile-menu",
         "settings": {
-          "menu": "",
-          "additional_menu": ""
+          "menu": "mobile-menu",
+          "additional_menu": "additional-mobile-menu"
         }
       },
       "main-login": {

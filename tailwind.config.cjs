@@ -59,6 +59,7 @@ module.exports = {
         'sh3': ['14px', { lineHeight: '1', letterSpacing: '0', }],
         'sh4': ['12px', { lineHeight: '1.8', letterSpacing: '0.08em', }],
         'sh5': ['13px', { lineHeight: '1.2', letterSpacing: '0.08em', }],
+        'pt': ['15px', { lineHeight: '1.2', letterSpacing: '0.17em', }],
         'body-1': ['18px', { lineHeight: '1', letterSpacing: '0', }],
         'body-2': ['13px', { lineHeight: '1.8', letterSpacing: '0.04em', }],
         'body-3': ['12px', { lineHeight: '1.8', letterSpacing: '0.04em', }],

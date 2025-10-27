@@ -46,31 +46,35 @@
       {% endif %}
     </a>
 
-    {% render 'product-badges' prod: prod, classes: 'absolute top-10 left-10' %}
+    {% render 'product-badges' prod: prod, container_classes: 'absolute top-10 left-10', hide_colors: true %}
 
     {% if settings.enable_quickview %}
       <div class="p-13 absolute left-0 right-0 bottom-0 hidden md:block">
         <button
-          class="group/quickview w-full button opacity-0 translate-y-5 transition-all relative group-hover/image:opacity-100 group-hover/image:translate-y-0"
+          class="group/quickview w-full button button--gold py-[23px] opacity-0 translate-y-5 transition-all relative group-hover/image:opacity-100 group-hover/image:translate-y-0"
           data-quick-view
           data-href="{{ prod.url }}"
           data-id="{{ prod.selected_or_first_available_variant.id }}"
         >
           <span class="transition-opacity group-[.loading]/quickview:opacity-0">Quick View</span>
           <span class="inset flex items-center justify-center transition-opacity opacity-0 group-[.loading]/quickview:opacity-100">{% render 'loading-spinner' %}</span>
+          <span class="button-dots"></span>
         </button>
       </div>
     {% endif %}
   </div>
 
-  <div class="mt-20 text-center">
-    <a href="{{ prod.url }}" class="text-body-1 font-serif">{{ prod.title }}</a>
-    {% render 'price' product: prod, classes: 'mt-10 justify-center text-cta uppercase' %}
+  <div class="mt-13 text-center">
+    <a href="{{ prod.url }}" class="text-m-h4 font-serif uppercase md:text-pt">{{ prod.title }}</a>
+
+    {% if prod.metafields.custom.product_card_description != blank %}
+      <p class="mb-[8px] text-m-sh1 lowercase font-italic opacity-50 md:text-sh4">{{ prod.metafields.custom.product_card_description }}</p>
+    {% endif %}
 
     {% unless prod.has_only_default_variant %}
       {% for option in prod.options_with_values %}
         {% if option.name == 'Color' %}
-          <div class="mt-20 pb-5 gap-10 flex justify-center">
+          <div class="mt-[8px] pb-5 gap-10 flex justify-center">
             {% for value in option.values %}
               {% liquid
                 assign is_active = false
@@ -78,8 +82,8 @@
                 assign swatch_color = color_swatch_name
                 assign swatch_metaobject = shop.metaobjects.color_swatch[color_swatch_name]
 
-                if swatch_metaobject.hex_value != blank
-                  assign swatch_color = swatch_metaobject.hex_value
+                if swatch_metaobject.hex_code != blank
+                  assign swatch_color = swatch_metaobject.hex_code
                 endif
 
                 if option.selected_value == value
@@ -110,5 +114,7 @@
         {% endif %}
       {% endfor %}
     {% endunless %}
+
+    {% render 'price' product: prod, classes: 'mt-10 justify-center text-sh2 uppercase' %}
   </div>
 </product-card>

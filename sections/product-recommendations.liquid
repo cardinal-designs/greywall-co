@@ -1,15 +1,20 @@
 <product-recommendations data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=8">
-  <div class="my-60 md:my-100">
-    <div class="overflow-hidden">
-      <div class="page-width">
-        {% if recommendations.performed and recommendations.products_count > 0 %}
-          <div class="mb-40 flex justify-between items-center">
-            <h2 class="text-m-h4 font-serif uppercase md:text-h4">{{ section.settings.title }}</h2>
-            <button class="recommendation-slider-button swiper-button swiper-button-next">
-              {% render 'icon' icon: 'arrow' %}
-            </button>
+  {% if recommendations.performed and recommendations.products_count > 0 %}
+    <div class="my-60 md:my-100">
+      <div class="overflow-hidden">
+        <div class="page-width">
+          <div class="mb-30 flex justify-between items-center md:mb-25">
+            <h2 class="text-m-sh1 lowercase font-italic md:text-sh1">{{ section.settings.title }}</h2>
+            <div class="swiper-buttons hidden gap-20 md:flex">
+              <button class="recommendation-slider-button swiper-button swiper-button-prev rotate-180">
+                {% render 'icon' icon: 'arrow' %}
+              </button>
+              <button class="recommendation-slider-button swiper-button swiper-button-next">
+                {% render 'icon' icon: 'arrow' %}
+              </button>
+            </div>
           </div>
-        <div class="recommendation-slider swiper recommendation-slider-{{ section.id }}">
+          <div class="recommendation-slider swiper recommendation-slider-{{ section.id }}">
             <div class="swiper-wrapper">
               {% for recommendation in recommendations.products %}
                 <li class="swiper-slide">
@@ -18,10 +23,10 @@
               {% endfor %}
             </div>
           </div>
-        {% endif %}
+        </div>
       </div>
     </div>
-  </div>
+  {% endif %}
 </product-recommendations>
 
 <style>

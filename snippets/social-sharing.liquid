@@ -18,18 +18,18 @@
       </button>
       <div
         class="
-          w-full p-20 absolute top-full translate-y-10 z-30 shadow-dropdown bg-white opacity-0 invisible transition-visibility
+          w-full p-20 absolute top-full translate-y-10 z-30 shadow-dropdown bg-background opacity-0 invisible transition-visibility
           group-[.active]/dropdown:visible group-[.active]/dropdown:opacity-100
         "
         aria-hidden="true"
         tabindex="0"
         data-dropdown-content
       >
-        <div class="flex relative border-1 border-cream">
+        <div class="flex relative border-1 border-darker-beige">
           <label id="share-label" for="share-input" class="hidden visually-hidden">Share</label>
           <input aria-labelledby="share-label" id="share-input"
             type="text"
-            class="w-full py-5 pl-10 text-body-3 text-ellipsis"
+            class="w-full py-5 pl-10 text-body-3 text-ellipsis bg-transparent"
             value="{{ url }}"
             readonly
           >

@@ -9,11 +9,11 @@
 %}
 
 {% capture title_section %}
-  <h1 class="mb-10 text-m-h2 font-serif uppercase md:text-h4">
+  <h1 class="mb-10 text-m-h2 font-serif uppercase md:text-h6">
     {{ product.title | escape }}
   </h1>
 
-  {% render 'price' product: product, classes: 'mb-10 text-m-sh1 uppercase md:text-sh5' %}
+  {% render 'price' product: product, classes: 'mb-10 text-sh2 uppercase' %}
 {% endcapture %}
 
 <product-section>
@@ -141,11 +141,11 @@
 
         </product-slider>
         <div class="absolute z-20 md:hidden{% if slider_mobile_style == 'center' %} top-10 left-0{% else %} top-13 left-13{% endif %}">
-          {% render 'product-badges' prod: product %}
+          {% render 'product-badges' prod: product, classes: 'px-[8px] py-[2px] inline-block text-sh4 lowercase font-italic' %}
         </div>
       </div>
 
-      <div id="ProductInfo-{{ section.id }}" class="">
+      <div id="ProductInfo-{{ section.id }}" class="md:pt-20">
         {% assign product_form_id = 'product-form-' | append: section.id %}
 
         {% if slider_desktop_style == 'grid' %}
@@ -156,7 +156,7 @@
 
         <div class="sticky-bar w-full pt-20">
           <div class="mb-20 hidden md:block">
-            {% render 'product-badges' prod: product %}
+            {% render 'product-badges' prod: product, classes: 'px-[8px] py-[2px] inline-block text-sh4 lowercase font-italic' %}
           </div>
 
           <div class="mb-30 md:mb-40{% if mobile_title_position == 'above' %} hidden md:block{% endif %}">
@@ -164,7 +164,7 @@
           </div>
 
           {% if product.description != blank and description_position == 'above' %}
-            <div class="rte mt-40 mb-30 text-body-4 hidden md:block">
+            <div class="rte max-w-[295px] mt-40 mb-30 text-body-2 hidden md:block">
               {{ product.description }}
             </div>
           {% endif %}
@@ -177,7 +177,7 @@
 
           <div class="mt-50">
             {% if product.description != blank %}
-              <div class="rte mb-30 text-m-body-2 md:text-body-4{% unless description_position == 'below' %} md:hidden{% endunless %}">
+              <div class="rte mb-30 text-m-body-2 md:text-body-2{% unless description_position == 'below' %} md:hidden{% endunless %}">
                 {{ product.description }}
               </div>
             {% endif %}
@@ -189,27 +189,29 @@
             {% endif %}
 
             {% if section.blocks.size > 0 %}
-              <div class="mt-40 border-t-1 border-cream md:mt-30">
+              <div class="mt-40 mb-20 border-t-1 border-darker-beige md:mt-30">
                 {% for block in section.blocks %}
-                  <dropdown-item {{ block.shopify_attributes }}>
-                    <div class="group/dropdown border-b-1 border-cream" data-dropdown>
-                      <button class="w-full py-20 flex justify-between text-caption font-serif" data-dropdown-toggle>
-                        {{ block.settings.title }}
-                        <span class="rotate-90 transition-transform group-[.active]/dropdown:rotate-[270deg]">
-                          {% render 'icon' icon: 'caret' %}
-                        </span>
-                      </button>
-                      <div class="hidden group-[.active]/dropdown:block" aria-hidden="true" data-dropdown-content>
-                        <div class="rte pb-20 text-m-body-2 md:text-body-4">{{ block.settings.text }}</div>
+                  {% if block.settings.text != blank %}
+                    <dropdown-item {{ block.shopify_attributes }}>
+                      <div class="group/dropdown border-b-1 border-darker-beige" data-dropdown>
+                        <button class="w-full py-20 flex justify-between text-m-sh1 lowercase font-italic" data-dropdown-toggle>
+                          {{ block.settings.title }}
+                          <span class="rotate-90 transition-transform group-[.active]/dropdown:rotate-[270deg]">
+                            {% render 'icon' icon: 'caret' %}
+                          </span>
+                        </button>
+                        <div class="hidden group-[.active]/dropdown:block" aria-hidden="true" data-dropdown-content>
+                          <div class="rte pb-20 text-m-body-2 md:text-body-4">{{ block.settings.text }}</div>
+                        </div>
                       </div>
-                    </div>
-                  </dropdown-item>
+                    </dropdown-item>
+                  {% endif %}
                 {% endfor %}
               </div>
             {% endif %}
 
             {% if section.settings.value_props != blank %}
-              <div class="my-30 px-15 border-1 border-cream [&_p]:py-10 [&_p]:text-body-3 [&_p]:border-b-1 [&_p:last-child]:border-0 [&_p]:border-cream">{{ section.settings.value_props }}</div>
+              <div class="my-30 px-15 border-1 border-darker-beige [&_p]:py-10 [&_p]:text-body-3 [&_p]:border-b-1 [&_p:last-child]:border-0 [&_p]:border-cream">{{ section.settings.value_props }}</div>
             {% endif %}
 
             {% if section.settings.show_sharing %}
@@ -220,7 +222,7 @@
               {% assign upsell_count = section.settings.upsell_count | times: 1.0 | round %}
               <div class="mt-90">
                 {% if section.settings.upsell_title != blank %}
-                  <p class="mb-20 text-sh2 uppercase">{{ section.settings.upsell_title }}</p>
+                  <p class="mb-20 text-m-sh2 uppercase md:text-sh2">{{ section.settings.upsell_title }}</p>
                   <div class="{% if upsell_count == 2 %} grid grid-cols-2 gap-20{% endif %}">
                     {% for current_product in section.settings.product_upsells limit: upsell_count %}
                       {% liquid
@@ -242,8 +244,6 @@
       </div>
     </div>
   </div>
-
-  {% render 'product-bar' prod: product %}
 
   {% if section.settings.zoom_type == "lightbox" %}
     {% render 'product-lightbox' %}

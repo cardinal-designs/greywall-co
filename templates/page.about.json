@@ -80,7 +80,6 @@
           "type": "text",
           "settings": {
             "text": "<p>Embracing the past, we craft garments that resonate with timeless sophistication while forging a path towards a more sustainable future. </p>",
-            "font_size": "regular",
             "center_content": false,
             "content_width": 560,
             "margin_top": 0,
@@ -125,7 +124,6 @@
           "type": "text",
           "settings": {
             "text": "<p>Our pants are made with the finest materials, ensuring unparalleled comfort and durability. Designed with attention to detail, we make our clothes with organic materials ensuring longevity.</p>",
-            "font_size": "regular",
             "center_content": false,
             "content_width": 560,
             "margin_top": 0,
@@ -256,7 +254,6 @@
           "type": "text",
           "settings": {
             "text": "<p>Our pants are made with the finest materials, ensuring unparalleled comfort and durability. Designed with attention to detail, we make our clothes with organic materials ensuring longevity.</p>",
-            "font_size": "regular",
             "center_content": false,
             "content_width": 560,
             "margin_top": 0,

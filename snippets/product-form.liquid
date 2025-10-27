@@ -38,7 +38,7 @@
             <legend class="form__label mb-10 flex items-center gap-10">
               <span class="text-sh2 uppercase">{{ option.name }}</span>
               {% if downcased_option == 'color' %}
-                <span class="text-body-4 opacity-50" data-selected-value>{{ option.selected_value }}</span>
+                <span class="pb-[2px] text-sh1 lowercase font-italic opacity-50" data-selected-value>{{ option.selected_value }}</span>
               {% endif %}
             </legend>
             <div class="flex gap-y-5 flex-wrap{% if downcased_option == 'color' %} gap-x-20{% else %} gap-x-30{% endif %}">
@@ -79,8 +79,8 @@
                       assign swatch_color = color_swatch_name
                       assign swatch_metaobject = shop.metaobjects.color_swatch[color_swatch_name]
 
-                      if swatch_metaobject.hex_value != blank
-                        assign swatch_color = swatch_metaobject.hex_value
+                      if swatch_metaobject.hex_code != blank
+                        assign swatch_color = swatch_metaobject.hex_code
                       endif
                     %}
                     
@@ -214,7 +214,7 @@
       <button
         type="submit"
         name="add"
-        class="product-form-submit group/button w-full button relative"
+        class="product-form-submit group/button button button--taupe w-full py-[23px] relative"
         {% if prod.selected_or_first_available_variant.available == false %}disabled{% endif %}
       >
         <span class="transition-opacity group-[.loading]/button:opacity-0">
@@ -224,6 +224,7 @@
         <span class="inset flex items-center justify-center transition-opacity opacity-0 group-[.loading]/button:opacity-100">
           {% render 'loading-spinner' %}
         </span>
+        <span class="button-dots"></span>
       </button>
     </div>
 

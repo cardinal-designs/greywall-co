@@ -72,8 +72,8 @@
                             assign swatch_color = color_swatch_name
                             assign swatch_metaobject = shop.metaobjects.color_swatch[color_swatch_name]
       
-                            if swatch_metaobject.hex_value != blank
-                              assign swatch_color = swatch_metaobject.hex_value
+                            if swatch_metaobject.hex_code != blank
+                              assign swatch_color = swatch_metaobject.hex_code
                             endif
                           %}
                           

@@ -20,16 +20,19 @@
   {% endif %}
 
   <div class="p-20 inset flex justify-center items-center">
-    <div class="max-w-custom w-full text-center text-white z-20" style="--width: 280px;">
+    <div class="max-w-custom w-full text-center text-white z-20" style="--width: 320px;">
       {% if block.settings.title != blank %}
-        <h2 class="text-m-h1 font-serif uppercase md:text-h1">{{ block.settings.title }}</h2>
+        <h2 class="text-m-h2 font-serif uppercase md:text-h3">{{ block.settings.title }}</h2>
       {% endif %}
       {% if block.settings.text != blank %}
         <p class="mt-5 text-m-body-2 md:text-body-2">{{ block.settings.text }}</p>
       {% endif %}
       {% if block.settings.button_label != blank %}
         {% if block.settings.button_style == 'button' %}
-          <a href="{{ block.settings.button_link }}" class="mt-20 w-fit button">{{ block.settings.button_label }}</a>
+          <a href="{{ block.settings.button_link }}" class="mt-20 w-fit button">
+            {{ block.settings.button_label }}
+            <span class="button-dots"></span>
+          </a>
         {% else %}
           <div class="mt-20">
             {% render 'text-link' link: block.settings.button_link, label: block.settings.button_label %}

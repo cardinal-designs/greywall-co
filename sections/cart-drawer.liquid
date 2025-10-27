@@ -9,12 +9,12 @@
             {% render 'shipping-bar' %}
           </div>
 
-          <div class="mx-20 py-20 flex justify-between items-center border-b-1 border-taupe md:mx-30">
+          <div class="mx-20 py-20 flex justify-between items-center border-b-1 border-darker-beige md:mx-30">
             <div class="flex items-center gap-10">
               <h2 class="text-m-h4 font-serif uppercase md:text-h4">{{ settings.cart_title }}</h2>
               <div id="cart-count">
                 {% if cart.item_count > 0 %}
-                  <p class="text-cta uppercase">({{ cart.item_count }} Item{% unless cart.item_count == 1 %}s{% endunless %})</p>
+                  <p class="text-m-sh2 uppercase md:text-sh2">({{ cart.item_count }} Item{% unless cart.item_count == 1 %}s{% endunless %})</p>
                 {% endif %}
               </div>
             </div>
@@ -33,7 +33,7 @@
         {% else %}
           <div id="cart-drawer-items" class="w-full h-full px-20 flex flex-col overflow-y-scroll md:px-30">
             {% for item in cart.items %}
-              <div class="py-15 border-b-1 border-taupe">
+              <div class="py-15 border-b-1 border-darker-beige">
                 {% render 'cart-item' item: item, idx: forloop.index %}
               </div>
             {% endfor %}
@@ -93,7 +93,7 @@
           </div>
         {% endif %}
 
-        <div class="w-full py-20 px-20 sticky bottom-0 bg-background border-t-1 border-taupe md:px-30{% if cart.empty? %} hidden{% endif %}">
+        <div class="w-full py-20 px-20 sticky bottom-0 bg-background md:px-30{% if cart.empty? %} hidden{% endif %}">
           {% if settings.enable_cart_note %}
             <button class="w-full -mt-20 mb-15 py-5 flex justify-between items-center gap-10 text-body-4" data-open-cart-note>
               <span>Add Gift Note</span>
@@ -105,19 +105,22 @@
             <ul class="mb-15" id="cart-drawer-subtotal">
               {% for discount in cart.cart_level_discount_applications %}
                 <li class="mb-15 flex justify-between items-center gap-20">
-                  <p class="text-sh5 uppercase">{{ discount.title }}</p>
-                  <p class="text-sh5 uppercase">-{{ discount.total_allocated_amount | money }}</p>
+                  <p class="text-m-sh1 lowercase font-italic">{{ discount.title }}</p>
+                  <p class="text-m-sh1 lowercase font-italic">-{{ discount.total_allocated_amount | money }}</p>
                 </li>
               {% endfor %}
             </ul>
           {% endif %}
 
           <div class="mb-15 flex justify-between items-center gap-20" id="cart-drawer-subtotal">
-            <p class="text-sh5 uppercase">Subtotal</p>
-            <p class="text-sh5 uppercase">{{ cart.total_price | money }}</p>
+            <p class="text-m-sh1 lowercase font-italic">Subtotal</p>
+            <p class="text-m-sh1 lowercase font-italic">{{ cart.total_price | money }}</p>
           </div>
-          <a href="/checkout" class="w-full button" name="checkout" form="cart">Checkout</a>
-          <p class="mt-10 text-m-body-2 text-center opacity-50 md:text-body-4">Shipping & Taxes Calculated at Checkout</p>
+          <a href="/checkout" class="button button--brown w-full py-[23px]" name="checkout" form="cart">
+            Checkout
+            <span class="button-dots"></span>
+          </a>
+          <p class="mt-10 text-m-body-2 text-center opacity-50 md:text-body-3">Shipping & Taxes Calculated at Checkout</p>
         </div>
 
         <div id="cart-drawer-loading" class="hidden inset bg-background/40">
@@ -134,7 +137,7 @@
           <button class="inset bg-brown/20" data-close-cart-note></button>
           <div class="absolute bottom-0 left-0 right-0 bg-background py-30 px-20 md:px-30 translate-y-full transition-transform group-[.active]/cart-note:translate-y-0">
             <div class="mb-20 flex justify-between items-center">
-              <h3 class="text-m-h3 font-serif font-italic md:text-h4">Add a Gift Note</h3>
+              <h3 class="text-m-h3 font-italic md:text-h4">Add a Gift Note</h3>
               <button class="flex" data-close-cart-note>{% render 'icon' icon: 'close' %}</button>
             </div>
             <label class="visually-hidden" for="CartDrawer-Note">Cart Note</label>

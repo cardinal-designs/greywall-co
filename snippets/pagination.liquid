@@ -71,7 +71,7 @@
                 data-page="{{ paginate.current_page | minus: 1 }}"
                 data-url="{{ paginate.previous.url }}{{ anchor }}" 
                 data-target="{{ target }}"
-                class="*:rotate-180 {% if paginate.previous %}opacity-100{% else %}opacity-50 pointer-events-none{% endif %}" aria-label="{{ 'general.pagination.previous' | t }}">
+                class="*:rotate-180 {% if paginate.previous %}opacity-100{% else %} pointer-events-none{% endif %}" aria-label="{{ 'general.pagination.previous' | t }}">
                 {% render 'icon' icon: 'arrow' %}
               </pagination-button>
             </li>
@@ -85,7 +85,7 @@
                   data-container="{{ container }}"
                   data-target="{{ target }}"
                   data-page="{{ part.title }}"
-                  class="p-5 block text-cta uppercase opacity-50" 
+                  class="p-5 block text-cta uppercase" 
                   aria-label="{{ 'general.pagination.page' | t: number: part.title }}">
                   {{ part.title }}
                 </pagination-button>
@@ -94,7 +94,7 @@
                 {% if part.title == paginate.current_page %}
                   <span class="p-5 block text-cta uppercase relative" aria-current="page" aria-label="{{ 'general.pagination.page' | t: number: part.title }}">
                     {{ part.title }}
-                    <span class="size-25 absolute top-half left-half -translate-x-half -translate-y-half block rounded-full border-1 border-brown"></span>
+                    <span class="size-25 absolute top-half left-half -translate-x-half -translate-y-half block rounded-full border-1 border-taupe"></span>
                   </span>
                 {% else %}
                   <span class="p-5 block text-cta uppercase">{{ part.title }}</span>
@@ -113,7 +113,7 @@
                 data-page="{{ paginate.current_page | plus: 1 }}"
                 data-url="{{ paginate.next.url }}{{ anchor }}" 
                 data-target="{{ target }}"
-                class="{% if paginate.next %}opacity-100{% else %}opacity-50 pointer-events-none{% endif %}" aria-label="{{ 'general.pagination.next' | t }}" >
+                class="{% if paginate.next %}opacity-100{% else %}pointer-events-none{% endif %}" aria-label="{{ 'general.pagination.next' | t }}" >
                   {% render 'icon' icon: 'arrow' %}
               </pagination-button>
             </li>
@@ -135,7 +135,7 @@
     </nav>
 
     {% if show_item_count and show_load_more_button == false %}
-      <p id="item-count" class="mt-30 text-center text-caption font-serif uppercase">
+      <p id="item-count" class="mt-30 text-center text-caption font-italic">
         You're viewing {{ current_pagination_range }} of {{ paginate.items }} product{% unless paginate.items == 1 %}s{% endunless %}
       </p>
     {% endif %}

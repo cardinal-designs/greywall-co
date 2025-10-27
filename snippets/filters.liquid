@@ -193,7 +193,7 @@
     </div>
 
     <div class="grid-toggle-container w-full flex justify-center md:justify-end">
-      <div class="hidden gap-13 md:flex">
+      {% comment %} <div class="hidden gap-13 md:flex">
         <button class="toggle-desktop group/grid flex gap-[2px] active" data-grid-toggle="4">
           {% for i in (i..3) %}
             <div class="w-[6px] h-[12px] border-[1.5px] border-brown transition-colors group-[.active]/grid:bg-brown"></div>
@@ -214,7 +214,7 @@
             <div class="w-[6px] h-[12px] border-[1.5px] border-brown transition-colors group-[.active]/grid:bg-brown"></div>
           {% endfor %}
         </button>
-      </div>
+      </div> {% endcomment %}
     </div>
 
     <form class="sort-form flex-shrink-0 relative">
@@ -297,7 +297,7 @@
           {% case filter.type %}
             {% when 'list' %}
               {% for value in filter.active_values %}
-                <button class="px-[8px] py-[3px] flex flex-wrap items-center gap-10 text-body-2 bg-gold" data-remove-filter data-url="{{ filter.url_to_remove | remove: '%2F%3Fsection_id%3Dproduct-grid' }}" data-filter="{{ value.param_name }}-{{ value.value }}">
+                <button class="px-[8px] py-[3px] flex flex-wrap items-center gap-10 text-sh2 uppercase text-beige bg-gold" data-remove-filter data-url="{{ filter.url_to_remove | remove: '%2F%3Fsection_id%3Dproduct-grid' }}" data-filter="{{ value.param_name }}-{{ value.value }}">
                   {{ value.label | escape }}
                   <div class="[&_svg]:w-[10px] [&_svg]:h-auto">
                     {% render 'icon' icon: 'close' %}
@@ -312,7 +312,7 @@
                 {% assign max_value_formatted = max_value | money_without_trailing_zeros %}
                 
                 {% if min_value != 0 or max_value != filter.range_max %}
-                  <button class="price-range px-[8px] py-[3px] flex flex-wrap items-center gap-10 text-body-2 bg-gold" data-remove-filter data-url="{{ filter.url_to_remove | remove: '%2F%3Fsection_id%3Dproduct-grid' }}" data-filter="{{ value.param_name }}-{{ value.value }}">
+                  <button class="price-range px-[8px] py-[3px] flex flex-wrap items-center gap-10 text-sh2 uppercase text-beige bg-gold" data-remove-filter data-url="{{ filter.url_to_remove | remove: '%2F%3Fsection_id%3Dproduct-grid' }}" data-filter="{{ value.param_name }}-{{ value.value }}">
                     {{ min_value_formatted }} - {{ max_value_formatted }}
                     <div class="[&_svg]:w-[10px] [&_svg]:h-auto">
                       {% render 'icon' icon: 'close' %}

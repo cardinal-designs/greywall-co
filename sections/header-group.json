@@ -27,9 +27,10 @@
           "type": "mega_menu",
           "settings": {
             "title": "Shop",
-            "title_1": "Spring 23",
-            "url_1": "shopify://collections/shop-all",
-            "title_2": "Lookbook",
+            "image_1": "shopify://shop_images/Image_92.jpg",
+            "title_1": "New Arrivals",
+            "url_1": "",
+            "title_2": "",
             "url_2": "shopify://pages/lookbook"
           }
         }
