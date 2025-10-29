@@ -16,19 +16,22 @@
           "type": "subtitle",
           "settings": {
             "title": "Discover",
+            "font_style": "uppercase",
             "margin_top": 0,
             "margin_bottom": 0
-          }
+          },
+          "blocks": {}
         },
         "title_4VMTmC": {
           "type": "title",
           "settings": {
             "title": "The Lookbooks",
-            "font_size": "h1",
-            "mobile_font_size": "h1",
+            "font_size": "large",
+            "mobile_font_size": "large",
             "margin_top": 0,
             "margin_bottom": 0
-          }
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -37,11 +40,12 @@
       ],
       "settings": {
         "content_position": "middle_center",
+        "mobile_content_position": "middle_center",
         "content_width": 560,
         "content_color": "text-white",
         "media_type": "image",
-        "image": "shopify://shop_images/Image_-_2024-06-07T155315.202.jpg",
-        "mobile_image": "shopify://shop_images/Image_-_2024-06-07T155319.288.jpg",
+        "image": "shopify://shop_images/Image_-_2025-10-29T094425.876.jpg",
+        "mobile_image": "shopify://shop_images/Image_-_2025-10-29T094434.966.jpg",
         "add_overlay": false
       }
     },
@@ -51,8 +55,8 @@
         "grid_item_hKmmdh": {
           "type": "_grid-item",
           "settings": {
-            "image": "shopify://shop_images/Image_-_2024-06-09T095250.200.jpg",
-            "add_overlay": true,
+            "image": "shopify://shop_images/Image_14a53f88-e3d9-4bd2-ac2c-e97c0d9ed49c.jpg",
+            "add_overlay": false,
             "link": "shopify://pages/spring-2023",
             "content_position": "bottom_left",
             "content_color": "text-white"
@@ -61,14 +65,15 @@
             "button_UBVMGE": {
               "type": "button",
               "settings": {
-                "text": "Spring 23",
+                "text": "The Furrow Collection",
                 "button_link": "shopify://pages/spring-2023",
                 "button_style": "text",
                 "button_color": "white",
                 "center_button": false,
                 "margin_top": 0,
                 "margin_bottom": 0
-              }
+              },
+              "blocks": {}
             }
           },
           "block_order": [
@@ -78,8 +83,8 @@
         "grid_item_38PRmf": {
           "type": "_grid-item",
           "settings": {
-            "image": "shopify://shop_images/Image_-_2024-06-09T095253.327.jpg",
-            "add_overlay": true,
+            "image": "shopify://shop_images/Rectangle_94e392b2-3803-48c1-b378-84cd47afc8b8.jpg",
+            "add_overlay": false,
             "link": "shopify://pages/spring-2023",
             "content_position": "bottom_left",
             "content_color": "text-white"
@@ -88,14 +93,15 @@
             "button_MRGC7Y": {
               "type": "button",
               "settings": {
-                "text": "Country Side Drop",
+                "text": "The Mineral Collection",
                 "button_link": "shopify://pages/spring-2023",
                 "button_style": "text",
                 "button_color": "white",
                 "center_button": false,
                 "margin_top": 0,
                 "margin_bottom": 0
-              }
+              },
+              "blocks": {}
             }
           },
           "block_order": [
@@ -105,8 +111,8 @@
         "grid_item_jLPM7w": {
           "type": "_grid-item",
           "settings": {
-            "image": "shopify://shop_images/Rectangle_61.jpg",
-            "add_overlay": true,
+            "image": "shopify://shop_images/Image_-_2025-10-29T094521.137.jpg",
+            "add_overlay": false,
             "link": "shopify://pages/spring-2023",
             "content_position": "bottom_left",
             "content_color": "text-white"
@@ -115,180 +121,103 @@
             "button_YwQQEa": {
               "type": "button",
               "settings": {
-                "text": "Athletics Collection 23",
+                "text": "The Versus Collection",
                 "button_link": "",
                 "button_style": "text",
                 "button_color": "white",
                 "center_button": false,
                 "margin_top": 0,
                 "margin_bottom": 0
-              }
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "button_YwQQEa"
           ]
         },
-        "grid_item_CPKj4E": {
+        "grid_item_7zrEwr": {
           "type": "_grid-item",
           "settings": {
-            "image": "shopify://shop_images/Rectangle_61.jpg",
-            "add_overlay": true,
+            "image": "shopify://shop_images/Rectangle_f8fc964c-6c70-4504-a8ed-e1cb89d7e7b3.jpg",
+            "add_overlay": false,
             "link": "shopify://pages/spring-2023",
             "content_position": "bottom_left",
             "content_color": "text-white"
           },
           "blocks": {
-            "button_BJC7gC": {
+            "button_ThxJXa": {
               "type": "button",
               "settings": {
-                "text": "Athletics Collection 23",
+                "text": "The Mineral Collection",
                 "button_link": "shopify://pages/spring-2023",
                 "button_style": "text",
                 "button_color": "white",
                 "center_button": false,
                 "margin_top": 0,
                 "margin_bottom": 0
-              }
+              },
+              "blocks": {}
             }
           },
           "block_order": [
-            "button_BJC7gC"
+            "button_ThxJXa"
           ]
         },
-        "grid_item_HziTA6": {
+        "grid_item_j7CQtD": {
           "type": "_grid-item",
           "settings": {
-            "image": "shopify://shop_images/Image_-_2024-06-09T095250.200.jpg",
-            "add_overlay": true,
+            "image": "shopify://shop_images/Image_2f31511f-5414-4cc4-be36-1187e78f9d51.jpg",
+            "add_overlay": false,
             "link": "shopify://pages/spring-2023",
             "content_position": "bottom_left",
             "content_color": "text-white"
           },
           "blocks": {
-            "button_LE9Wyc": {
+            "button_djQaQb": {
               "type": "button",
               "settings": {
-                "text": "Spring 23",
-                "button_link": "shopify://pages/spring-2023",
+                "text": "The Versus Collection",
+                "button_link": "",
                 "button_style": "text",
                 "button_color": "white",
                 "center_button": false,
                 "margin_top": 0,
                 "margin_bottom": 0
-              }
+              },
+              "blocks": {}
             }
           },
           "block_order": [
-            "button_LE9Wyc"
+            "button_djQaQb"
           ]
         },
-        "grid_item_irHwx6": {
+        "grid_item_YXTLBF": {
           "type": "_grid-item",
           "settings": {
-            "image": "shopify://shop_images/Image_-_2024-06-09T095253.327.jpg",
-            "add_overlay": true,
+            "image": "shopify://shop_images/Image-1_f2bf6cdc-a649-472d-aa5d-2717f9f84745.jpg",
+            "add_overlay": false,
             "link": "shopify://pages/spring-2023",
             "content_position": "bottom_left",
             "content_color": "text-white"
           },
           "blocks": {
-            "button_TAVFxB": {
+            "button_4rH7dQ": {
               "type": "button",
               "settings": {
-                "text": "Country Side Drop",
+                "text": "The Furrow Collection",
                 "button_link": "shopify://pages/spring-2023",
                 "button_style": "text",
                 "button_color": "white",
                 "center_button": false,
                 "margin_top": 0,
                 "margin_bottom": 0
-              }
+              },
+              "blocks": {}
             }
           },
           "block_order": [
-            "button_TAVFxB"
-          ]
-        },
-        "grid_item_kDEmRi": {
-          "type": "_grid-item",
-          "settings": {
-            "image": "shopify://shop_images/Image_-_2024-06-11T095839.300.jpg",
-            "add_overlay": true,
-            "link": "shopify://pages/spring-2023",
-            "content_position": "bottom_left",
-            "content_color": "text-white"
-          },
-          "blocks": {
-            "button_h8RMrj": {
-              "type": "button",
-              "settings": {
-                "text": "Spring 23",
-                "button_link": "shopify://pages/spring-2023",
-                "button_style": "text",
-                "button_color": "white",
-                "center_button": false,
-                "margin_top": 0,
-                "margin_bottom": 0
-              }
-            }
-          },
-          "block_order": [
-            "button_h8RMrj"
-          ]
-        },
-        "grid_item_ka4iM3": {
-          "type": "_grid-item",
-          "settings": {
-            "image": "shopify://shop_images/Image_-_2024-06-09T095253.327.jpg",
-            "add_overlay": true,
-            "link": "shopify://pages/spring-2023",
-            "content_position": "bottom_left",
-            "content_color": "text-white"
-          },
-          "blocks": {
-            "button_yGGbGE": {
-              "type": "button",
-              "settings": {
-                "text": "Country Side Drop",
-                "button_link": "shopify://pages/spring-2023",
-                "button_style": "text",
-                "button_color": "white",
-                "center_button": false,
-                "margin_top": 0,
-                "margin_bottom": 0
-              }
-            }
-          },
-          "block_order": [
-            "button_yGGbGE"
-          ]
-        },
-        "grid_item_FYRjgL": {
-          "type": "_grid-item",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_61.jpg",
-            "add_overlay": true,
-            "link": "shopify://pages/spring-2023",
-            "content_position": "bottom_left",
-            "content_color": "text-white"
-          },
-          "blocks": {
-            "button_YMNCHE": {
-              "type": "button",
-              "settings": {
-                "text": "Athletics Collection 23",
-                "button_link": "shopify://pages/spring-2023",
-                "button_style": "text",
-                "button_color": "white",
-                "center_button": false,
-                "margin_top": 0,
-                "margin_bottom": 0
-              }
-            }
-          },
-          "block_order": [
-            "button_YMNCHE"
+            "button_4rH7dQ"
           ]
         }
       },
@@ -296,12 +225,12 @@
         "grid_item_hKmmdh",
         "grid_item_38PRmf",
         "grid_item_jLPM7w",
-        "grid_item_CPKj4E",
-        "grid_item_HziTA6",
-        "grid_item_irHwx6",
-        "grid_item_kDEmRi",
-        "grid_item_ka4iM3",
-        "grid_item_FYRjgL"
+        "grid_item_7zrEwr",
+        "grid_item_j7CQtD",
+        "grid_item_YXTLBF"
+      ],
+      "custom_css": [
+        ".grid-item__content {padding: 20px;}"
       ],
       "settings": {
         "image_ratio": "tall",

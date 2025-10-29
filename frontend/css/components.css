@@ -38,7 +38,7 @@
   }
 
   .field__input {
-    @apply w-full p-10 text-body-2 text-brown border-1 rounded-none border-brown bg-transparent resize-none placeholder:text-brown/50;
+    @apply w-full p-10 text-m-sh1 font-italic text-brown border-1 rounded-none border-darker-beige bg-transparent resize-none placeholder:text-brown md:text-sh4;
   }
 
   .field__select {
@@ -176,27 +176,27 @@
   }
 
   .text-editor h1 {
-    @apply text-m-h1 font-serif uppercase md:text-h1;
+    @apply font-serif uppercase text-m-h1 md:text-h2;
   }
 
   .text-editor h2 {
-    @apply text-m-h3 font-serif uppercase md:text-h3;
+    @apply font-serif uppercase text-m-h1 md:text-h3;
   }
 
   .text-editor h3 {
-    @apply text-m-h4 font-serif uppercase md:text-h4;
+    @apply font-serif uppercase text-m-h2 md:text-h4;
   }
 
   .text-editor h4 {
-    @apply text-sh1;
+    @apply font-serif uppercase text-m-sh4 md:text-h5;
   }
 
   .text-editor h5 {
-    @apply text-sh2 uppercase;
+    @apply text-sh1 lowercase font-italic;
   }
 
   .text-editor h6 {
-    @apply text-m-body-1 font-serif md:text-body-1;
+    @apply text-sh2 uppercase;
   }
 
   /* Loading Spinner */

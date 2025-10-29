@@ -11,11 +11,123 @@
   "sections": {
     "main": {
       "type": "main-404",
+      "disabled": true,
       "settings": {
+        "title": "404",
+        "text": "<p>Page not found.</p>",
+        "button_label": "Take Me Home",
+        "button_link": "/",
+        "button_style": "button"
+      }
+    },
+    "hero_JgipY3": {
+      "type": "hero",
+      "blocks": {
+        "text_KKnKK9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>404 Error</p>",
+            "center_content": false,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {}
+        },
+        "title_YaxzEj": {
+          "type": "title",
+          "settings": {
+            "title": "the page you are looking for doesn’t exist",
+            "font_size": "regular",
+            "mobile_font_size": "regular",
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {}
+        },
+        "button_h3rP4b": {
+          "type": "button",
+          "settings": {
+            "text": "Shop New Arrivals",
+            "button_link": "",
+            "button_style": "button",
+            "button_color": "light",
+            "center_button": false,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_KKnKK9",
+        "title_YaxzEj",
+        "button_h3rP4b"
+      ],
+      "name": "Hero",
+      "settings": {
+        "content_position": "middle_center",
+        "mobile_content_position": "middle_center",
+        "content_width": 455,
+        "content_color": "text-white",
+        "media_type": "image",
+        "image": "shopify://shop_images/Rectangle_41.jpg",
+        "mobile_image": "shopify://shop_images/Rectangle_42.jpg",
+        "add_overlay": false
+      }
+    },
+    "instagram_pGJc99": {
+      "type": "instagram",
+      "blocks": {
+        "image_Gb97cR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Frame.jpg"
+          }
+        },
+        "image_4YBgFG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Frame-1.jpg"
+          }
+        },
+        "image_8Fcwad": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Frame-2.jpg"
+          }
+        },
+        "image_9qFa9W": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Frame-3.jpg"
+          }
+        },
+        "image_mHBdad": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Frame-4.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_Gb97cR",
+        "image_4YBgFG",
+        "image_8Fcwad",
+        "image_9qFa9W",
+        "image_mHBdad"
+      ],
+      "settings": {
+        "background_color": "#e3d7c5",
+        "content_color": "text-text",
+        "title": "get inspired",
+        "handle": "@greywallandco",
+        "link": "https://www.instagram.com/greywallandco/?hl=en"
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "hero_JgipY3",
+    "instagram_pGJc99"
   ]
 }

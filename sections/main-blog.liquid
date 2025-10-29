@@ -5,7 +5,7 @@
 <div class="main-blog my-60">
 
   <div class="mb-30 md:mb-60">
-    <h2 class="mb-30 text-m-h1 font-serif uppercase text-center md:text-h2" data-animate>{{ blog.title }}</h2>
+    <h2 class="mb-30 text-m-h1 font-serif uppercase text-center md:text-h3" data-animate>{{ blog.title }}</h2>
 
     <div class="px-20 overflow-scroll no-scrollbar md:px-40" data-animate>
       <div class="w-fit mx-auto flex items-center gap-40">
@@ -30,7 +30,7 @@
     </div>
   </div>
 
-  {% paginate blog.articles by 2 %}
+  {% paginate blog.articles by 12 %}
     <div id="blog-grid" class="page-width">
       <ul class="grid gap-40 md:grid-cols-2 md:gap-x-20 md:gap-y-60 lg:grid-cols-3">
         {% for article in blog.articles %}
@@ -41,7 +41,7 @@
       </ul>
 
       {% if paginate.pages > 1 %}
-        {% render 'pagination', paginate: paginate, load_more: section.settings.pagination, target: '#blog-grid' %}
+        {% render 'pagination', paginate: paginate, load_more: section.settings.pagination, target: '#blog-grid', show_item_count: true %}
       {% endif %}
     </div>
   {% endpaginate %}

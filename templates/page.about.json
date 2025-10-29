@@ -12,377 +12,303 @@
     "main": {
       "type": "hero",
       "blocks": {
-        "subtitle_YL4EJM": {
-          "type": "subtitle",
-          "settings": {
-            "title": "Our Story",
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
-        },
         "title_VnfQbR": {
           "type": "title",
           "settings": {
-            "title": "Generations of expertise in premium outdoor apparel.",
-            "font_size": "h1",
-            "mobile_font_size": "h1",
+            "title": "A premier destination for studio designed lighting",
+            "font_size": "large",
+            "mobile_font_size": "large",
             "margin_top": 0,
             "margin_bottom": 0
-          }
+          },
+          "blocks": {}
+        },
+        "text_4zD4KT": {
+          "type": "text",
+          "name": "Text",
+          "settings": {
+            "text": "<p>We spotlight global designers and artisans, offering timeless, design-forward pieces for luxury homeowners, interior designers, and tastemakers.</p>",
+            "center_content": false,
+            "content_width": 465,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {}
+        },
+        "group_LNeNm6": {
+          "type": "group",
+          "name": "Group",
+          "settings": {
+            "direction": "flex-row",
+            "horizontal_alignment": "left",
+            "vertical_alignment": "center",
+            "wrap": false,
+            "gap": 20,
+            "margin_top": 20,
+            "margin_bottom": 0
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "subtitle_YL4EJM",
-        "title_VnfQbR"
+        "title_VnfQbR",
+        "text_4zD4KT",
+        "group_LNeNm6"
       ],
       "settings": {
-        "content_position": "middle_center",
-        "content_width": 470,
+        "content_position": "bottom_left",
+        "mobile_content_position": "bottom_left",
+        "content_width": 660,
         "content_color": "text-white",
         "media_type": "image",
-        "image": "shopify://shop_images/Rectangle_56.jpg",
-        "mobile_image": "shopify://shop_images/Rectangle_57.jpg",
+        "image": "shopify://shop_images/Rectangle_38.jpg",
+        "mobile_image": "shopify://shop_images/Rectangle_39.jpg",
         "add_overlay": false
       }
     },
     "richtext_Wchfby": {
       "type": "richtext",
       "blocks": {
-        "icon_i7yzzj": {
-          "type": "icon",
-          "settings": {
-            "icon": "shopify://shop_images/Frame_3.png",
-            "icon_width": 60,
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "center_icon": true
-          }
-        },
-        "subtitle_JGWwCf": {
-          "type": "subtitle",
-          "settings": {
-            "title": "Exceptional clothing engineered for adventure",
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
-        },
         "title_7w9TfF": {
           "type": "title",
           "settings": {
-            "title": "Where style meets sustainability",
-            "font_size": "h1",
-            "mobile_font_size": "h1",
+            "title": "We spotlight global designers and artisans",
+            "font_size": "regular",
+            "mobile_font_size": "regular",
             "margin_top": 0,
             "margin_bottom": 0
-          }
+          },
+          "blocks": {}
         },
         "text_TNdQYi": {
           "type": "text",
           "settings": {
-            "text": "<p>Embracing the past, we craft garments that resonate with timeless sophistication while forging a path towards a more sustainable future. </p>",
-            "center_content": false,
-            "content_width": 560,
+            "text": "<p>Offering timeless, design-forward pieces for luxury homeowners, interior designers, and tastemakers.</p>",
+            "center_content": true,
+            "content_width": 335,
             "margin_top": 0,
             "margin_bottom": 0
-          }
+          },
+          "blocks": {}
+        },
+        "button_3XtxfV": {
+          "type": "button",
+          "name": "Button",
+          "settings": {
+            "text": "Shop New Arrivals",
+            "button_link": "",
+            "button_style": "button",
+            "button_color": "light",
+            "center_button": false,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "icon_i7yzzj",
-        "subtitle_JGWwCf",
         "title_7w9TfF",
-        "text_TNdQYi"
+        "text_TNdQYi",
+        "button_3XtxfV"
       ],
       "settings": {
         "background_color": "rgba(0,0,0,0)",
-        "content_width": 660
+        "content_color": "text-text",
+        "content_width": 480
       }
     },
     "offset_images_GxgH9e": {
       "type": "offset-images",
       "settings": {
-        "large_image": "shopify://shop_images/Image_-_2024-06-06T093656.827.jpg",
-        "small_image": "shopify://shop_images/Auto_Layout_Vertical_2.jpg",
+        "large_image": "shopify://shop_images/Image_-_2025-10-28T152514.401.jpg",
+        "small_image": "shopify://shop_images/Auto_Layout_Vertical_4.jpg",
         "reverse_layout": true,
-        "caption": "Embrace the warmth of tradition with our knitwear collection. Crafted for comfort and styled for the modern adventurer."
-      }
-    },
-    "image_text_wMFXnD": {
-      "type": "image-text",
-      "blocks": {
-        "title_NwG8zR": {
-          "type": "title",
-          "settings": {
-            "title": "Elevate Your Every Move",
-            "font_size": "h2",
-            "mobile_font_size": "h1",
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
-        },
-        "text_UxfDEy": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our pants are made with the finest materials, ensuring unparalleled comfort and durability. Designed with attention to detail, we make our clothes with organic materials ensuring longevity.</p>",
-            "center_content": false,
-            "content_width": 560,
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
-        }
-      },
-      "block_order": [
-        "title_NwG8zR",
-        "text_UxfDEy"
-      ],
-      "settings": {
-        "image_position": "left",
-        "media_type": "image",
-        "image": "shopify://shop_images/Image_-_2024-06-06T093757.041.jpg"
-      }
-    },
-    "richtext_69VQdd": {
-      "type": "richtext",
-      "blocks": {
-        "title_qPxeK4": {
-          "type": "title",
-          "settings": {
-            "title": "“Our mission is to create clothes that blend functionality with style, encouraging people to embrace outdoor adventures.”",
-            "font_size": "h1",
-            "mobile_font_size": "h1",
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
-        },
-        "subtitle_HmWTFm": {
-          "type": "subtitle",
-          "settings": {
-            "title": "From the Founder",
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
-        }
-      },
-      "block_order": [
-        "title_qPxeK4",
-        "subtitle_HmWTFm"
-      ],
-      "settings": {
-        "background_color": "#ebf1e6",
-        "content_width": 660
-      }
-    },
-    "image_slider_FqBeKp": {
-      "type": "image-slider",
-      "blocks": {
-        "block_HAfwJg": {
-          "type": "block",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_58.jpg"
-          }
-        },
-        "block_V6MMVq": {
-          "type": "block",
-          "settings": {
-            "image": "shopify://shop_images/Image_-_2024-06-06T134940.611.jpg"
-          }
-        },
-        "block_XbkJmK": {
-          "type": "block",
-          "settings": {
-            "image": "shopify://shop_images/Image_-_2024-06-05T164405.508.jpg"
-          }
-        },
-        "block_HQ3L7M": {
-          "type": "block",
-          "settings": {
-            "image": "shopify://shop_images/Auto_Layout_Vertical_2.jpg"
-          }
-        },
-        "block_DCMBjw": {
-          "type": "block",
-          "settings": {
-            "image": "shopify://shop_images/Top-3-VibeAlt.jpg"
-          }
-        },
-        "block_FGqhwh": {
-          "type": "block",
-          "settings": {
-            "image": "shopify://shop_images/Auto_Layout_Horizontal_5.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "block_HAfwJg",
-        "block_V6MMVq",
-        "block_XbkJmK",
-        "block_HQ3L7M",
-        "block_DCMBjw",
-        "block_FGqhwh"
-      ],
-      "settings": {
-        "desktop_columns": "2",
-        "title": "The Spring Lookbooks"
+        "caption": "Lorem ipsum dolor sit amet consectetur. Tellus elit tempor porttitor massa feugiat posuere et tincidunt."
       }
     },
     "video_Mdt4DV": {
       "type": "video",
       "settings": {
-        "background_color": "#ebf1e6",
-        "title": "Lorem Ipsum",
+        "background_color": "#8b6536",
+        "title": "Lorem ipsum dolor sit amet consectetur. Lacus mauris sed suspendisse urna.",
+        "subtitle": "from the founder",
         "video_source": "external",
         "external_video": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/_9VUPq3SxOc?si=aGvEseOqqcsqy0wR\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
-        "placeholder_image": "shopify://shop_images/Rectangle_59.jpg",
-        "mobile_placeholder_image": "shopify://shop_images/Rectangle_60.jpg",
+        "placeholder_image": "shopify://shop_images/Rectangle_40_1622f935-0e5e-4432-b60b-9d02e4147984.jpg",
         "show_overlay": false
       }
     },
-    "image_text_zkq3YT": {
-      "type": "image-text",
+    "richtext_WUPyLJ": {
+      "type": "richtext",
       "blocks": {
-        "title_dDbq6C": {
+        "title_WacDwT": {
           "type": "title",
           "settings": {
-            "title": "Elevate Your Every Move",
-            "font_size": "h2",
-            "mobile_font_size": "h1",
+            "title": "Title Lorem Ipsum",
+            "font_size": "regular",
+            "mobile_font_size": "regular",
             "margin_top": 0,
             "margin_bottom": 0
-          }
-        },
-        "text_JPLp3q": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our pants are made with the finest materials, ensuring unparalleled comfort and durability. Designed with attention to detail, we make our clothes with organic materials ensuring longevity.</p>",
-            "center_content": false,
-            "content_width": 560,
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "title_dDbq6C",
-        "text_JPLp3q"
+        "title_WacDwT"
       ],
+      "custom_css": [
+        ".richtext {margin: 80px 0;}",
+        "@media screen and (max-width: 767px) {.richtext {margin: 60px 0; }}"
+      ],
+      "name": "Richtext",
       "settings": {
-        "image_position": "right",
-        "media_type": "image",
-        "image": "shopify://shop_images/Image_-_2024-06-06T093757.041.jpg"
+        "background_color": "",
+        "content_color": "text-text",
+        "content_width": 660
       }
     },
-    "press_marquee_VDM4Bx": {
-      "type": "press-marquee",
+    "columns_ydLrRr": {
+      "type": "columns",
       "blocks": {
-        "block_PiX8b6": {
-          "type": "block",
+        "column_rB347t": {
+          "type": "_column",
           "settings": {
-            "image": "shopify://shop_images/bazaar.png"
-          }
+            "image": "shopify://shop_images/Image_-_2025-10-28T154337.824.jpg",
+            "link": "",
+            "content_alignment": "center"
+          },
+          "blocks": {
+            "title_7hgeci": {
+              "type": "title",
+              "name": "Title",
+              "settings": {
+                "title": "Paul Sidhu",
+                "font_size": "small",
+                "mobile_font_size": "small",
+                "margin_top": 0,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            },
+            "text_7DABFt": {
+              "type": "text",
+              "name": "Text",
+              "settings": {
+                "text": "<p>VP of Brand</p>",
+                "center_content": false,
+                "margin_top": 5,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "title_7hgeci",
+            "text_7DABFt"
+          ]
         },
-        "block_86zfCQ": {
-          "type": "block",
+        "column_UxXTg7": {
+          "type": "_column",
           "settings": {
-            "image": "shopify://shop_images/vanity.png"
-          }
-        },
-        "block_nhCFgN": {
-          "type": "block",
-          "settings": {
-            "image": "shopify://shop_images/instyle.png"
-          }
-        },
-        "block_Td6bPN": {
-          "type": "block",
-          "settings": {
-            "image": "shopify://shop_images/vogue.png"
-          }
-        },
-        "block_HNX9pP": {
-          "type": "block",
-          "settings": {
-            "image": "shopify://shop_images/hypebeast.png"
-          }
-        },
-        "block_KGrBTG": {
-          "type": "block",
-          "settings": {
-            "image": "shopify://shop_images/goop.png"
-          }
+            "image": "shopify://shop_images/Image_-_2025-10-28T154342.669.jpg",
+            "link": "",
+            "content_alignment": "center"
+          },
+          "blocks": {
+            "title_rjcJBK": {
+              "type": "title",
+              "name": "Title",
+              "settings": {
+                "title": "Paul Sidhu",
+                "font_size": "small",
+                "mobile_font_size": "small",
+                "margin_top": 0,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            },
+            "text_yJxket": {
+              "type": "text",
+              "name": "Text",
+              "settings": {
+                "text": "<p>VP of Brand</p>",
+                "center_content": false,
+                "margin_top": 5,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "title_rjcJBK",
+            "text_yJxket"
+          ]
         }
       },
       "block_order": [
-        "block_PiX8b6",
-        "block_86zfCQ",
-        "block_nhCFgN",
-        "block_Td6bPN",
-        "block_HNX9pP",
-        "block_KGrBTG"
+        "column_rB347t",
+        "column_UxXTg7"
       ],
+      "custom_css": [
+        ".grid {max-width: 700px; margin: 0 auto; gap: 120px;}",
+        " @media screen and (max-width: 767px) {.grid {max-width: 200px; gap: 40px; }}"
+      ],
+      "name": "Columns",
       "settings": {
-        "background_color": "#f2f1e9",
+        "background_color": "",
+        "content_color": "text-text",
+        "image_ratio": "tall",
+        "desktop_columns": "2",
         "title": ""
       }
     },
-    "hero_34ifyX": {
-      "type": "hero",
-      "custom_css": [
-        "@media screen and (min-width: 768px) {.hero {margin-top: 80px; }}"
-      ],
-      "settings": {
-        "content_position": "middle_center",
-        "content_width": 560,
-        "content_color": "text-white",
-        "media_type": "image",
-        "image": "shopify://shop_images/Section_10.jpg",
-        "mobile_image": "shopify://shop_images/Image_-_2024-06-06T094027.140.jpg",
-        "add_overlay": false
-      }
-    },
-    "instagram_hkPUmB": {
+    "instagram_QnrraF": {
       "type": "instagram",
       "blocks": {
-        "image_6irMPL": {
+        "image_8UDeYT": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Frame.jpg"
           }
         },
-        "image_gBqTPc": {
+        "image_C6ncKU": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Frame_1.jpg"
+            "image": "shopify://shop_images/Frame-1.jpg"
           }
         },
-        "image_tPXGJr": {
+        "image_jmPmNh": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Frame_2.jpg"
+            "image": "shopify://shop_images/Frame-2.jpg"
           }
         },
-        "image_pfXrAd": {
+        "image_HjNXmT": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Frame_3.jpg"
+            "image": "shopify://shop_images/Frame-3.jpg"
           }
         },
-        "image_9maLXh": {
+        "image_AmcbKq": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Frame_4.jpg"
+            "image": "shopify://shop_images/Frame-4.jpg"
           }
         }
       },
       "block_order": [
-        "image_6irMPL",
-        "image_gBqTPc",
-        "image_tPXGJr",
-        "image_pfXrAd",
-        "image_9maLXh"
+        "image_8UDeYT",
+        "image_C6ncKU",
+        "image_jmPmNh",
+        "image_HjNXmT",
+        "image_AmcbKq"
       ],
       "settings": {
-        "title": "@ohaeiapparel",
-        "link": ""
+        "background_color": "#e3d7c5",
+        "content_color": "text-text",
+        "title": "get inspired",
+        "handle": "@greywallandco",
+        "link": "https://www.instagram.com/greywallandco/?hl=en"
       }
     }
   },
@@ -390,13 +316,9 @@
     "main",
     "richtext_Wchfby",
     "offset_images_GxgH9e",
-    "image_text_wMFXnD",
-    "richtext_69VQdd",
-    "image_slider_FqBeKp",
     "video_Mdt4DV",
-    "image_text_zkq3YT",
-    "press_marquee_VDM4Bx",
-    "hero_34ifyX",
-    "instagram_hkPUmB"
+    "richtext_WUPyLJ",
+    "columns_ydLrRr",
+    "instagram_QnrraF"
   ]
 }

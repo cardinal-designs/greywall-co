@@ -11,10 +11,387 @@
   "sections": {
     "main": {
       "type": "hero",
-      "settings": {}
+      "blocks": {
+        "title_BEpCUX": {
+          "type": "title",
+          "name": "Title",
+          "settings": {
+            "title": "Our designers",
+            "font_size": "large",
+            "mobile_font_size": "large",
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {}
+        },
+        "text_cwq3yk": {
+          "type": "text",
+          "name": "Text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet consectetur. Aliquam mi mauris interdum eget. Nisi mattis facilisi sit adipiscing neque ultrices augue diam sit. </p>",
+            "center_content": false,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "title_BEpCUX",
+        "text_cwq3yk"
+      ],
+      "settings": {
+        "content_position": "middle_center",
+        "mobile_content_position": "bottom_left",
+        "content_width": 465,
+        "content_color": "text-white",
+        "media_type": "image",
+        "image": "shopify://shop_images/Rectangle_43.jpg",
+        "mobile_image": "shopify://shop_images/Rectangle_44.jpg",
+        "add_overlay": false
+      }
+    },
+    "columns_Ljrfxw": {
+      "type": "columns",
+      "blocks": {
+        "column_YNFtnP": {
+          "type": "_column",
+          "settings": {
+            "image": "shopify://shop_images/Image_07473ab9-f2f3-425b-bd0a-cdd68f7200b2.jpg",
+            "link": "",
+            "content_alignment": "center"
+          },
+          "blocks": {
+            "title_VwkPq8": {
+              "type": "title",
+              "name": "Title",
+              "settings": {
+                "title": "Jason Koharik",
+                "font_size": "small",
+                "mobile_font_size": "small",
+                "margin_top": 0,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            },
+            "text_769gHx": {
+              "type": "text",
+              "name": "Text",
+              "settings": {
+                "text": "<p>Lorem ipsum dolor sit amet consectetur. Non id quam donec cursus ullamcorper. Viverra porta ut tincidunt.</p>",
+                "center_content": false,
+                "margin_top": 5,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            },
+            "button_qz7gXL": {
+              "type": "button",
+              "name": "Button",
+              "settings": {
+                "text": "Shop Their Collection",
+                "button_link": "",
+                "button_style": "button",
+                "button_color": "light",
+                "center_button": false,
+                "margin_top": 10,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "title_VwkPq8",
+            "text_769gHx",
+            "button_qz7gXL"
+          ]
+        },
+        "column_b7qJe8": {
+          "type": "_column",
+          "settings": {
+            "image": "shopify://shop_images/Image-1_55b37f01-7c86-4bca-8d47-70bfa9855828.jpg",
+            "link": "",
+            "content_alignment": "center"
+          },
+          "blocks": {
+            "title_GpifwH": {
+              "type": "title",
+              "name": "Title",
+              "settings": {
+                "title": "Paul Cocksedge Studio",
+                "font_size": "small",
+                "mobile_font_size": "small",
+                "margin_top": 0,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            },
+            "text_NAQEjm": {
+              "type": "text",
+              "name": "Text",
+              "settings": {
+                "text": "<p>Lorem ipsum dolor sit amet consectetur. Non id quam donec cursus ullamcorper. Viverra porta ut tincidunt.</p>",
+                "center_content": false,
+                "margin_top": 5,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            },
+            "button_ekaCzV": {
+              "type": "button",
+              "name": "Button",
+              "settings": {
+                "text": "Shop Their Collection",
+                "button_link": "",
+                "button_style": "button",
+                "button_color": "light",
+                "center_button": false,
+                "margin_top": 10,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "title_GpifwH",
+            "text_NAQEjm",
+            "button_ekaCzV"
+          ]
+        },
+        "column_qXGpQX": {
+          "type": "_column",
+          "settings": {
+            "image": "shopify://shop_images/Image-2_95ec465f-8f42-4f55-b53c-45d424784c1b.jpg",
+            "link": "",
+            "content_alignment": "center"
+          },
+          "blocks": {
+            "title_jmwUyx": {
+              "type": "title",
+              "name": "Title",
+              "settings": {
+                "title": "Branch Creative",
+                "font_size": "small",
+                "mobile_font_size": "small",
+                "margin_top": 0,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            },
+            "text_Kwe4bU": {
+              "type": "text",
+              "name": "Text",
+              "settings": {
+                "text": "<p>Lorem ipsum dolor sit amet consectetur. Non id quam donec cursus ullamcorper. Viverra porta ut tincidunt.</p>",
+                "center_content": false,
+                "margin_top": 5,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            },
+            "button_XQmMrw": {
+              "type": "button",
+              "name": "Button",
+              "settings": {
+                "text": "Shop Their Collection",
+                "button_link": "",
+                "button_style": "button",
+                "button_color": "light",
+                "center_button": false,
+                "margin_top": 10,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "title_jmwUyx",
+            "text_Kwe4bU",
+            "button_XQmMrw"
+          ]
+        },
+        "column_BrhxJX": {
+          "type": "_column",
+          "settings": {
+            "image": "shopify://shop_images/Image-3_1d6d7b96-37ee-4035-b4d0-6413a4a60605.jpg",
+            "link": "",
+            "content_alignment": "center"
+          },
+          "blocks": {
+            "title_ADYYT8": {
+              "type": "title",
+              "name": "Title",
+              "settings": {
+                "title": "Sean Brown",
+                "font_size": "small",
+                "mobile_font_size": "small",
+                "margin_top": 0,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            },
+            "text_UMHNnr": {
+              "type": "text",
+              "name": "Text",
+              "settings": {
+                "text": "<p>Lorem ipsum dolor sit amet consectetur. Non id quam donec cursus ullamcorper. Viverra porta ut tincidunt.</p>",
+                "center_content": false,
+                "margin_top": 5,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            },
+            "button_nqKfyT": {
+              "type": "button",
+              "name": "Button",
+              "settings": {
+                "text": "Shop Their Collection",
+                "button_link": "",
+                "button_style": "button",
+                "button_color": "light",
+                "center_button": false,
+                "margin_top": 10,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "title_ADYYT8",
+            "text_UMHNnr",
+            "button_nqKfyT"
+          ]
+        },
+        "column_fyVRd7": {
+          "type": "_column",
+          "settings": {
+            "image": "shopify://shop_images/Image-4.jpg",
+            "link": "",
+            "content_alignment": "center"
+          },
+          "blocks": {
+            "title_TNm6BY": {
+              "type": "title",
+              "name": "Title",
+              "settings": {
+                "title": "Alex Brokamp",
+                "font_size": "small",
+                "mobile_font_size": "small",
+                "margin_top": 0,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            },
+            "text_rwq9r4": {
+              "type": "text",
+              "name": "Text",
+              "settings": {
+                "text": "<p>Lorem ipsum dolor sit amet consectetur. Non id quam donec cursus ullamcorper. Viverra porta ut tincidunt.</p>",
+                "center_content": false,
+                "margin_top": 5,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            },
+            "button_E7TmJp": {
+              "type": "button",
+              "name": "Button",
+              "settings": {
+                "text": "Shop Their Collection",
+                "button_link": "",
+                "button_style": "button",
+                "button_color": "light",
+                "center_button": false,
+                "margin_top": 10,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "title_TNm6BY",
+            "text_rwq9r4",
+            "button_E7TmJp"
+          ]
+        },
+        "column_pcFXyM": {
+          "type": "_column",
+          "settings": {
+            "image": "shopify://shop_images/Image-5.jpg",
+            "link": "",
+            "content_alignment": "center"
+          },
+          "blocks": {
+            "title_a37aQj": {
+              "type": "title",
+              "name": "Title",
+              "settings": {
+                "title": "Hannah Jewett",
+                "font_size": "small",
+                "mobile_font_size": "small",
+                "margin_top": 0,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            },
+            "text_cKUjN8": {
+              "type": "text",
+              "name": "Text",
+              "settings": {
+                "text": "<p>Lorem ipsum dolor sit amet consectetur. Non id quam donec cursus ullamcorper. Viverra porta ut tincidunt.</p>",
+                "center_content": false,
+                "margin_top": 5,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            },
+            "button_a7Hg3h": {
+              "type": "button",
+              "name": "Button",
+              "settings": {
+                "text": "Shop Their Collection",
+                "button_link": "",
+                "button_style": "button",
+                "button_color": "light",
+                "center_button": false,
+                "margin_top": 10,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "title_a37aQj",
+            "text_cKUjN8",
+            "button_a7Hg3h"
+          ]
+        }
+      },
+      "block_order": [
+        "column_YNFtnP",
+        "column_b7qJe8",
+        "column_qXGpQX",
+        "column_BrhxJX",
+        "column_fyVRd7",
+        "column_pcFXyM"
+      ],
+      "custom_css": [
+        ".grid {max-width: 1200px; margin: 0 auto; gap: 120px;}",
+        "@media screen and (max-width: 1120px) {.grid {gap: 60px; }}",
+        "@media screen and (max-width: 767px) {.grid {max-width: 230px; gap: 40px; }}"
+      ],
+      "name": "Columns",
+      "settings": {
+        "background_color": "",
+        "content_color": "text-text",
+        "image_ratio": "tall",
+        "desktop_columns": "3",
+        "title": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "columns_Ljrfxw"
   ]
 }

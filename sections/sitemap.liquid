@@ -1,18 +1,16 @@
 <div class="sitemap">
-  <div class="py-[85px] text-center bg-beige">
-    <div class="page-width">
-      <h1 class="text-h1 font-serif uppercase">{{ section.settings.title }}</h1>
-    </div>
+  <div class="page-width my-60 md:mt-100 md:mb-80">
+    <h1 class="text-m-h1 font-serif text-center uppercase md:text-h3">{{ section.settings.title }}</h1>
   </div>
   <div class="page-width mt-40 mb-60 md:my-80">
-    <div class="max-w-custom w-full mx-auto grid gap-x-30 gap-y-40 sm:grid-cols-2 md:grid-cols-4 md:gap-y-60" style="--width: 856px;">
+    <div class="max-w-custom w-full mx-auto flex flex-col justify-center items-center flex-wrap gap-30 md:flex-row md:items-start md:gap-80 lg:gap-100" style="--width: 970px;">
       {% for link in section.settings.menu.links %}
-        <div class="text-center sm:text-left">
-          <h2 class="mb-15 text-h3 font-serif uppercase">{{ link.title }}</h2>
+        <div class="min-w-[125px] text-center sm:text-left">
+          <h2 class="mb-15 pb-10 text-sh1 font-italic lowercase border-b-1 border-darker-beige">{{ link.title }}</h2>
           <ul class="flex flex-col" role="list">
             {% for child_link in link.links %}
               <li>
-                <a href="{{ child_link.url }}" class="text-body-2 hover:underline">{{ child_link.title }}</a>
+                <a href="{{ child_link.url }}" class="text-m-body-2 hover:underline md:text-body-3">{{ child_link.title }}</a>
               </li>
             {% endfor %}
           </ul>
