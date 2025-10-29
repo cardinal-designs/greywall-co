@@ -334,7 +334,12 @@
         "product_columns": "2",
         "add_pagination": false,
         "product_slider_title": "New Arrivals",
-        "products": []
+        "products": [
+          "chandelier",
+          "lamp",
+          "marble-flush-mount",
+          "pendant"
+        ]
       }
     },
     "interactive_hero_8ztFEW": {
