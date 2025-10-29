@@ -69,35 +69,35 @@
         "collection_YrUt9F": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "shop-all",
             "collection_title": "Best Sellers"
           }
         },
         "collection_MWhLdA": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "shop-all",
             "collection_title": "New Arrivals"
           }
         },
         "collection_UdByUB": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "shop-all",
             "collection_title": "Wall"
           }
         },
         "collection_TtjzGY": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "shop-all",
             "collection_title": "Ceiling"
           }
         },
         "collection_Rhy9Fh": {
           "type": "collection",
           "settings": {
-            "collection": "accessories",
+            "collection": "shop-all",
             "collection_title": "Lamps"
           }
         }
