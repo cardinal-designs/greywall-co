@@ -62,8 +62,8 @@
         "button_label": "",
         "button_link": "",
         "button_style": "button",
-        "image_1": "shopify://shop_images/Image_94.jpg",
-        "image_2": "shopify://shop_images/Image_93.jpg"
+        "image_1": "shopify://shop_images/FURROW_TL354116BGD_LIFESTYLE_02.jpg",
+        "image_2": "shopify://shop_images/FURROW_TL354012PGN_LIFESTYLE_02.jpg"
       }
     },
     "hero_F8VNDb": {
@@ -114,8 +114,8 @@
         "content_width": 350,
         "content_color": "text-white",
         "media_type": "image",
-        "image": "shopify://shop_images/Rectangle_34.jpg",
-        "mobile_image": "shopify://shop_images/Rectangle_35.jpg",
+        "image": "shopify://shop_images/JASON_KOHARIK_COLLECTION_1440x700_f518da89-225f-461a-aa02-c9ae409cc261.jpg",
+        "mobile_image": "shopify://shop_images/JASON_KOHARIK_COLLECTION_1440x700_37daca00-99a4-436f-b5a0-e282545aede1.jpg",
         "add_overlay": true
       }
     },
@@ -125,13 +125,13 @@
         "block_GjaBr3": {
           "type": "block",
           "settings": {
-            "image": "shopify://shop_images/Rectangle.jpg"
+            "image": "shopify://shop_images/MINERAL_FM345084UBOP_LIFESTYLE.jpg"
           }
         },
         "block_TQkkfw": {
           "type": "block",
           "settings": {
-            "image": "shopify://shop_images/Image_332fad45-a105-400b-8fc5-ecc5ee705319.jpg"
+            "image": "shopify://shop_images/VERSUS_WS341328PTB_LIFESTYLE_02.jpg"
           }
         },
         "block_gEC8cX": {
