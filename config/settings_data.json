@@ -93,7 +93,8 @@
       "main-gift-card": {
         "type": "main-gift-card",
         "settings": {
-          "logo": "shopify://shop_images/ohaei-logo.svg"
+          "logo": "shopify://shop_images/greywall-logo.svg",
+          "gift_card_image": "shopify://shop_images/Gift_Card.svg"
         }
       }
     },
