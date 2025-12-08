@@ -30,7 +30,7 @@
         {% endfor %}
       </div>
 
-      <div class="w-full flex-shrink-0 lg:max-w-custom" style="--width: 300px;">
+      <div class="w-full flex-shrink-0 lg:max-w-custom" style="--width: 297px;">
         {% if section.settings.newsletter_title != blank %}
           <h2 class="text-m-sh2 uppercase md:text-sh2">{{ section.settings.newsletter_title }}</h2>
         {% endif %}
@@ -38,43 +38,47 @@
           <div class="mt-15 text-body-3 text-taupe">{{ section.settings.newsletter_text }}</div>
         {% endif %}
 
-        {% form 'customer', id: 'ContactFooter', class: 'mt-30' %}
-          <input type="hidden" name="contact[tags]" value="newsletter">
-          <div class="flex border-b-1 border-white">
-            <label class="field__label visually-hidden" for="NewsletterForm--{{ section.id }}">
-              {{ 'newsletter.label' | t }}
-            </label>
-            <input
-              class="w-full py-10 text-body-3 bg-transparent text-white placeholder:text-white/50"
-              id="NewsletterForm--{{ section.id }}"
-              type="email"
-              name="contact[email]"
-              value="{{ form.email }}"
-              aria-required="true"
-              autocorrect="off"
-              autocapitalize="off"
-              autocomplete="email"
-              {% if form.errors %}
-                autofocus
-                aria-invalid="true"
-                aria-describedby="ContactFooter-error"
-              {% elsif form.posted_successfully? %}
-                aria-describedby="ContactFooter-success"
-              {% endif %}
-              placeholder="Your email"
-              required
-            >
-            <button type="submit" class="h-auto text-cta uppercase" name="commit" aria-label="Submit">
-              Submit
-            </button>
-          </div>
-          {% if form.errors %}
-            <p class="text-body-3 text-error" id="ContactFooter-error">{{ form.errors.messages['email'] }}</p>
-          {% endif %}
-          {% if form.posted_successfully? %}
-            <p class="text-body-3" id="ContactFooter-success" tabindex="-1" autofocus>{{ 'newsletter.success' | t }}</p>
-          {% endif %}
-        {% endform %}
+        {% if section.settings.klaviyo !=blank %}
+          {{ section.settings.klaviyo }}
+        {% else %}
+          {% form 'customer', id: 'ContactFooter', class: 'mt-30' %}
+            <input type="hidden" name="contact[tags]" value="newsletter">
+            <div class="flex border-b-1 border-white">
+              <label class="field__label visually-hidden" for="NewsletterForm--{{ section.id }}">
+                {{ 'newsletter.label' | t }}
+              </label>
+              <input
+                class="w-full py-10 text-body-3 bg-transparent text-white placeholder:text-white/50"
+                id="NewsletterForm--{{ section.id }}"
+                type="email"
+                name="contact[email]"
+                value="{{ form.email }}"
+                aria-required="true"
+                autocorrect="off"
+                autocapitalize="off"
+                autocomplete="email"
+                {% if form.errors %}
+                  autofocus
+                  aria-invalid="true"
+                  aria-describedby="ContactFooter-error"
+                {% elsif form.posted_successfully? %}
+                  aria-describedby="ContactFooter-success"
+                {% endif %}
+                placeholder="Your email"
+                required
+              >
+              <button type="submit" class="h-auto text-cta uppercase" name="commit" aria-label="Submit">
+                Submit
+              </button>
+            </div>
+            {% if form.errors %}
+              <p class="text-body-3 text-error" id="ContactFooter-error">{{ form.errors.messages['email'] }}</p>
+            {% endif %}
+            {% if form.posted_successfully? %}
+              <p class="text-body-3" id="ContactFooter-success" tabindex="-1" autofocus>{{ 'newsletter.success' | t }}</p>
+            {% endif %}
+          {% endform %}
+        {% endif %}
       </div>
     </div>
 
@@ -156,6 +160,11 @@
       "id": "newsletter_text",
       "label": "Newsletter Text",
       "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+    },
+    {
+      "type": "html",
+      "id": "klaviyo",
+      "label": "klaviyo embed code"
     }
   ]
 }
