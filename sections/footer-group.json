@@ -20,7 +20,8 @@
         "brand_text": "",
         "menu": "footer",
         "newsletter_title": "Newsletter",
-        "newsletter_text": "<p>Subscribe to receive the latest news, exclusive offers and 10% off your first order.</p>"
+        "newsletter_text": "<p>Subscribe to receive the latest news, exclusive offers and 10% off your first order.</p>",
+        "klaviyo": "<div class=\"klaviyo-form-SCWSQz\"></div>"
       }
     }
   },
