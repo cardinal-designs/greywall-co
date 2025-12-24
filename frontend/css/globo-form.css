@@ -60,3 +60,7 @@
 #globo-formbuilder-124686 .globo-form-app .gfb__footer {
   @apply text-center;
 }
+
+#globo-formbuilder-124686 .globo-form-control .globo-list-control {
+  padding: 0;
+}
