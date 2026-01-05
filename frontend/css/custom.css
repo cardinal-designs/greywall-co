@@ -319,7 +319,8 @@ div#swym-storefront-layout-collection-grid-item-option-button {
 .swym-storefront-layout-notification-title,
 .swym-storefront-layout-notification-message,
 .swym-storefront-layout-login-heading,
-.swym-storefront-layout-login-description {
+.swym-storefront-layout-login-description,
+.swym-ui-component .swym-sfl-popup-dialog.swym-control-centre-mode .swym-cc-sfl-popup-action-container>div .swym-cc-sfl-popup-content p {
     color: #472715 !important;
 }
 
@@ -402,4 +403,20 @@ button.swym-button.swym-add-to-wishlist.swym-inject {
 
 .swym-btn-container .swym-add-to-wishlist.swym-heart:after {
     display: none !important;
+}
+
+.swym-storefront-layout-notification-container {
+    background: #fff !important;
+}
+
+.swym-ui-component .swym-sfl-popup-dialog.swym-control-centre-mode .swym-cc-sfl-popup-action-container>div figure {
+    height: 100% !important;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .swym-ui-component .swym-sfl-popup-dialog.swym-control-centre-mode .swym-cc-sfl-popup-action-container>div figure img {
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+    }
 }
