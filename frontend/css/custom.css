@@ -244,6 +244,8 @@
     --swym-storefront-layout-notification-neutral-text-color: #472715 !important;
     --swym-storefront-layout-color-text-sub2: rgb(71 39 21 / 50%) !important;
     --swym-storefront-layout-color-text-sub: rgb(71 39 21 / 50%) !important;
+    --swym-storefront-layout-font-size-text: 11px !important;
+    --swym-storefront-layout-font-size-sub-text: 11px !important;
 }
 
 .swym-storefront-layout-notification-container {
@@ -264,8 +266,6 @@ swym-storefront-layout-login-user .swym-storefront-layout-login-button,
 .swym-storefront-layout-login-heading,
 .swym-storefront-layout-grid-item-title,
 .swym-storefront-layout-title,
-.swym-storefront-layout-notification-message,
-.swym-storefront-layout-notification-title,
 .swym-storefront-layout-action-title,
 .swym-storefront-layout-collection-title {
     font-family: "dejanire-text", sans-serif !important;
@@ -369,6 +369,33 @@ swym-storefront-layout-as-drawer .swym-storefront-layout-layout {
     transform: none !important;
 }
 
-.swym-storefront-layout-container {
+.swym-wishlist-button-bar,.swym-btn-container.swym-inject,
+button.swym-button.swym-add-to-wishlist.swym-inject {
+    width:100% !important;
+}
 
+button.swym-button.swym-add-to-wishlist.swym-inject {
+    background-color: #472715 !important;
+    font-weight: 400 !important;
+    font-size: 11px !important;
+    letter-spacing: 0.1em !important;
+    text-transform: uppercase !important;
+    font-family: "monotype-grotesque", sans-serif !important;
+    height: auto !important;
+    line-height: 1 !important;
+    padding: 16px 14px !important;
+    outline: none !important;
+    opacity: 1 !important;
+}
+
+.swym-btn-container .swym-button.swym-added *:not(.swym-tooltip) {
+    opacity: 1 !important;
+}
+
+.swym-wishlist-button-bar{
+    margin-top: 15px !important;
+}
+
+.swym-btn-container .swym-add-to-wishlist.swym-heart:after {
+    display: none !important;
 }
