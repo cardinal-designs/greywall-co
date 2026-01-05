@@ -19,6 +19,7 @@ export default class QuickView extends HTMLElement {
         button.classList.add('loading');
         this.handleQuickView(button);
       }
+
     });
   }
 
@@ -71,6 +72,7 @@ export default class QuickView extends HTMLElement {
             }
           });
         }
+        document.dispatchEvent(new  CustomEvent("swym:collections-loaded"));
       });
   }
 
