@@ -38,7 +38,7 @@
 }
 
 #globo-formbuilder-124686 .globo-form-control .radio-label {
-  @apply font-sans text-body-3 text-brown mb-10;
+  @apply font-sans text-body-3 text-brown mb-10 capitalize;
 }
 
 #globo-formbuilder-124686 .globo-form-control .globo-list-control:last-child .radio-label {
@@ -76,4 +76,8 @@
 #globo-formbuilder-124686 .globo-form-control .gfb__dropzone--placeholder--description,
 #globo-formbuilder-124686 .gfb__dropzone--placeholder--title {
   @apply font-sans text-body-3 text-brown;
+}
+
+#globo-formbuilder-124686 .globo-form-control label .text-danger {
+  @apply ml-[-4px];
 }
