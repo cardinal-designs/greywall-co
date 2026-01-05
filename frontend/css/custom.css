@@ -315,7 +315,11 @@ div#swym-storefront-layout-collection-grid-item-option-button {
 
 #swym-storefront-layout-collection-option-button.swym-single-share-wishlist-btn,
 .swym-storefront-layout-title,
-.swym-storefront-layout-tab-button.swym-storefront-layout-tab-button-active {
+.swym-storefront-layout-tab-button.swym-storefront-layout-tab-button-active,
+.swym-storefront-layout-notification-title,
+.swym-storefront-layout-notification-message,
+.swym-storefront-layout-login-heading,
+.swym-storefront-layout-login-description {
     color: #472715 !important;
 }
 

@@ -72,6 +72,7 @@ export default class QuickView extends HTMLElement {
             }
           });
         }
+        
       });
   }
 
