@@ -72,7 +72,6 @@ export default class QuickView extends HTMLElement {
             }
           });
         }
-        document.dispatchEvent(new  CustomEvent("swym:collections-loaded"));
       });
   }
 
