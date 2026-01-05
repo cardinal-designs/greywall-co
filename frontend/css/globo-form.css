@@ -64,3 +64,16 @@
 #globo-formbuilder-124686 .globo-form-control .globo-list-control {
   padding: 0;
 }
+
+#globo-formbuilder-124686 .globo-form-control .gfb__dropzone {
+  @apply border-brown border-solid bg-transparent rounded-[1px];
+}
+
+#globo-formbuilder-124686 .globo-form-control .gfb__dropzone--placeholder--button {
+  @apply button rounded-none border-none font-sans;
+}
+
+#globo-formbuilder-124686 .globo-form-control .gfb__dropzone--placeholder--description,
+#globo-formbuilder-124686 .gfb__dropzone--placeholder--title {
+  @apply font-sans text-body-3 text-brown;
+}
