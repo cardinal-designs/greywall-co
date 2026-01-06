@@ -70,7 +70,8 @@ class PaginationButton extends HTMLElement {
                     document.querySelector("#product-grid #item-count").textContent = htmlContent.querySelector('#item-count').textContent
                 }                
             }).then(() => {
-              document.querySelector("#pagination").classList.remove("loading")
+              document.querySelector("#pagination").classList.remove("loading");
+              document.dispatchEvent(new CustomEvent("swym:collections-loaded"));
           }).catch(() => {
             document.querySelector("#pagination").classList.remove("loading")
           })
