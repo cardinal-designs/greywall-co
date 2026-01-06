@@ -19,6 +19,7 @@ export default class QuickView extends HTMLElement {
         button.classList.add('loading');
         this.handleQuickView(button);
       }
+
     });
   }
 
@@ -57,6 +58,7 @@ export default class QuickView extends HTMLElement {
         setTimeout(() => {
           this.open();
           if (opener) opener.classList.remove('loading');
+          _swat.initializeActionButtons("body")
         }, 150);
 
 
@@ -71,6 +73,7 @@ export default class QuickView extends HTMLElement {
             }
           });
         }
+        
       });
   }
 
