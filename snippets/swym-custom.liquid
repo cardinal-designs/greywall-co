@@ -2,7 +2,8 @@
   function swymCallbackFn(swat){
     function swymAttachEvents(){
       swat.initializeActionButtons("body");
-      // _swat.initializeActionButtons("body")
+      _swat.initializeActionButtons(".swym-button");
+      _swat.initializeActionButtons("body")
     }
     document.addEventListener('quickview:loaded', function(e) {
       console.log("Quickview Loaded!",e.detail.productId);
@@ -29,4 +30,6 @@
     window.SwymCallbacks = [];
   }
   window.SwymCallbacks.push(swymCallbackFn);
+
+  document.dispatchEvent(new CustomEvent("swym:collections-loaded"));
 </script>

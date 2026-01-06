@@ -263,6 +263,11 @@ swym-storefront-layout-login-user .swym-storefront-layout-login-button,
     font-family: "monotype-grotesque", sans-serif !important;
 }
 
+.swym-storefront-layout-notification-message {
+    font-weight: 400 !important;
+    font-size: 11px !important;
+}
+
 .swym-storefront-layout-login-heading,
 .swym-storefront-layout-grid-item-title,
 .swym-storefront-layout-title,
@@ -353,19 +358,33 @@ swym-storefront-layout-as-drawer .swym-storefront-layout-layout {
     height: 20px !important;
 }
 
-.swym-button.swym-add-to-wishlist-view-product.swym-heart:after {
+quick-view .swym-btn-container .swym-button {
+    background: transparent !important;
+    outline: none !important;
+    opacity: 1 !important;
+}
+
+quick-view  .swym-button-bar {
+    margin: 0 !important;
+}
+
+.swym-button.swym-add-to-wishlist-view-product.swym-heart:after,
+quick-view .swym-button.swym-add-to-wishlist.swym-heart:after {
     display: none !important;
 }
 
-.swym-button.swym-add-to-wishlist-view-product.swym-heart:not(.swym-added) svg + svg {
+.swym-button.swym-add-to-wishlist-view-product.swym-heart:not(.swym-added) svg + svg,
+quick-view .swym-button.swym-add-to-wishlist.swym-heart:not(.swym-added) svg + svg {
     display: none !important;
 }
 
-.swym-button.swym-add-to-wishlist-view-product.swym-heart.swym-added svg {
+.swym-button.swym-add-to-wishlist-view-product.swym-heart.swym-added svg,
+quick-view .swym-button.swym-add-to-wishlist.swym-heart.swym-added svg {
     display: none !important;
 }
 
-.swym-button.swym-add-to-wishlist-view-product.swym-heart.swym-added svg + svg {
+.swym-button.swym-add-to-wishlist-view-product.swym-heart.swym-added svg + svg,
+quick-view .swym-button.swym-add-to-wishlist.swym-heart.swym-added svg + svg {
     display: block !important;
 }
 
@@ -388,7 +407,7 @@ button.swym-button.swym-add-to-wishlist.swym-inject {
     font-family: "monotype-grotesque", sans-serif !important;
     height: auto !important;
     line-height: 1 !important;
-    padding: 16px 14px !important;
+    padding: 20px 14px !important;
     outline: none !important;
     opacity: 1 !important;
 }
