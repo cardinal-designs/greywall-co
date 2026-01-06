@@ -71,8 +71,6 @@ class PaginationButton extends HTMLElement {
                 }                
             }).then(() => {
               document.querySelector("#pagination").classList.remove("loading");
-              console.log("removed loading");
-              document.dispatchEvent(new  CustomEvent("swym:collections-loaded"));
           }).catch(() => {
             document.querySelector("#pagination").classList.remove("loading")
           })
