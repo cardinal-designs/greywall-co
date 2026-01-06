@@ -1,0 +1,83 @@
+#globo-formbuilder-124686 .globo-form-app {
+  @apply text-brown my-50 md:mt-100 md:mb-[97px];
+}
+
+#globo-formbuilder-124686 .globo-form-app .header .title {
+  @apply font-serif uppercase text-m-h1 md:text-h3;
+}
+
+#globo-formbuilder-124686 .globo-form-app .header {
+  @apply mb-30 md:mb-[45px];
+}
+
+#globo-formbuilder-124686 .globo-form-control {
+  @apply mb-20 md:mb-30 p-0;
+}
+
+#globo-formbuilder-124686 .globo-form-row {
+  @apply gap-[21px];
+}
+
+#globo-formbuilder-124686 .globo-form-control label {
+  @apply text-m-sh1 md:text-sh1 font-italic text-brown mb-[11px] lowercase;
+}
+
+#globo-formbuilder-124686 .editor-actions {
+  @apply hidden;
+}
+
+#globo-formbuilder-124686 .globo-form-control input,
+#globo-formbuilder-124686 .globo-form-control textarea,
+#globo-formbuilder-124686 .globo-form-control select {
+  @apply border border-brown border-solid bg-transparent py-3 pl-[11px] rounded-none min-h-[46px] font-sans text-body-3 text-brown placeholder:opacity-50 placeholder:text-brown;
+}
+
+#globo-formbuilder-124686 .globo-form-control .radio-wrapper .radio-input~.radio-label:before,
+#globo-formbuilder-124686 .globo-form-control .radio-wrapper .radio-input~.radio-label:after {
+  @apply size-[11px] bg-transparent font-sans text-body-3 top-[5px] left-[-19px];
+}
+
+#globo-formbuilder-124686 .globo-form-control .radio-label {
+  @apply font-sans text-body-3 text-brown mb-10 capitalize;
+}
+
+#globo-formbuilder-124686 .globo-form-control .globo-list-control:last-child .radio-label {
+  @apply mb-0;
+}
+
+#globo-formbuilder-124686 .globo-form-control .radio-wrapper {
+  @apply pl-[19px];
+}
+
+#globo-formbuilder-124686 .globo-form-app .panels {
+  @apply z-0;
+}
+
+#globo-formbuilder-124686 .globo-form-id-124686 .globo-form-app .gfb__footer button[type="submit"] {
+  @apply button max-w-[126px] rounded-none border-none font-sans pt-4;
+}
+
+#globo-formbuilder-124686 .globo-form-app .gfb__footer {
+  @apply text-center;
+}
+
+#globo-formbuilder-124686 .globo-form-control .globo-list-control {
+  padding: 0;
+}
+
+#globo-formbuilder-124686 .globo-form-control .gfb__dropzone {
+  @apply border-brown border-solid bg-transparent rounded-[1px];
+}
+
+#globo-formbuilder-124686 .globo-form-control .gfb__dropzone--placeholder--button {
+  @apply button rounded-none border-none font-sans;
+}
+
+#globo-formbuilder-124686 .globo-form-control .gfb__dropzone--placeholder--description,
+#globo-formbuilder-124686 .gfb__dropzone--placeholder--title {
+  @apply font-sans text-body-3 text-brown;
+}
+
+#globo-formbuilder-124686 .globo-form-control label .text-danger {
+  @apply ml-[-4px];
+}
