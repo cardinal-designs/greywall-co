@@ -61,7 +61,7 @@
         <!-- Navigation -->
         {% if section.settings.menu != blank %}
           <nav class="flex flex-shrink-0">
-            <ul class="hidden items-center gap-20 md:flex md:gap-40 lg:gap-60" role="list">
+            <ul class="hidden items-center gap-20 md:flex md:gap-20 lg:gap-40" role="list">
               {% for link in section.settings.menu.links %}
                 {% assign downcased_link_title = link.title | downcase | strip %}
                 {% assign mega_menu_names = '' %}
@@ -240,10 +240,10 @@
         </div>
 
         <!-- Icons -->
-        <div class="flex justify-end items-center gap-20 flex-shrink-0 relative md:gap-40 lg:gap-60">
+        <div class="flex justify-end items-center gap-20 flex-shrink-0 relative md:gap-20 lg:gap-40">
           {% if section.settings.additional_menu != blank %}
             <nav class="flex flex-shrink-0">
-              <ul class="hidden items-center gap-20 md:flex md:gap-40 lg:gap-60" role="list">
+              <ul class="hidden items-center gap-20 md:flex md:gap-20 lg:gap-40" role="list">
                 {% for link in section.settings.additional_menu.links %}
                   <a href="{{ link.url }}" class="group/link py-20 block text-cta uppercase relative"{% if link.current %} aria-current="page"{% endif %}>
                     {{ link.title | escape }}
