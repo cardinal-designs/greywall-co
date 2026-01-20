@@ -274,6 +274,7 @@
             </a>
           {% endif %} {% endcomment %}
 
+          {% comment %}
           <div>
             <a href="#swym-wishlist" class="swym-wishlist text-cta uppercase hidden md:block group/link md:py-20 relative">
               Wishlist
@@ -285,6 +286,7 @@
               </svg>
             </a>
           </div>
+          {% endcomment %}
 
           {% if template != 'cart' %}
             <button class="relative md:py-20" data-open-cart id="cart-icon-bubble" aria-label="Open Cart Drawer" data-id="{{ section.id }}">
