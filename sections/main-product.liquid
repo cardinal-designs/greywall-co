@@ -156,7 +156,7 @@
           </div>
         {% endif %}
 
-        <div class="sticky-bar w-full pt-20">
+        <div class="sticky-bar w-full pt-10">
           <div class="mb-20 hidden md:block">
             {% render 'product-badges' prod: product, classes: 'px-[8px] py-[2px] inline-block text-sh4 lowercase font-italic' %}
           </div>
@@ -166,7 +166,7 @@
           </div>
 
           {% if product.description != blank and description_position == 'above' %}
-            <div class="rte max-w-[295px] mt-40 mb-30 text-body-2 hidden md:block">
+            <div class="rte max-w-[295px] mt-20 mb-30 text-body-2 hidden md:block">
               {{ product.description }}
             </div>
           {% endif %}
