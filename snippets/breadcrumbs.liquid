@@ -20,8 +20,7 @@
           </li>
         {% endif %}
         <li class="text-body-4 opacity-50">
-          <span class="active md:block" aria-current="page">{{ product.title | truncate: 50 }}</span>
-          <span class="active md:hidden" aria-current="page">{{ product.title }}</span>
+          <span class="active" aria-current="page">{{ product.title | truncate: 50 }}</span>
         </li>
       {% when 'collection' and collection.handle %}
         {% if settings.shop_all_link != collection.url and settings.shop_all_link != blank %}
