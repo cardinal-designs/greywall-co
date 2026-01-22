@@ -28,7 +28,7 @@
   {% endif %}
 
   <div class="page-width">
-    <div class="product md:grid{% if slider_desktop_style == 'thumbnails' %} mt-20 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] md:gap-40 lg:grid-cols-[minmax(0,1fr)_455px] lg:gap-90{% else %} md:grid-cols-[minmax(0,1fr)_365px] md:gap-40 xxxl:grid-cols-[minmax(0,0.65fr)_minmax(0,0.35fr)]{% endif %}">
+    <div class="product mb-60 md:grid{% if slider_desktop_style == 'thumbnails' %} mt-20 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] md:gap-40 lg:grid-cols-[minmax(0,1fr)_455px] lg:gap-90{% else %} md:grid-cols-[minmax(0,1fr)_365px] md:gap-40 xxxl:grid-cols-[minmax(0,0.65fr)_minmax(0,0.35fr)]{% endif %}">
       <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
         {{ "accessibility.skip_to_product_info" | t }}
       </a>
