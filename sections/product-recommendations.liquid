@@ -1,33 +1,68 @@
-<product-recommendations data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=8">
-  {% if recommendations.performed and recommendations.products_count > 0 %}
-    <div class="my-60 md:my-100">
-      <div class="overflow-hidden">
-        <div class="page-width">
-          <div class="mb-30 flex justify-between items-center md:mb-25">
-            <h2 class="text-m-sh1 lowercase font-italic md:text-sh1">{{ section.settings.title }}</h2>
-            <div class="swiper-buttons hidden gap-20 md:flex">
-              <button class="recommendation-slider-button swiper-button swiper-button-prev rotate-180">
-                {% render 'icon' icon: 'arrow' %}
-              </button>
-              <button class="recommendation-slider-button swiper-button swiper-button-next">
-                {% render 'icon' icon: 'arrow' %}
-              </button>
+{% if section.settings.products == 'collection' %}
+  {% assign current_collection = collections[section.settings.collection] %}
+
+  {% if current_collection.products.size > 0 %}
+    <product-recommendations data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=8">
+      <div class="my-60 md:my-100">
+        <div class="overflow-hidden">
+          <div class="page-width">
+            <div class="mb-30 flex justify-between items-center md:mb-25">
+              <h2 class="text-m-sh1 lowercase font-italic md:text-sh1">{{ section.settings.title }}</h2>
+              <div class="swiper-buttons hidden gap-20 md:flex">
+                <button class="recommendation-slider-button swiper-button swiper-button-prev rotate-180">
+                  {% render 'icon' icon: 'arrow' %}
+                </button>
+                <button class="recommendation-slider-button swiper-button swiper-button-next">
+                  {% render 'icon' icon: 'arrow' %}
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="recommendation-slider swiper recommendation-slider-{{ section.id }}">
-            <div class="swiper-wrapper">
-              {% for recommendation in recommendations.products %}
-                <li class="swiper-slide">
-                  {% render 'product-card' prod: recommendation %}
-                </li>
-              {% endfor %}
+            <div class="recommendation-slider swiper recommendation-slider-{{ section.id }}">
+              <div class="swiper-wrapper">
+                {% for current_product in current_collection.products %}
+                  <li class="swiper-slide">
+                    {% render 'product-card' prod: current_product %}
+                  </li>
+                {% endfor %}
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </product-recommendations>
   {% endif %}
-</product-recommendations>
+{% else %}
+  <product-recommendations data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=8">
+    {% if recommendations.performed and recommendations.products_count > 0 %}
+      <div class="my-60 md:my-100">
+        <div class="overflow-hidden">
+          <div class="page-width">
+            <div class="mb-30 flex justify-between items-center md:mb-25">
+              <h2 class="text-m-sh1 lowercase font-italic md:text-sh1">{{ section.settings.title }}</h2>
+              <div class="swiper-buttons hidden gap-20 md:flex">
+                <button class="recommendation-slider-button swiper-button swiper-button-prev rotate-180">
+                  {% render 'icon' icon: 'arrow' %}
+                </button>
+                <button class="recommendation-slider-button swiper-button swiper-button-next">
+                  {% render 'icon' icon: 'arrow' %}
+                </button>
+              </div>
+            </div>
+            <div class="recommendation-slider swiper recommendation-slider-{{ section.id }}">
+              <div class="swiper-wrapper">
+                {% for recommendation in recommendations.products %}
+                  <li class="swiper-slide">
+                    {% render 'product-card' prod: recommendation %}
+                  </li>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  </product-recommendations>
+{% endif %}
 
 <style>
   /* Style before slider has loaded */
@@ -56,6 +91,21 @@
       "id": "title",
       "label": "Title",
       "default": "You Might Like"
+    },
+    {
+      "type": "select",
+      "id": "products",
+      "options": [
+        { "value": "standard", "label": "Standard" },
+        { "value": "collection", "label": "Collection" }
+      ],
+      "default": "standard",
+      "label": "Products"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
     }
   ]
 }

@@ -11,34 +11,6 @@
   "sections": {
     "main": {
       "type": "main-product",
-      "blocks": {
-        "dropdown_f8XbkQ": {
-          "type": "dropdown",
-          "settings": {
-            "title": "Materials",
-            "text": "{{ product.metafields.custom.materials | metafield_tag }}"
-          }
-        },
-        "dropdown_yQwAKq": {
-          "type": "dropdown",
-          "settings": {
-            "title": "Dimensions",
-            "text": "{{ product.metafields.custom.dimensions | metafield_tag }}"
-          }
-        },
-        "dropdown_g7LzfJ": {
-          "type": "dropdown",
-          "settings": {
-            "title": "Shipping & Returns",
-            "text": "<p>Lorem ipsum dolor sit amet consectetur. Platea id fermentum egestas morbi sodales augue purus tristique ipsum. </p>"
-          }
-        }
-      },
-      "block_order": [
-        "dropdown_f8XbkQ",
-        "dropdown_yQwAKq",
-        "dropdown_g7LzfJ"
-      ],
       "settings": {
         "description_position": "above",
         "mobile_title_position": "below",
@@ -179,7 +151,9 @@
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
-        "title": "Shop the collection"
+        "title": "Shop the collection",
+        "products": "collection",
+        "collection": "{{ product.metafields.custom.family_collection.value }}"
       }
     }
   },
