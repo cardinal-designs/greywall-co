@@ -72,7 +72,7 @@
         "title_7w9TfF": {
           "type": "title",
           "settings": {
-            "title": "We spotlight global designers and artisans",
+            "title": "Greywall thoughtfully curates lighting with purpose and story",
             "font_size": "regular",
             "mobile_font_size": "regular",
             "margin_top": 0,
@@ -83,7 +83,7 @@
         "text_TNdQYi": {
           "type": "text",
           "settings": {
-            "text": "<p>Offering timeless, design-forward pieces for luxury homeowners, interior designers, and tastemakers.</p>",
+            "text": "<p>We do this by selecting pieces that reflect craft, character, and considered design.</p>",
             "center_content": true,
             "content_width": 335,
             "margin_top": 0,
@@ -123,7 +123,7 @@
         "large_image": "shopify://shop_images/FURROW_TL354012PEC_LIFESTYLE_02.jpg",
         "small_image": "shopify://shop_images/MINERAL_FM345084PTBAR_LIFESTYLE.jpg",
         "reverse_layout": true,
-        "caption": "Lorem ipsum dolor sit amet consectetur. Tellus elit tempor porttitor massa feugiat posuere et tincidunt."
+        "caption": "Greywall curates lighting as art, celebrating material expression, sculptural form, and the hands and ideas behind each piece."
       }
     },
     "video_Mdt4DV": {
