@@ -130,10 +130,10 @@
       "type": "video",
       "settings": {
         "background_color": "#8b6536",
-        "title": "Lorem ipsum dolor sit amet consectetur. Lacus mauris sed suspendisse urna.",
+        "title": "“Greywall is built on the belief that great lighting is sculptural, intentional, and enduring. Our collection celebrates craftsmanship, materiality, and design that leads rather than follows.”",
         "subtitle": "from the founder",
         "video_source": "external",
-        "external_video": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/_9VUPq3SxOc?si=aGvEseOqqcsqy0wR\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
+        "external_video": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/08MC-k-28-Q?si=kRyM4zDowpfYrsUn\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
         "placeholder_image": "shopify://shop_images/Rectangle_40_1622f935-0e5e-4432-b60b-9d02e4147984.jpg",
         "show_overlay": false
       }
