@@ -133,7 +133,7 @@
         "title": "“Greywall is built on the belief that great lighting is sculptural, intentional, and enduring. Our collection celebrates craftsmanship, materiality, and design that leads rather than follows.”",
         "subtitle": "from the founder",
         "video_source": "external",
-        "external_video": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/08MC-k-28-Q?si=kRyM4zDowpfYrsUn\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
+        "external_video": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/08MC-k-28-Q?si=kRyM4zDowpfYrsUn\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen=\"\"></iframe>",
         "placeholder_image": "shopify://shop_images/Rectangle_40_1622f935-0e5e-4432-b60b-9d02e4147984.jpg",
         "show_overlay": false
       }
@@ -144,7 +144,7 @@
         "title_WacDwT": {
           "type": "title",
           "settings": {
-            "title": "Title Lorem Ipsum",
+            "title": "Our Team",
             "font_size": "regular",
             "mobile_font_size": "regular",
             "margin_top": 0,
@@ -249,6 +249,7 @@
         "column_rB347t",
         "column_UxXTg7"
       ],
+      "disabled": true,
       "custom_css": [
         ".grid {max-width: 700px; margin: 0 auto; gap: 120px;}",
         "@media screen and (max-width: 767px) {.grid {max-width: 200px; gap: 40px; }}"
@@ -260,6 +261,46 @@
         "image_ratio": "tall",
         "desktop_columns": "2",
         "title": ""
+      }
+    },
+    "image_text_4rW6f6": {
+      "type": "image-text",
+      "blocks": {
+        "title_qxbRgJ": {
+          "type": "title",
+          "settings": {
+            "title": "Our Team",
+            "font_size": "regular",
+            "mobile_font_size": "large",
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {}
+        },
+        "text_TYQdtW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our dedicated support team offers thoughtful guidance on trade needs, design intent, material artistry, and beyond. Contact <a href=\"mailto:info@greywall.co\"><span style=\"text-decoration:underline\">info@greywall.co</span></a> to reach us. </p>",
+            "center_content": false,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "title_qxbRgJ",
+        "text_TYQdtW"
+      ],
+      "name": "Image / Text",
+      "settings": {
+        "background_color": "",
+        "content_color": "text-text",
+        "image_position": "left",
+        "content_width": 380,
+        "add_margin": true,
+        "media_type": "image",
+        "image": "shopify://shop_images/250927_Editorial_0622_copy.jpg"
       }
     },
     "instagram_QnrraF": {
@@ -319,6 +360,7 @@
     "video_Mdt4DV",
     "richtext_WUPyLJ",
     "columns_ydLrRr",
+    "image_text_4rW6f6",
     "instagram_QnrraF"
   ]
 }
