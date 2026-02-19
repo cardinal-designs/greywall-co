@@ -130,7 +130,7 @@
             "text_F7zyq7": {
               "type": "text",
               "settings": {
-                "text": "<p>Lorem ipsum dolor sit amet consectetur. Aliquam morbi arcu suscipit quam. Velit lacus vivamus neque libero enim.</p>",
+                "text": "<p>The Furrow collection by Jason Koharik is inspired by the Tridacna, layering material and finish with flowing forms.</p>",
                 "center_content": true,
                 "content_width": 350,
                 "margin_top": 0,
@@ -168,7 +168,7 @@
             "text_mTnFLL": {
               "type": "text",
               "settings": {
-                "text": "<p>Lorem ipsum dolor sit amet consectetur. Aliquam morbi arcu suscipit quam. Velit lacus vivamus neque libero enim.</p>",
+                "text": "<p>Versus by Jason Koharik explores contrast through sculptural form pairing elegance strength and subtle wit in lighting design</p>",
                 "center_content": true,
                 "content_width": 350,
                 "margin_top": 0,
@@ -329,8 +329,8 @@
         "container": "full_width",
         "image_ratio": "tall",
         "image": "shopify://shop_images/MINERAL_FM_LIFESTYLE.jpg",
-        "title": "The Furrow Collection",
-        "text": "Lorem ipsum dolor sit amet consectetur. Justo molestie etiam gravida eget egestas potenti. Lorem ipsum dolor sit amet consectetur. Justo molestie etiam gravida eget egestas potenti.",
+        "title": "The Mineral Collection",
+        "text": "Inspired by salt, the mineral that shaped civilizations, this collection pairs natural alabaster or molded mineral glass with patina brass or urban bronze. Soft, textured light glows through elemental forms, honoring connection, preservation, and the timeless beauty of the earth.",
         "product_columns": "2",
         "add_pagination": false,
         "product_slider_title": "New Arrivals",
