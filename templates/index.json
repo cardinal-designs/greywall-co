@@ -37,7 +37,7 @@
           "type": "button",
           "settings": {
             "text": "Shop New Arrivals",
-            "button_link": "",
+            "button_link": "shopify://collections/new-arrivals",
             "button_style": "button",
             "button_color": "text",
             "center_button": false,
@@ -76,21 +76,21 @@
         "collection_MWhLdA": {
           "type": "collection",
           "settings": {
-            "collection": "shop-all",
+            "collection": "new-arrivals",
             "collection_title": "New Arrivals"
           }
         },
         "collection_UdByUB": {
           "type": "collection",
           "settings": {
-            "collection": "shop-all",
+            "collection": "wall-sconces",
             "collection_title": "Wall"
           }
         },
         "collection_TtjzGY": {
           "type": "collection",
           "settings": {
-            "collection": "shop-all",
+            "collection": "chandeliers",
             "collection_title": "Ceiling"
           }
         },
