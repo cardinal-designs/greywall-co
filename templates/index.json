@@ -123,7 +123,7 @@
           "type": "_column",
           "settings": {
             "image": "shopify://shop_images/FURROW_TL354012PEC_LIFESTYLE.jpg",
-            "link": "shopify://collections/shop-all",
+            "link": "shopify://pages/designers",
             "content_alignment": "center"
           },
           "blocks": {
@@ -142,7 +142,7 @@
               "type": "button",
               "settings": {
                 "text": "Shop By Designer",
-                "button_link": "shopify://collections/shop-all",
+                "button_link": "shopify://pages/designers",
                 "button_style": "button",
                 "button_color": "black",
                 "center_button": false,
@@ -423,7 +423,7 @@
           "type": "button",
           "settings": {
             "text": "Shop By Designer",
-            "button_link": "shopify://collections/shop-all",
+            "button_link": "shopify://pages/designers",
             "button_style": "button",
             "button_color": "light",
             "center_button": false,
