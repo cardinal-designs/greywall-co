@@ -162,7 +162,7 @@
           "type": "_column",
           "settings": {
             "image": "shopify://shop_images/Image-2_95ec465f-8f42-4f55-b53c-45d424784c1b.jpg",
-            "link": "",
+            "link": "shopify://collections/branch-creative",
             "content_alignment": "center"
           },
           "blocks": {
@@ -214,7 +214,7 @@
           "type": "_column",
           "settings": {
             "image": "shopify://shop_images/Image-3_1d6d7b96-37ee-4035-b4d0-6413a4a60605.jpg",
-            "link": "",
+            "link": "shopify://collections/sean-brown",
             "content_alignment": "center"
           },
           "blocks": {
@@ -266,7 +266,7 @@
           "type": "_column",
           "settings": {
             "image": "shopify://shop_images/Image-4.jpg",
-            "link": "",
+            "link": "shopify://collections/alex-brokamp",
             "content_alignment": "center"
           },
           "blocks": {
@@ -318,7 +318,7 @@
           "type": "_column",
           "settings": {
             "image": "shopify://shop_images/Image-5.jpg",
-            "link": "",
+            "link": "shopify://collections/hannah-jewett",
             "content_alignment": "center"
           },
           "blocks": {

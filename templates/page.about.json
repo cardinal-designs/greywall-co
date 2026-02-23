@@ -96,7 +96,7 @@
           "name": "Button",
           "settings": {
             "text": "Shop New Arrivals",
-            "button_link": "",
+            "button_link": "shopify://collections/new-arrivals",
             "button_style": "button",
             "button_color": "light",
             "center_button": false,
