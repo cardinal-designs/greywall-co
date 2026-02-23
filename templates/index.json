@@ -123,7 +123,7 @@
           "type": "_column",
           "settings": {
             "image": "shopify://shop_images/FURROW_TL354012PEC_LIFESTYLE.jpg",
-            "link": "",
+            "link": "shopify://collections/shop-all",
             "content_alignment": "center"
           },
           "blocks": {
@@ -142,7 +142,7 @@
               "type": "button",
               "settings": {
                 "text": "Shop By Designer",
-                "button_link": "",
+                "button_link": "shopify://collections/shop-all",
                 "button_style": "button",
                 "button_color": "black",
                 "center_button": false,
@@ -161,7 +161,7 @@
           "type": "_column",
           "settings": {
             "image": "shopify://shop_images/VERSUS_PD341328UB_LIFESTYLE.jpg",
-            "link": "",
+            "link": "shopify://collections/shop-all",
             "content_alignment": "center"
           },
           "blocks": {
@@ -180,7 +180,7 @@
               "type": "button",
               "settings": {
                 "text": "Shop By Collection",
-                "button_link": "",
+                "button_link": "shopify://collections/shop-all",
                 "button_style": "button",
                 "button_color": "black",
                 "center_button": false,
@@ -215,7 +215,7 @@
           "type": "_column",
           "settings": {
             "image": "shopify://shop_images/VERSUS_FL341367UB_LIFESTYLE.jpg",
-            "link": "",
+            "link": "shopify://collections/table-lamps",
             "content_alignment": "left"
           },
           "blocks": {
@@ -239,7 +239,7 @@
           "type": "_column",
           "settings": {
             "image": "shopify://shop_images/BELL_CH21120-GBK-UNV_LIFESTYLE.jpg",
-            "link": "",
+            "link": "shopify://collections/chandeliers",
             "content_alignment": "left"
           },
           "blocks": {
@@ -263,7 +263,7 @@
           "type": "_column",
           "settings": {
             "image": "shopify://shop_images/SINCLAIR_WV364512VB_LIFESTYLE.jpg",
-            "link": "",
+            "link": "shopify://collections/wall-sconces",
             "content_alignment": "left"
           },
           "blocks": {
@@ -287,7 +287,7 @@
           "type": "_column",
           "settings": {
             "image": "shopify://shop_images/FURROW_TL354012PGN_LIFESTYLE.jpg",
-            "link": "",
+            "link": "shopify://collections/table-lamps",
             "content_alignment": "left"
           },
           "blocks": {
@@ -335,10 +335,10 @@
         "add_pagination": false,
         "product_slider_title": "New Arrivals",
         "products": [
-          "chandelier",
-          "lamp",
-          "marble-flush-mount",
-          "pendant"
+          "mineral-fm345084-alora",
+          "mineral-ch360105-alora",
+          "mineral-fm360115-alora",
+          "mineral-fm356115-alora"
         ]
       }
     },
