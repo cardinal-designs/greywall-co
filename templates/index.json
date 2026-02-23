@@ -423,7 +423,7 @@
           "type": "button",
           "settings": {
             "text": "Shop By Designer",
-            "button_link": "",
+            "button_link": "shopify://collections/shop-all",
             "button_style": "button",
             "button_color": "light",
             "center_button": false,
