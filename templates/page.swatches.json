@@ -57,7 +57,7 @@
         "column_aipnhR": {
           "type": "_column",
           "settings": {
-            "image": "shopify://shop_images/Image_fe797036-850f-4c39-bb4e-508663b2610f.jpg",
+            "image": "shopify://shop_images/PTB-PatinaBrass.jpg",
             "link": "",
             "content_alignment": "center"
           },
@@ -66,7 +66,7 @@
               "type": "title",
               "name": "Title",
               "settings": {
-                "title": "LOREM IPSUM",
+                "title": "Patina Brass",
                 "font_size": "small",
                 "mobile_font_size": "small",
                 "margin_top": 0,
@@ -94,7 +94,7 @@
         "column_e6cjKN": {
           "type": "_column",
           "settings": {
-            "image": "shopify://shop_images/Image-1_45cdde43-8ca0-4461-a5c0-119ee1a4c84c.jpg",
+            "image": "shopify://shop_images/AR-Alabaster.jpg",
             "link": "",
             "content_alignment": "center"
           },
@@ -103,7 +103,7 @@
               "type": "title",
               "name": "Title",
               "settings": {
-                "title": "LOREM IPSUM",
+                "title": "Alabaster",
                 "font_size": "small",
                 "mobile_font_size": "small",
                 "margin_top": 0,
@@ -131,7 +131,7 @@
         "column_kr6Dh3": {
           "type": "_column",
           "settings": {
-            "image": "shopify://shop_images/Image-2_f10fb692-0bc2-4b50-b1b8-511de428ec83.jpg",
+            "image": "shopify://shop_images/PW-Pearl_White.jpg",
             "link": "",
             "content_alignment": "center"
           },
@@ -140,7 +140,7 @@
               "type": "title",
               "name": "Title",
               "settings": {
-                "title": "LOREM IPSUM",
+                "title": "Pearl White",
                 "font_size": "small",
                 "mobile_font_size": "small",
                 "margin_top": 0,
