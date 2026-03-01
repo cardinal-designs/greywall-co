@@ -14,6 +14,7 @@
       "blocks": {
         "promo_card_Q3M6Bg": {
           "type": "promo_card",
+          "disabled": true,
           "settings": {
             "card_position": 3,
             "card_size": "large",
