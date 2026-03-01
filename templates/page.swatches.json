@@ -168,7 +168,7 @@
         "column_JxrgwN": {
           "type": "_column",
           "settings": {
-            "image": "shopify://shop_images/Image-1_45cdde43-8ca0-4461-a5c0-119ee1a4c84c.jpg",
+            "image": "shopify://shop_images/UB-UrbanBronze.jpg",
             "link": "",
             "content_alignment": "center"
           },
@@ -177,7 +177,7 @@
               "type": "title",
               "name": "Title",
               "settings": {
-                "title": "LOREM IPSUM",
+                "title": "Urban Bronze",
                 "font_size": "small",
                 "mobile_font_size": "small",
                 "margin_top": 0,
