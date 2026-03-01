@@ -242,7 +242,7 @@
         "column_UKdEyG": {
           "type": "_column",
           "settings": {
-            "image": "shopify://shop_images/Image_fe797036-850f-4c39-bb4e-508663b2610f.jpg",
+            "image": "shopify://shop_images/PB-PolishedBrass.jpg",
             "link": "",
             "content_alignment": "center"
           },
@@ -251,7 +251,7 @@
               "type": "title",
               "name": "Title",
               "settings": {
-                "title": "LOREM IPSUM",
+                "title": "Polished Brass",
                 "font_size": "small",
                 "mobile_font_size": "small",
                 "margin_top": 0,
