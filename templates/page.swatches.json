@@ -460,6 +460,43 @@
             "title_UBVaiB",
             "text_L8anR3"
           ]
+        },
+        "column_rJx4wa": {
+          "type": "_column",
+          "settings": {
+            "image": "shopify://shop_images/WT-Walnut.jpg",
+            "link": "",
+            "content_alignment": "center"
+          },
+          "blocks": {
+            "title_BA83Jq": {
+              "type": "title",
+              "name": "Title",
+              "settings": {
+                "title": "Walnut",
+                "font_size": "small",
+                "mobile_font_size": "small",
+                "margin_top": 0,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            },
+            "text_LDNri6": {
+              "type": "text",
+              "name": "Text",
+              "settings": {
+                "text": "<p>Lorem ipsum dolor sit amet consectetur. In congue scelerisque adipiscing sodales tellus mi dictum diam.</p>",
+                "center_content": false,
+                "margin_top": 10,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "title_BA83Jq",
+            "text_LDNri6"
+          ]
         }
       },
       "block_order": [
@@ -473,7 +510,8 @@
         "column_ViYznt",
         "column_PmMCRM",
         "column_de3D3w",
-        "column_pkQK6F"
+        "column_pkQK6F",
+        "column_rJx4wa"
       ],
       "name": "Columns",
       "settings": {
