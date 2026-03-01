@@ -275,6 +275,43 @@
             "title_CE3w6T",
             "text_gjA6c6"
           ]
+        },
+        "column_DYyfEt": {
+          "type": "_column",
+          "settings": {
+            "image": "shopify://shop_images/PB-PolishedBrass.jpg",
+            "link": "",
+            "content_alignment": "center"
+          },
+          "blocks": {
+            "title_FbNjwK": {
+              "type": "title",
+              "name": "Title",
+              "settings": {
+                "title": "Travertine",
+                "font_size": "small",
+                "mobile_font_size": "small",
+                "margin_top": 0,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            },
+            "text_BnYfd7": {
+              "type": "text",
+              "name": "Text",
+              "settings": {
+                "text": "<p>Lorem ipsum dolor sit amet consectetur. In congue scelerisque adipiscing sodales tellus mi dictum diam.</p>",
+                "center_content": false,
+                "margin_top": 10,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "title_FbNjwK",
+            "text_BnYfd7"
+          ]
         }
       },
       "block_order": [
@@ -283,7 +320,8 @@
         "column_kr6Dh3",
         "column_JxrgwN",
         "column_aRgTHE",
-        "column_UKdEyG"
+        "column_UKdEyG",
+        "column_DYyfEt"
       ],
       "name": "Columns",
       "settings": {
