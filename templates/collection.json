@@ -11,26 +11,6 @@
   "sections": {
     "product-grid": {
       "type": "main-collection",
-      "blocks": {
-        "promo_card_Q3M6Bg": {
-          "type": "promo_card",
-          "disabled": true,
-          "settings": {
-            "card_position": 3,
-            "card_size": "large",
-            "image": "shopify://shop_images/Image_96.jpg",
-            "add_overlay": false,
-            "title": "New Arrivals",
-            "text": "Discover new arrivals with thoughtful forms, refined finishes, and designs created to elevate modern interiors.",
-            "button_label": "Shop New Arrivals",
-            "button_link": "",
-            "button_style": "button"
-          }
-        }
-      },
-      "block_order": [
-        "promo_card_Q3M6Bg"
-      ],
       "settings": {
         "pagination": "false"
       }
