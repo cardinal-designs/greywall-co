@@ -386,6 +386,80 @@
             "title_VYVR3F",
             "text_4mMjjU"
           ]
+        },
+        "column_de3D3w": {
+          "type": "_column",
+          "settings": {
+            "image": "shopify://shop_images/MRB-MetallicBrass.jpg",
+            "link": "",
+            "content_alignment": "center"
+          },
+          "blocks": {
+            "title_39RV8T": {
+              "type": "title",
+              "name": "Title",
+              "settings": {
+                "title": "Metallic Brass",
+                "font_size": "small",
+                "mobile_font_size": "small",
+                "margin_top": 0,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            },
+            "text_TCrTCG": {
+              "type": "text",
+              "name": "Text",
+              "settings": {
+                "text": "<p>Lorem ipsum dolor sit amet consectetur. In congue scelerisque adipiscing sodales tellus mi dictum diam.</p>",
+                "center_content": false,
+                "margin_top": 10,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "title_39RV8T",
+            "text_TCrTCG"
+          ]
+        },
+        "column_pkQK6F": {
+          "type": "_column",
+          "settings": {
+            "image": "shopify://shop_images/AW-AntiqueWhite2.jpg",
+            "link": "",
+            "content_alignment": "center"
+          },
+          "blocks": {
+            "title_UBVaiB": {
+              "type": "title",
+              "name": "Title",
+              "settings": {
+                "title": "Antique White",
+                "font_size": "small",
+                "mobile_font_size": "small",
+                "margin_top": 0,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            },
+            "text_L8anR3": {
+              "type": "text",
+              "name": "Text",
+              "settings": {
+                "text": "<p>Lorem ipsum dolor sit amet consectetur. In congue scelerisque adipiscing sodales tellus mi dictum diam.</p>",
+                "center_content": false,
+                "margin_top": 10,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "title_UBVaiB",
+            "text_L8anR3"
+          ]
         }
       },
       "block_order": [
@@ -397,7 +471,9 @@
         "column_UKdEyG",
         "column_DYyfEt",
         "column_ViYznt",
-        "column_PmMCRM"
+        "column_PmMCRM",
+        "column_de3D3w",
+        "column_pkQK6F"
       ],
       "name": "Columns",
       "settings": {
