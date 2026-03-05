@@ -12,9 +12,9 @@
 {% liquid
   assign image = prod.featured_image
 
-  if prod.selected_or_first_available_variant.image != blank
-    assign image = prod.selected_or_first_available_variant.image
-  endif
+  #if prod.selected_or_first_available_variant.image != blank
+  #  assign image = prod.selected_or_first_available_variant.image
+  #endif
 
   assign prioritize_loading = prioritize_loading | default: false
 %}

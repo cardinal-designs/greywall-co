@@ -40,7 +40,7 @@
         "dropdown_g7LzfJ"
       ],
       "settings": {
-        "description_position": "above",
+        "description_position": "below",
         "mobile_title_position": "below",
         "zoom_type": "none",
         "slider_style": "grid",
