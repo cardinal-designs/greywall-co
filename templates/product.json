@@ -43,7 +43,7 @@
         "description_position": "below",
         "mobile_title_position": "below",
         "zoom_type": "none",
-        "slider_style": "grid",
+        "slider_style": "thumbnails",
         "mobile_slider_style": "center",
         "extra_text": "",
         "value_props": "",
