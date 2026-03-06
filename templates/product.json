@@ -12,6 +12,28 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "badge_AKA8gB": {
+          "type": "badge",
+          "settings": {}
+        },
+        "title_pEQgAe": {
+          "type": "title",
+          "settings": {}
+        },
+        "price_kRwzPY": {
+          "type": "price",
+          "settings": {}
+        },
+        "form_3mC4c7": {
+          "type": "form",
+          "settings": {
+            "extra_text": ""
+          }
+        },
+        "description_HFTCHp": {
+          "type": "description",
+          "settings": {}
+        },
         "dropdown_f8XbkQ": {
           "type": "dropdown",
           "settings": {
@@ -32,25 +54,36 @@
             "title": "Shipping & Returns",
             "text": "<p>Lorem ipsum dolor sit amet consectetur. Platea id fermentum egestas morbi sodales augue purus tristique ipsum. </p>"
           }
+        },
+        "upsells_7rPxNx": {
+          "type": "upsells",
+          "settings": {
+            "upsell_title": "Curated for you",
+            "product_upsells": "{{ product.metafields.custom.upsells.value }}",
+            "upsell_count": "2"
+          }
+        },
+        "share_jJtaWm": {
+          "type": "share",
+          "settings": {}
         }
       },
       "block_order": [
+        "badge_AKA8gB",
+        "title_pEQgAe",
+        "price_kRwzPY",
+        "form_3mC4c7",
+        "description_HFTCHp",
         "dropdown_f8XbkQ",
         "dropdown_yQwAKq",
-        "dropdown_g7LzfJ"
+        "dropdown_g7LzfJ",
+        "upsells_7rPxNx",
+        "share_jJtaWm"
       ],
       "settings": {
-        "description_position": "below",
-        "mobile_title_position": "below",
         "zoom_type": "none",
         "slider_style": "thumbnails",
-        "mobile_slider_style": "center",
-        "extra_text": "",
-        "value_props": "",
-        "show_sharing": true,
-        "upsell_title": "Curated for You",
-        "product_upsells": "{{ product.metafields.custom.upsells.value }}",
-        "upsell_count": "1"
+        "mobile_slider_style": "center"
       }
     },
     "double_image_text_EhfR3A": {
