@@ -448,55 +448,6 @@
         "media_type": "image",
         "image": "shopify://shop_images/Image_83.jpg"
       }
-    },
-    "instagram_JewbLy": {
-      "type": "instagram",
-      "blocks": {
-        "image_6irMPL": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Frame.jpg"
-          }
-        },
-        "image_gBqTPc": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Frame-1.jpg"
-          }
-        },
-        "image_tPXGJr": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Frame-2.jpg"
-          }
-        },
-        "image_pfXrAd": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Frame-3.jpg"
-          }
-        },
-        "image_9maLXh": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Frame-4.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "image_6irMPL",
-        "image_gBqTPc",
-        "image_tPXGJr",
-        "image_pfXrAd",
-        "image_9maLXh"
-      ],
-      "settings": {
-        "background_color": "#e3d7c5",
-        "content_color": "text-text",
-        "title": "get inspired",
-        "handle": "@greywallandco",
-        "link": "https://www.instagram.com/greywallandco/?hl=en"
-      }
     }
   },
   "order": [
@@ -506,7 +457,6 @@
     "columns_NnVJPJ",
     "image_products_TWptUr",
     "interactive_hero_8ztFEW",
-    "image_text_TeTqVT",
-    "instagram_JewbLy"
+    "image_text_TeTqVT"
   ]
 }
