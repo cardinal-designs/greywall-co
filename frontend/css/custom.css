@@ -309,6 +309,15 @@ swym-storefront-layout-login-user .swym-storefront-layout-login-button:hover,
     border-radius: 0 !important;
     border-color: #472715 !important;
     color: #472715 !important;
+    font-weight: 400 !important;
+    font-size: 11px !important;
+    letter-spacing: .1em !important;
+    line-height: 150% !important;
+    text-transform: uppercase !important;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .3s;
+    font-family: monotype-grotesque, sans-serif !important;
 }
 
 .swym-ui-component .swym-save-wishlist-modal .swym-save-wishlist-modal-dialog .swym-save-summary .swym-save-list-btn:hover {
