@@ -274,11 +274,10 @@
             </a>
           {% endif %} {% endcomment %}
 
-          {% comment %}
+          
           <div>
             <a href="#swym-wishlist" class="swym-wishlist text-cta uppercase hidden md:block group/link md:py-20 relative">
               Wishlist
-                {% comment %} <i aria-hidden="true" focusable="false" role="presentation" class="fa fa-heart"></i>  {% endcomment %}
             </a>
             <a href="#swym-wishlist" class="swym-wishlist text-cta uppercase md:hidden group/link md:py-20 relative">
               <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -286,7 +285,7 @@
               </svg>
             </a>
           </div>
-          {% endcomment %}
+         
 
           {% if template != 'cart' %}
             <button class="relative md:py-20" data-open-cart id="cart-icon-bubble" aria-label="Open Cart Drawer" data-id="{{ section.id }}">
