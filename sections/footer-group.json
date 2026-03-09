@@ -29,7 +29,7 @@
             "link_color": "#000000",
             "background_color": "#e3d7c5",
             "feed_id": "",
-            "html_area": ""
+            "html_area": "<div class=\"page-width text-center mt-30\">\n<a href=\"https://www.instagram.com/greywallandco\" class=\"mb-30 block text-m-sh2 uppercase md:text-sh2\" target=\"_blank\">@GREYWALLANDCO</a>\n</div>"
           }
         }
       },
