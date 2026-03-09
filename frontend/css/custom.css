@@ -265,6 +265,7 @@
 swym-storefront-layout-login-user .swym-storefront-layout-login-button,
 .swym-storefront-layout-empty-sfl-view-cart-button,
 .swym-storefront-layout-grid-item-add-to-cart-button,
+.swym-ui-component .swym-save-wishlist-modal .swym-save-wishlist-modal-dialog .swym-save-summary .swym-login-btn,
 .swym-ui-component .swym-save-wishlist-modal .swym-save-wishlist-modal-dialog .swym-logged-in .swym-log-out-btn,
 .swym-ui-component .swym-share-wishlist-modal .swym-share-wishlist-modal-dialog .swym-share-wishlist-email-btn,
 .swym-ui-component .swym-wishlist-grid .swym-wishlist-item .swym-add-to-cart-btn,
@@ -289,6 +290,7 @@ swym-storefront-layout-login-user .swym-storefront-layout-login-button,
 swym-storefront-layout-login-user .swym-storefront-layout-login-button:hover,
 .swym-storefront-layout-empty-sfl-view-cart-button:hover,
 .swym-storefront-layout-grid-item-add-to-cart-button:hover,
+.swym-ui-component .swym-save-wishlist-modal .swym-save-wishlist-modal-dialog .swym-save-summary .swym-login-btn:hover,
 .swym-ui-component .swym-save-wishlist-modal .swym-save-wishlist-modal-dialog .swym-logged-in .swym-log-out-btn:hover,
 .swym-ui-component .swym-share-wishlist-modal .swym-share-wishlist-modal-dialog .swym-share-wishlist-email-btn:hover,
 .swym-ui-component .swym-wishlist-grid .swym-wishlist-item .swym-add-to-cart-btn:hover,
@@ -301,6 +303,17 @@ swym-storefront-layout-login-user .swym-storefront-layout-login-button:hover,
 
 .swym-ui-component .swym-save-wishlist-modal .swym-save-wishlist-modal-dialog .swym-logged-in .swym-back-btn {
     font-weight: 400 !important;
+}
+
+.swym-ui-component .swym-save-wishlist-modal .swym-save-wishlist-modal-dialog .swym-save-summary .swym-save-list-btn {
+    border-radius: 0 !important;
+    border-color: #472715 !important;
+    color: #472715 !important;
+}
+
+.swym-ui-component .swym-save-wishlist-modal .swym-save-wishlist-modal-dialog .swym-save-summary .swym-save-list-btn:hover {
+    background-color: #472715 !important;
+    color: #f7f4ef !important;
 }
 
 swym-storefront-layout-login-user .swym-storefront-layout-login-button::before,
@@ -469,10 +482,13 @@ swym-storefront-layout-as-drawer .swym-storefront-layout-layout {
 }
 
 .swym-storefront-layout-grid-item-add-to-cart-button,
+.swym-ui-component .swym-save-wishlist-modal .swym-save-wishlist-modal-dialog .swym-save-summary .swym-login-btn,
 .swym-ui-component .swym-share-wishlist-modal .swym-share-wishlist-modal-dialog .swym-share-wishlist-email-btn,
 .swym-ui-component.swym-wishlist-page .swym-sfl-tab-container .swym-sfl-list-view .swym-sfl-layout-grid .swym-sfl-card-product-item .swym-sfl-add-to-cart-btn,
-.swym-ui-component .swym-sfl-list-heading .swym-sfl-action-button .swym-sfl-add-all-to-cart-btn {
-    padding: 8.5px 22px !important;
+.swym-ui-component .swym-sfl-list-heading .swym-sfl-action-button .swym-sfl-add-all-to-cart-btn,
+.swym-ui-component .swym-wishlist-grid .swym-wishlist-item .swym-add-to-cart-btn,
+.swym-ui-component .swym-sfl-list-empty-content .swym-sfl-cart-btn {
+    padding: 10.5px 22px !important;
 }
 
 .swym-storefront-layout-empty-sfl-view-cart-button,
@@ -938,7 +954,6 @@ div#swym-wishlist-render-container,
 .swym-ui-component .swym-wishlist-grid .swym-wishlist-item .swym-add-to-cart-btn,
 .swym-ui-component .swym-sfl-list-empty-content .swym-sfl-cart-btn {
     margin: 0 !important;
-    padding: 10.5px 22px !important;
 }
 
 .swym-ui-component .swym-simple-wishlist-container .swym-wishlist-container-title-bar .swym-wishlist-main-title {
@@ -1153,14 +1168,12 @@ div#swym-wishlist-render-container,
     .swym-storefront-layout-grid-item-add-to-cart-button, 
     .swym-ui-component .swym-share-wishlist-modal .swym-share-wishlist-modal-dialog .swym-share-wishlist-email-btn,
     .swym-ui-component.swym-wishlist-page .swym-sfl-tab-container .swym-sfl-list-view .swym-sfl-layout-grid .swym-sfl-card-product-item .swym-sfl-add-to-cart-btn, 
-    .swym-ui-component .swym-sfl-list-heading .swym-sfl-action-button .swym-sfl-add-all-to-cart-btn {
-        padding: 8.5px 16px !important;
-    }
-
+    .swym-ui-component .swym-sfl-list-heading .swym-sfl-action-button .swym-sfl-add-all-to-cart-btn,
     .swym-ui-component .swym-wishlist-grid .swym-wishlist-item .swym-add-to-cart-btn,
-    .swym-ui-component .swym-sfl-list-empty-content .swym-sfl-cart-btn {
-        padding: 10.5px 22px !important;
-    } 
+    .swym-ui-component .swym-sfl-list-empty-content .swym-sfl-cart-btn,
+    .swym-ui-component .swym-save-wishlist-modal .swym-save-wishlist-modal-dialog .swym-save-summary .swym-login-btn {
+        padding: 10.5px 16px !important;
+    }
 
     .swym-ui-component.swym-wishlist-page .swym-wishlist-container-title-bar {
         padding: 45px 0 40px !important;
