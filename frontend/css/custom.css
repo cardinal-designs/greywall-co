@@ -265,7 +265,10 @@
 swym-storefront-layout-login-user .swym-storefront-layout-login-button,
 .swym-storefront-layout-empty-sfl-view-cart-button,
 .swym-storefront-layout-grid-item-add-to-cart-button,
+.swym-ui-component .swym-save-wishlist-modal .swym-save-wishlist-modal-dialog .swym-logged-in .swym-log-out-btn,
+.swym-ui-component .swym-share-wishlist-modal .swym-share-wishlist-modal-dialog .swym-share-wishlist-email-btn,
 .swym-ui-component .swym-wishlist-grid .swym-wishlist-item .swym-add-to-cart-btn,
+.swym-ui-component .swym-sfl-list-empty-content .swym-sfl-cart-btn,
 .swym-ui-component.swym-wishlist-page .swym-sfl-tab-container .swym-sfl-list-view .swym-sfl-layout-grid .swym-sfl-card-product-item .swym-sfl-add-to-cart-btn,
 .swym-ui-component .swym-sfl-list-heading .swym-sfl-action-button .swym-sfl-add-all-to-cart-btn {
     font-weight: 400 !important;
@@ -286,11 +289,18 @@ swym-storefront-layout-login-user .swym-storefront-layout-login-button,
 swym-storefront-layout-login-user .swym-storefront-layout-login-button:hover,
 .swym-storefront-layout-empty-sfl-view-cart-button:hover,
 .swym-storefront-layout-grid-item-add-to-cart-button:hover,
+.swym-ui-component .swym-save-wishlist-modal .swym-save-wishlist-modal-dialog .swym-logged-in .swym-log-out-btn:hover,
+.swym-ui-component .swym-share-wishlist-modal .swym-share-wishlist-modal-dialog .swym-share-wishlist-email-btn:hover,
 .swym-ui-component .swym-wishlist-grid .swym-wishlist-item .swym-add-to-cart-btn:hover,
+.swym-ui-component .swym-sfl-list-empty-content .swym-sfl-cart-btn:hover,
 .swym-ui-component.swym-wishlist-page .swym-sfl-tab-container .swym-sfl-list-view .swym-sfl-layout-grid .swym-sfl-card-product-item .swym-sfl-add-to-cart-btn:hover,
 .swym-ui-component .swym-sfl-list-heading .swym-sfl-action-button .swym-sfl-add-all-to-cart-btn:hover {
     background-color: #8b6536 !important;
     color: #f7f4ef !important;
+}
+
+.swym-ui-component .swym-save-wishlist-modal .swym-save-wishlist-modal-dialog .swym-logged-in .swym-back-btn {
+    font-weight: 400 !important;
 }
 
 swym-storefront-layout-login-user .swym-storefront-layout-login-button::before,
@@ -459,7 +469,7 @@ swym-storefront-layout-as-drawer .swym-storefront-layout-layout {
 }
 
 .swym-storefront-layout-grid-item-add-to-cart-button,
-.swym-ui-component .swym-wishlist-grid .swym-wishlist-item .swym-add-to-cart-btn,
+.swym-ui-component .swym-share-wishlist-modal .swym-share-wishlist-modal-dialog .swym-share-wishlist-email-btn,
 .swym-ui-component.swym-wishlist-page .swym-sfl-tab-container .swym-sfl-list-view .swym-sfl-layout-grid .swym-sfl-card-product-item .swym-sfl-add-to-cart-btn,
 .swym-ui-component .swym-sfl-list-heading .swym-sfl-action-button .swym-sfl-add-all-to-cart-btn {
     padding: 8.5px 22px !important;
@@ -605,10 +615,10 @@ swym-storefront-layout-as-modal .swym-storefront-layout-layout {
 .swym-storefront-layout-title {
     font-family: "dejanire-text", sans-serif !important;
     font-weight: 400 !important;
-    font-size: 30px !important;
-    line-height: 120% !important;
-    letter-spacing: 0% !important;
-    text-transform: capitalize !important;
+    font-size: 22px !important;
+    line-height: 135% !important;
+    letter-spacing: 0.017em !important;
+    text-transform: uppercase !important;
     padding-bottom: 20px !important;
     border-bottom: 1px solid #CDC4B0 !important;
     margin-bottom: 20px !important;
@@ -676,7 +686,8 @@ swym-storefront-layout-as-modal .swym-storefront-layout-layout {
 
 .swym-storefront-layout-empty-wishlist-description,
 .swym-storefront-layout-login-description,
-.swym-ui-component .swym-empty-wishlist-container .swym-empty-wishlist-text {
+.swym-ui-component .swym-empty-wishlist-container .swym-empty-wishlist-text,
+.swym-ui-component .swym-sfl-list-empty-content .swym-sfl-list-empty-text2 {
     font-family: "monotype-grotesque", sans-serif !important;
     font-weight: 400 !important;
     font-size: 12px !important;
@@ -840,12 +851,17 @@ div#swym-wishlist-render-container,
 
 .swym-ui-component.swym-wishlist-page .swym-wishlist-container-title-bar .swym-wishlist-main-title,
 .swym-ui-component .swym-share-wishlist-modal .swym-share-wishlist-modal-dialog .swym-text-heading,
-.swym-ui-component.swym-wishlist-page .swym-sfl-tab-container .swym-sfl-list-view .swym-sfl-list-heading .swym-sfl-title {
+.swym-ui-component.swym-wishlist-page .swym-sfl-tab-container .swym-sfl-list-view .swym-sfl-list-heading .swym-sfl-title,
+.swym-ui-component .swym-sfl-list-empty-content .swym-sfl-list-empty-text {
     font-family: "dejanire-text", sans-serif !important;
     font-weight: 400 !important;
     font-size: 22px !important;
     line-height: 128% !important;
     letter-spacing: 0% !important;
+}
+
+.swym-ui-component.swym-wishlist-page .swym-wishlist-container-title-bar .swym-wishlist-main-title {
+    text-transform: uppercase !important;
 }
 
 .swym-ui-component .swym-share-wishlist-modal .swym-share-wishlist-modal-dialog .swym-share-wishlist-input-container .swym-input-label {
@@ -906,10 +922,9 @@ div#swym-wishlist-render-container,
 .swym-ui-component .swym-user-login-status {
     font-family: "monotype-grotesque", sans-serif !important;
     font-weight: 500 !important;
-    font-size: 11px !important;
-    line-height: 150% !important;
-    letter-spacing: 0.01em !important;
-    text-transform: uppercase !important;
+    font-size: 12px !important;
+    line-height: 180% !important;
+    letter-spacing: 0.03em !important;
 }
 
 .swym-ui-component .swym-user-login-status .swym-user-text {
@@ -920,8 +935,10 @@ div#swym-wishlist-render-container,
     display: none !important;
 }
 
-.swym-ui-component .swym-wishlist-grid .swym-wishlist-item .swym-add-to-cart-btn {
+.swym-ui-component .swym-wishlist-grid .swym-wishlist-item .swym-add-to-cart-btn,
+.swym-ui-component .swym-sfl-list-empty-content .swym-sfl-cart-btn {
     margin: 0 !important;
+    padding: 10.5px 22px !important;
 }
 
 .swym-ui-component .swym-simple-wishlist-container .swym-wishlist-container-title-bar .swym-wishlist-main-title {
@@ -995,11 +1012,19 @@ div#swym-wishlist-render-container,
     border: none !important;
 }
 
+.swym-ui-component .swym-simple-wishlist-container .swym-sfl-list-heading .swym-sfl-action-button .swym-sfl-add-all-to-cart-btn.swym-disabled {
+    color: #F7F4EF !important;
+    background: #472715 !important;
+    border: none !important;
+    opacity: 0.5;
+}
+
 .swym-storefront-layout-login-user-container {
     background: #F7F4EF !important;
 }
 
-.swym-storefront-layout-grid-item-title {
+.swym-storefront-layout-grid-item-title,
+.swym-ui-component .swym-save-wishlist-modal .swym-save-wishlist-modal-dialog .swym-text-heading {
     font-family: "dejanire-text", sans-serif !important;
     font-weight: 400 !important;
     font-size: 14px !important;
@@ -1007,8 +1032,15 @@ div#swym-wishlist-render-container,
     letter-spacing: 0.013em !important;
     text-transform: uppercase !important;
     color: #472715 !important;
-    display: block !important;
+    margin: 0 !important;
 }
+
+.swym-ui-component .swym-save-wishlist-modal .swym-save-wishlist-modal-dialog .swym-text-content {
+    margin: 15px 0 !important;
+    color: #472715 !important;
+    font-family: "monotype-grotesque", sans-serif !important;
+}
+
 
 @media (min-width: 768px) {
 
@@ -1055,9 +1087,18 @@ div#swym-wishlist-render-container,
 
     .swym-storefront-layout-title {
         font-size: 18px !important;
+        line-height: 110% !important;
+        letter-spacing: 0.013em !important;
         padding-bottom: 16px !important;
         margin-bottom: 16px !important;
         border-color: #F6F3EC !important;
+        color: #212121 !important;
+    }
+
+    .swym-storefront-layout-empty-wishlist-title,
+    .swym-storefront-layout-empty-wishlist-description,
+    .swym-ui-component .swym-empty-wishlist-container .swym-empty-wishlist-text {
+        color: #212121 !important;
     }
 
     .swym-storefront-layout-login-heading, .swym-storefront-layout-grid-item-title, .swym-storefront-layout-action-title, .swym-storefront-layout-collection-title, 
@@ -1080,7 +1121,8 @@ div#swym-wishlist-render-container,
         width: calc(50% - 10px) !important;
     }
 
-    .swym-ui-component.swym-wishlist-page .swym-wishlist-container-title-bar .swym-wishlist-main-title {
+    .swym-ui-component.swym-wishlist-page .swym-wishlist-container-title-bar .swym-wishlist-main-title,
+    .swym-ui-component .swym-sfl-list-empty-content .swym-sfl-list-empty-text {
         font-size: 14px !important;
         line-height: 150% !important;
     }
@@ -1093,7 +1135,7 @@ div#swym-wishlist-render-container,
     .swym-ui-component .swym-user-login-status {
         font-size: 12px !important;
         line-height: 180% !important;
-        letter-spacing: 0.02em !important;
+        letter-spacing: 0.04em !important;
     }
 
     .swym-storefront-layout-as-modal .swym-storefront-layout-grid-item-image-container, 
@@ -1108,9 +1150,17 @@ div#swym-wishlist-render-container,
         padding: 12px !important;
     }
 
-    .swym-storefront-layout-grid-item-add-to-cart-button, .swym-ui-component .swym-wishlist-grid .swym-wishlist-item .swym-add-to-cart-btn, .swym-ui-component.swym-wishlist-page .swym-sfl-tab-container .swym-sfl-list-view .swym-sfl-layout-grid .swym-sfl-card-product-item .swym-sfl-add-to-cart-btn, .swym-ui-component .swym-sfl-list-heading .swym-sfl-action-button .swym-sfl-add-all-to-cart-btn {
+    .swym-storefront-layout-grid-item-add-to-cart-button, 
+    .swym-ui-component .swym-share-wishlist-modal .swym-share-wishlist-modal-dialog .swym-share-wishlist-email-btn,
+    .swym-ui-component.swym-wishlist-page .swym-sfl-tab-container .swym-sfl-list-view .swym-sfl-layout-grid .swym-sfl-card-product-item .swym-sfl-add-to-cart-btn, 
+    .swym-ui-component .swym-sfl-list-heading .swym-sfl-action-button .swym-sfl-add-all-to-cart-btn {
         padding: 8.5px 16px !important;
     }
+
+    .swym-ui-component .swym-wishlist-grid .swym-wishlist-item .swym-add-to-cart-btn,
+    .swym-ui-component .swym-sfl-list-empty-content .swym-sfl-cart-btn {
+        padding: 10.5px 22px !important;
+    } 
 
     .swym-ui-component.swym-wishlist-page .swym-wishlist-container-title-bar {
         padding: 45px 0 40px !important;
