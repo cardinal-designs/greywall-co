@@ -215,7 +215,7 @@
           "type": "_column",
           "settings": {
             "image": "shopify://shop_images/VERSUS_FL341367UB_LIFESTYLE.jpg",
-            "link": "shopify://collections/table-lamps",
+            "link": "shopify://collections/floor-lamps",
             "content_alignment": "left"
           },
           "blocks": {
@@ -239,7 +239,7 @@
           "type": "_column",
           "settings": {
             "image": "shopify://shop_images/BELL_CH21120-GBK-UNV_LIFESTYLE.jpg",
-            "link": "shopify://collections/chandeliers",
+            "link": "shopify://collections/ceiling",
             "content_alignment": "left"
           },
           "blocks": {
@@ -263,7 +263,7 @@
           "type": "_column",
           "settings": {
             "image": "shopify://shop_images/SINCLAIR_WV364512VB_LIFESTYLE.jpg",
-            "link": "shopify://collections/wall-sconces",
+            "link": "shopify://collections/wall",
             "content_alignment": "left"
           },
           "blocks": {
