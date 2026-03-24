@@ -180,7 +180,7 @@
               "type": "button",
               "settings": {
                 "text": "Shop By Collection",
-                "button_link": "shopify://collections/shop-all",
+                "button_link": "shopify://pages/lookbooks",
                 "button_style": "button",
                 "button_color": "black",
                 "center_button": false,
