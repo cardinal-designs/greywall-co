@@ -90,7 +90,7 @@
               "name": "Button",
               "settings": {
                 "text": "Shop Their Collection",
-                "button_link": "",
+                "button_link": "shopify://collections/jason-koharik",
                 "button_style": "button",
                 "button_color": "light",
                 "center_button": false,
@@ -142,7 +142,7 @@
               "name": "Button",
               "settings": {
                 "text": "Shop Their Collection",
-                "button_link": "",
+                "button_link": "shopify://collections/paul-cocksedge-studio",
                 "button_style": "button",
                 "button_color": "light",
                 "center_button": false,
@@ -194,7 +194,7 @@
               "name": "Button",
               "settings": {
                 "text": "Shop Their Collection",
-                "button_link": "",
+                "button_link": "shopify://collections/branch-creative",
                 "button_style": "button",
                 "button_color": "light",
                 "center_button": false,
@@ -246,7 +246,7 @@
               "name": "Button",
               "settings": {
                 "text": "Shop Their Collection",
-                "button_link": "",
+                "button_link": "shopify://collections/sean-brown",
                 "button_style": "button",
                 "button_color": "light",
                 "center_button": false,
@@ -298,7 +298,7 @@
               "name": "Button",
               "settings": {
                 "text": "Shop Their Collection",
-                "button_link": "",
+                "button_link": "shopify://collections/alex-brokamp",
                 "button_style": "button",
                 "button_color": "light",
                 "center_button": false,
@@ -350,7 +350,7 @@
               "name": "Button",
               "settings": {
                 "text": "Shop Their Collection",
-                "button_link": "",
+                "button_link": "shopify://collections/hannah-jewett",
                 "button_style": "button",
                 "button_color": "light",
                 "center_button": false,
