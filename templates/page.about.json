@@ -292,6 +292,7 @@
         "title_qxbRgJ",
         "text_TYQdtW"
       ],
+      "disabled": true,
       "name": "Image / Text",
       "settings": {
         "background_color": "",
@@ -299,8 +300,69 @@
         "image_position": "left",
         "content_width": 380,
         "add_margin": true,
-        "media_type": "image",
-        "image": "shopify://shop_images/250927_Editorial_0622_copy.jpg"
+        "media_type": "image"
+      }
+    },
+    "richtext_WMieYH": {
+      "type": "richtext",
+      "blocks": {
+        "subtitle_KEpPMX": {
+          "type": "subtitle",
+          "disabled": true,
+          "settings": {
+            "title": "Subtitle",
+            "font_style": "italic",
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {}
+        },
+        "title_rYn6tC": {
+          "type": "title",
+          "settings": {
+            "title": "Our Team",
+            "font_size": "regular",
+            "mobile_font_size": "large",
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {}
+        },
+        "text_QeJBCj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our dedicated support team offers thoughtful guidance on trade needs, design intent, material artistry, and beyond. Contact <a href=\"mailto:info@greywall.co\"><span style=\"text-decoration:underline\">info@greywall.co</span></a> to reach us.</p>",
+            "center_content": false,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {}
+        },
+        "button_ahnNwy": {
+          "type": "button",
+          "settings": {
+            "text": "Shop Now",
+            "button_link": "",
+            "button_style": "button",
+            "button_color": "light",
+            "center_button": false,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "subtitle_KEpPMX",
+        "title_rYn6tC",
+        "text_QeJBCj",
+        "button_ahnNwy"
+      ],
+      "name": "Richtext",
+      "settings": {
+        "background_color": "",
+        "content_color": "text-text",
+        "content_width": 660
       }
     },
     "instagram_QnrraF": {
@@ -361,6 +423,7 @@
     "richtext_WUPyLJ",
     "columns_ydLrRr",
     "image_text_4rW6f6",
+    "richtext_WMieYH",
     "instagram_QnrraF"
   ]
 }
