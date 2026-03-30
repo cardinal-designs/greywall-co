@@ -156,6 +156,7 @@
       "block_order": [
         "title_WacDwT"
       ],
+      "disabled": true,
       "custom_css": [
         ".richtext {margin: 80px 0;}",
         "@media screen and (max-width: 767px) {.richtext {margin: 60px 0; }}"
@@ -331,7 +332,7 @@
         "text_QeJBCj": {
           "type": "text",
           "settings": {
-            "text": "<p>Our dedicated support team offers thoughtful guidance on trade needs, design intent, material artistry, and beyond. Contact <a href=\"mailto:info@greywall.co\"><span style=\"text-decoration:underline\">info@greywall.co</span></a> to reach us.</p>",
+            "text": "<p>Our dedicated support team offers thoughtful guidance on trade needs, design intent, material artistry, and beyond. Contact <a href=\"mailto:info@greywall.co\"><span style=\"text-decoration:underline\">info@greywall.co</span></a> to reach us. </p>",
             "center_content": false,
             "margin_top": 0,
             "margin_bottom": 0
