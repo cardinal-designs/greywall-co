@@ -1,0 +1,265 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "hero",
+      "blocks": {
+        "title_ajgcJV": {
+          "type": "title",
+          "name": "Title",
+          "settings": {
+            "title": "Join Our Trade Program",
+            "font_size": "large",
+            "mobile_font_size": "large",
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {}
+        },
+        "text_8LMNwe": {
+          "type": "text",
+          "name": "Text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet consectetur. Aliquam mi mauris interdum eget. Nisi mattis facilisi sit adipiscing neque ultrices augue diam sit. </p>",
+            "center_content": true,
+            "content_width": 465,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {}
+        },
+        "group_NYaGJt": {
+          "type": "group",
+          "name": "Group",
+          "settings": {
+            "direction": "flex-row",
+            "horizontal_alignment": "center",
+            "vertical_alignment": "center",
+            "wrap": true,
+            "gap": 20,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {
+            "button_7H4VrC": {
+              "type": "button",
+              "name": "Button",
+              "settings": {
+                "text": "Sign In",
+                "button_link": "/account",
+                "button_style": "button",
+                "button_color": "light",
+                "center_button": false,
+                "margin_top": 0,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            },
+            "button_7LqefQ": {
+              "type": "button",
+              "name": "Button",
+              "settings": {
+                "text": "Join Now",
+                "button_link": "shopify://pages/trade-program-application",
+                "button_style": "button",
+                "button_color": "light",
+                "center_button": false,
+                "margin_top": 0,
+                "margin_bottom": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "button_7H4VrC",
+            "button_7LqefQ"
+          ]
+        }
+      },
+      "block_order": [
+        "title_ajgcJV",
+        "text_8LMNwe",
+        "group_NYaGJt"
+      ],
+      "settings": {
+        "content_position": "middle_center",
+        "mobile_content_position": "middle_center",
+        "content_width": 560,
+        "content_color": "text-white",
+        "media_type": "image",
+        "image": "shopify://shop_images/TRADE_PROGRAM_1440x700_e9c87622-c710-491b-a30f-3ff50e244e51.jpg",
+        "mobile_image": "shopify://shop_images/TRADE_PROGRAM_1440x700_7c5ff67c-04a4-41b6-9222-c8a49a5dca3d.jpg",
+        "add_overlay": false
+      }
+    },
+    "richtext_V7qRjw": {
+      "type": "richtext",
+      "blocks": {
+        "subtitle_9bCWfU": {
+          "type": "subtitle",
+          "settings": {
+            "title": "lorem ipsum dolor",
+            "font_style": "italic",
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {}
+        },
+        "title_KdRzHC": {
+          "type": "title",
+          "settings": {
+            "title": "Exclusive trade pricing and services",
+            "font_size": "large",
+            "mobile_font_size": "large",
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {}
+        },
+        "text_PkXYjg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet consectetur. Aliquam mi mauris interdum eget. Nisi mattis facilisi sit adipiscing neque ultrices augue diam sit. Adipiscing penatibus eu mattis facilisis sed nulla pulvinar interdum dignissim.</p>",
+            "center_content": false,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "subtitle_9bCWfU",
+        "title_KdRzHC",
+        "text_PkXYjg"
+      ],
+      "name": "Richtext",
+      "settings": {
+        "background_color": "",
+        "content_color": "text-text",
+        "content_width": 500
+      }
+    },
+    "image_text_8i8gqF": {
+      "type": "image-text",
+      "blocks": {
+        "title_bBLLP9": {
+          "type": "title",
+          "settings": {
+            "title": "Designed for",
+            "font_size": "regular",
+            "mobile_font_size": "regular",
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {}
+        },
+        "text_8z8496": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet consectetur. Sit quam enim risus interdum. Blandit hac erat sed eu rutrum. Dignissim felis id et scelerisque nibh habitasse arcu.</p>",
+            "center_content": false,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {}
+        },
+        "button_dXhxY3": {
+          "type": "button",
+          "settings": {
+            "text": "Join Now",
+            "button_link": "shopify://pages/trade-program-application",
+            "button_style": "button",
+            "button_color": "light",
+            "center_button": false,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "title_bBLLP9",
+        "text_8z8496",
+        "button_dXhxY3"
+      ],
+      "name": "Image / Text",
+      "settings": {
+        "background_color": "",
+        "content_color": "text-text",
+        "image_position": "left",
+        "content_width": 340,
+        "add_margin": true,
+        "media_type": "image",
+        "image": "shopify://shop_images/FURROW_TL354012PEC_LIFESTYLE_8d63d7c4-0e61-4771-9fd7-d5bf4cba5a61.jpg"
+      }
+    },
+    "image_text_eF88gy": {
+      "type": "image-text",
+      "blocks": {
+        "title_KfiLdL": {
+          "type": "title",
+          "settings": {
+            "title": "Benefits",
+            "font_size": "regular",
+            "mobile_font_size": "regular",
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {}
+        },
+        "text_wrBqJe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet consectetur. Sit quam enim risus interdum. Blandit hac erat sed eu rutrum. Dignissim felis id et scelerisque nibh habitasse arcu.</p>",
+            "center_content": false,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {}
+        },
+        "button_qXhXq4": {
+          "type": "button",
+          "settings": {
+            "text": "Contact Us",
+            "button_link": "shopify://pages/contact",
+            "button_style": "button",
+            "button_color": "light",
+            "center_button": false,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "title_KfiLdL",
+        "text_wrBqJe",
+        "button_qXhXq4"
+      ],
+      "name": "Image / Text",
+      "settings": {
+        "background_color": "",
+        "content_color": "text-text",
+        "image_position": "right",
+        "content_width": 340,
+        "add_margin": true,
+        "media_type": "image",
+        "image": "shopify://shop_images/VERSUS_PD341328PTB_LIFESTYLE_b664d921-5658-4f81-930c-9aea35c1572b.jpg"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "richtext_V7qRjw",
+    "image_text_8i8gqF",
+    "image_text_eF88gy"
+  ]
+}
