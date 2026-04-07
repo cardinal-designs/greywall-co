@@ -348,7 +348,7 @@
         "block_FmfiNF": {
           "type": "block",
           "settings": {
-            "product": "",
+            "product": "furrow-pd354125-alora",
             "pos_x": 41,
             "pos_y": 16,
             "card_position": "bottom_right"
@@ -357,7 +357,7 @@
         "block_hEfYRd": {
           "type": "block",
           "settings": {
-            "product": "",
+            "product": "furrow-ws354012-alora",
             "pos_x": 29,
             "pos_y": 36,
             "card_position": "bottom_left"
@@ -366,7 +366,7 @@
         "block_7hYAEp": {
           "type": "block",
           "settings": {
-            "product": "",
+            "product": "furrow-tl354116-alora",
             "pos_x": 84,
             "pos_y": 71,
             "card_position": "bottom_left"
@@ -375,7 +375,7 @@
         "block_RtUrjk": {
           "type": "block",
           "settings": {
-            "product": "",
+            "product": "furrow-fl354064-alora",
             "pos_x": 61,
             "pos_y": 52,
             "card_position": "bottom_left"
