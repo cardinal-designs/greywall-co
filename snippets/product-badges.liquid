@@ -50,13 +50,13 @@
 
 {% if prod.compare_at_price > prod.price %}
   {% capture badges %}
-    <div class="{{ style }} bg-gold">Sale</div>
+    <div class="{{ style }} bg-beige">Sale</div>
   {% endcapture %}
 {% endif %}
 
 {% unless prod.available %}
   {% capture badges %}
-    <div class="{{ style }} bg-gold text-brown/50">Out of Stock</div>
+    <div class="{{ style }} bg-beige text-brown">Out of Stock</div>
   {% endcapture %}
 {% endunless %}
 
